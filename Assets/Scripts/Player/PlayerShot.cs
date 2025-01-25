@@ -17,7 +17,7 @@ public class PlayerShot : MonoBehaviour
     private Vector2 weaponTransformVector;
     private Vector2 differenceVector;
 
-    private float gaugeShot = 1f;
+    public float gaugeShot { get; private set; }
 
     private InputAction rightClickMouseAction;
     private float rightClickMouseState;
@@ -32,6 +32,7 @@ public class PlayerShot : MonoBehaviour
         //Get the playermovement script of the parent
         playerMovement = GetComponentInParent<PlayerMovement>();
         playerTransform = GetComponentInParent<Transform>();
+        gaugeShot = 1f;
     }
 
     private void Start()
@@ -72,7 +73,7 @@ public class PlayerShot : MonoBehaviour
 
                         //Get the orientation of the weapon compared to the mouse with transform.right
                         bubbleBulletrb.AddForce(differenceVector * forceToBubble);
-                        gaugeShot -= decrementGauchePerShot;
+                        //gaugeShot -= decrementGauchePerShot;
                         Debug.Log(gaugeShot);
                     }
                 }
