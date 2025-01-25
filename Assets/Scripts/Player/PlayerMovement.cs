@@ -17,11 +17,13 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveValue;
     private Vector2 lookValue;
     private Vector3 vectorZero = Vector3.zero;
-    private Vector3 mousPos;
+    public Vector3 mousPos { get; private set; }
+
     private float angleRadMouse;
     private float angleDegMouse;
 
-    private static PlayerMovement instance;
+
+    public static PlayerMovement instance;
 
     private void Awake()
     {
