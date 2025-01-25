@@ -9,7 +9,7 @@ public class PlayerShot : MonoBehaviour
     [SerializeField] private float forceToBubble;
     [SerializeField] private BoxCollider2D colliderSafeArea;
 
-    private Vector2 transformBullet;
+    private Vector2 transformWeapon;
 
     private InputAction rightClickMouseAction;
     private float rightClickMouseState;
@@ -47,9 +47,10 @@ public class PlayerShot : MonoBehaviour
                     GameObject bubbleBulletGO = Instantiate(bubbleBullet, forwardWeapon.position, playerTransform.rotation);
                     gunHeat = 0;
                     Rigidbody2D bubbleBulletrb = bubbleBulletGO.GetComponent<Rigidbody2D>();
-                    transformBullet = new Vector2(transform.position.x, transform.position.y);
+                    //Convert Vector3 into Vector2
+                    transformWeapon = new Vector2(transform.position.x, transform.position.y);
                     //Get the orientation of the weapon compared to the mouse
-                    transform.right = mousePos - transformBullet;
+                    transform.right = mousePos - transformWeapon;
                     bubbleBulletrb.AddForce(transform.right * forceToBubble);
                 }
             }

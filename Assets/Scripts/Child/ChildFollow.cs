@@ -5,12 +5,11 @@ public class ChildFollow : MonoBehaviour
     [SerializeField] private float moveSpeedChild;
     [SerializeField] private float smoothFactor;
     [SerializeField] private float lengthLimitToTarget;
-    [SerializeField] private float timeToStop;
 
-    private Transform playerTransform;
+    public Transform playerTransform { get; private set; }
     private float angleGOtoTarget;
     private Vector3 vectorZero = Vector3.zero;
-    private Vector2 differenceToTarget;
+    public Vector2 differenceToTarget { get; private set; }
     private Rigidbody2D rb;
 
     private Vector3 vel;
