@@ -67,5 +67,4 @@ public class PlayerMovement : MonoBehaviour
         Vector3 vel = new Vector2(moveValue.x * moveSpeed, moveValue.y*moveSpeed);
         rb.linearVelocity = Vector3.SmoothDamp(rb.linearVelocity, vel, ref vectorZero, smoothFactor);
     }
-
 }
