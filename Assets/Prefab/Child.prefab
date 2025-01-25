@@ -149,9 +149,10 @@ GameObject:
   - component: {fileID: 1277173903511454055}
   - component: {fileID: 9008378177213750555}
   - component: {fileID: 2098753589118982079}
+  - component: {fileID: 3923852519770528980}
   m_Layer: 6
   m_Name: Child
-  m_TagString: Untagged
+  m_TagString: Child
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -315,3 +316,16 @@ MonoBehaviour:
   moveSpeedChild: 0.5
   smoothFactor: 0.1
   lengthLimitToTarget: 2
+--- !u!114 &3923852519770528980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8890093302505974991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5291213035c5c84badc3ba11ab66dd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3

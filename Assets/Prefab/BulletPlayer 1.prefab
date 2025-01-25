@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 806436782422422621}
   - component: {fileID: 8686863323144367716}
   - component: {fileID: -229632475453921730}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BulletPlayer 1
-  m_TagString: Untagged
+  m_TagString: Bubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134,7 +134,7 @@ CircleCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 384
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -188,5 +188,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a40e2769c3f7e74db0e912c120c32ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBeforeDisappear: 2
   damage: 1

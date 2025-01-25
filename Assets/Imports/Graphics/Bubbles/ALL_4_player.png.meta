@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d810ae6ea45ccac4987d4e8ebdcef2e6
+guid: 13ee2e155957a2c43afe457d760dff5e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 870792962099354395
-    second: coeur_full_1_0
+      213: 7916319833254384769
+    second: ALL_4_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: coeur_full_1_0
+      name: ALL_4_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 89
-        height: 75
+        x: 4
+        y: 5
+        width: 66
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b1b97dad59da51c00800000000000000
-      internalID: 870792962099354395
+      spriteID: 184d18522fa6cdd60800000000000000
+      internalID: 7916319833254384769
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      coeur_full_1_0: 870792962099354395
+      ALL_4_0: 7916319833254384769
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

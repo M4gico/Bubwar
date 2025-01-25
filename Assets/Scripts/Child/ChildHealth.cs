@@ -10,7 +10,7 @@ public class ChildHealth : MonoBehaviour
         health -= damage;
         if(health <= 0)
         {
-            Destroy(this);
+            Destroy(gameObject);
         }
     }
 }

@@ -2,49 +2,32 @@ using UnityEngine;
 
 public class BubblePlayerContoller : MonoBehaviour
 {
-    [SerializeField] private float timeBeforeDisappear;
     [SerializeField] private float damage;
 
-    private CircleCollider2D colliderObject;
-    private Collider2D[] childCollidersToDamage;
-
-    private Vector2 centerCollider;
-    private float radiusCollider = 0.5f;
+    private Animator animator;
+    private Rigidbody2D rb;
 
     private void Awake()
     {
-        colliderObject = GetComponent<CircleCollider2D>();
+        animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
-    private void Start()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Get the center and radius of the circle collider
-        centerCollider = colliderObject.bounds.center; // Center of the collider
-        //radiusCollider = colliderObject.radius; // Radius of the collider
-        //Destroy the gameobject after timeBeforeDisappear in seconds
-        //Destroy(gameObject, timeBeforeDisappear);
-    }
-
-    private void Update()
-    {
-        //childColliders = Physics2D.OverlapBoxAll(attackPos.position, new Vector2(physicWeaponEquip.reachX, physicWeaponEquip.reachY), 0, LayerMask.GetMask("Enemy"));
-        childCollidersToDamage = Physics2D.OverlapCircleAll(new Vector2(0,0), radiusCollider, LayerMask.GetMask("Child"));
-        if(childCollidersToDamage == null || childCollidersToDamage.Length == 0)
+        if (!collision.CompareTag("Bubble") || !collision.CompareTag("Player"))
         {
-            Debug.Log("colliders null");
-        }
-        for (int i = 0; i < childCollidersToDamage.Length; i++)
-        {
-            //Take the EnemyHealth script of the enemy and take the function TakeDamage
-            childCollidersToDamage[i].GetComponent<ChildHealth>().TakeDamage(damage);
-            Debug.Log("Attack child");
+            if (collision.gameObject.GetComponent<ChildHealth>() != null)
+            {
+                collision.gameObject.GetComponent<ChildHealth>().TakeDamage(damage);
+            }
+            rb.linearVelocity = new Vector2(0, 0);
+            animator.SetBool("isDestroy", true);
         }
     }
 
-    private void OnDrawGizmos()
+    private void DestroyGO()
     {
-        // Draw a yellow sphere at the transform's position
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawSphere(centerCollider, 1);
+        Destroy(gameObject);
     }
 }

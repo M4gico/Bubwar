@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      coeur_broken_0: 4775239235544986149
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

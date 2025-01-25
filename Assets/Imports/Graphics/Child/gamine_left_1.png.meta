@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d810ae6ea45ccac4987d4e8ebdcef2e6
+guid: 47539da98a40d61408292a267c97039c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 870792962099354395
-    second: coeur_full_1_0
+      213: 424703129287427799
+    second: gamine_left_1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: coeur_full_1_0
+      name: gamine_left_1_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 4
         y: 0
-        width: 89
-        height: 75
+        width: 110
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b1b97dad59da51c00800000000000000
-      internalID: 870792962099354395
+      spriteID: 7d68c24fe39d4e500800000000000000
+      internalID: 424703129287427799
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      coeur_full_1_0: 870792962099354395
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
