@@ -32,9 +32,9 @@ Material:
     - _Alpha: 0.95
     - _CircleRadius: 0.08
     - _FOVAngle: 25
-    - _ViewDistance: 0.3
+    - _ViewDistance: 5
     m_Colors:
-    - _MousePosition: {r: 0.89586407, g: 1.7987516, b: 0, a: 0}
+    - _MousePosition: {r: 0.957159, g: 1.9839679, b: 0, a: 0}
     - _PlayerPosition: {r: 0.5, g: 0.547, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
