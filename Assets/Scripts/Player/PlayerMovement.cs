@@ -46,7 +46,19 @@ public class PlayerMovement : MonoBehaviour
         cam = Camera.main;
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-  }
+    }
+
+    private void Start()
+    {
+        moveAction = InputSystem.actions.FindAction("Move");
+        lookAction = InputSystem.actions.FindAction("CursorPos");
+    }
+
+    private void FixedUpdate()
+    {
+        //Get the value of inputs
+        moveValue = moveAction.ReadValue<Vector2>();
+        lookValue = lookAction.ReadValue<Vector2>();
 
   private void Start()
   {
@@ -111,5 +123,6 @@ public class PlayerMovement : MonoBehaviour
         //Move the player
         Vector3 vel = new Vector2(moveValue.x * moveSpeed, moveValue.y*moveSpeed);
         rb.linearVelocity = Vector3.SmoothDamp(rb.linearVelocity, vel, ref vectorZero, smoothFactor);
-  }
+    }
+}
 }

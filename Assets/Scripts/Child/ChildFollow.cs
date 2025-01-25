@@ -22,11 +22,13 @@ public class ChildFollow : MonoBehaviour
 
     private void Update()
     {
+        /*
         //Rotate the object to the player transform (target)
         angleGOtoTarget = Mathf.Atan2(playerTransform.position.y - transform.position.y, playerTransform.position.x - transform.position.x);
         angleGOtoTarget = (180 / Mathf.PI) * angleGOtoTarget - 90;
 
         transform.rotation = Quaternion.Euler(0f, 0f, angleGOtoTarget);
+        */
         Debug.DrawLine(transform.position, playerTransform.position, Color.red, Time.deltaTime);
 
         differenceToTarget = new Vector2(playerTransform.position.x - transform.position.x, playerTransform.position.y - transform.position.y);
