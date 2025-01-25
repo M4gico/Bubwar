@@ -1,5 +1,113 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7855920733909173527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bubble/BubbleSmall_Die
+  m_EditorClassIdentifier: 
+  Path: event:/Bubble/BubbleSmall_Die
+  Guid:
+    Data1: 853789253
+    Data2: 1131129365
+    Data3: 1894158775
+    Data4: -1943794827
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 250
+--- !u!114 &-6678234649880843473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enfant/AttackPistol
+  m_EditorClassIdentifier: 
+  Path: event:/Enfant/AttackPistol
+  Guid:
+    Data1: 1419144122
+    Data2: 1082301529
+    Data3: 1828849577
+    Data4: -1890453424
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 617
+--- !u!114 &-4649571383651041551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enfant/AttackBig
+  m_EditorClassIdentifier: 
+  Path: event:/Enfant/AttackBig
+  Guid:
+    Data1: -249313496
+    Data2: 1290663954
+    Data3: 915359930
+    Data4: 1773015192
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &-4229424601279143523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GameOver
+  m_EditorClassIdentifier: 
+  Path: event:/GameOver
+  Guid:
+    Data1: -1528292695
+    Data2: 1325720591
+    Data3: -45469542
+    Data4: 788954199
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 312
 --- !u!114 &-2270386221118953890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19,6 +127,34 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 1020
+  Exists: 1
+--- !u!114 &-2038084194775292564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Phase
+  m_EditorClassIdentifier: 
+  Name: Phase
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 2005132907
+    data2: 1142925673
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Menu
+  - 1
+  - 2
+  - 3
   Exists: 1
 --- !u!114 &-1877953882537699071
 MonoBehaviour:
@@ -47,6 +183,81 @@ MonoBehaviour:
   - 1
   - 2
   - 3
+  Exists: 1
+--- !u!114 &-1400904505080736762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Phase
+  m_EditorClassIdentifier: 
+  Name: Phase
+  StudioPath: parameter:/Phase
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 2005132907
+    data2: 1142925673
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Menu
+  - 1
+  - 2
+  - 3
+  Exists: 1
+--- !u!114 &-1254700773938218179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bubble/BubbleBig_Die
+  m_EditorClassIdentifier: 
+  Path: event:/Bubble/BubbleBig_Die
+  Guid:
+    Data1: 609488633
+    Data2: 1216809334
+    Data3: -1434836072
+    Data4: -941644906
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 406
+--- !u!114 &-1095261682789711340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMODProject/BudWar/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638734411804856789
+  FileSizes:
+  - Name: Desktop
+    Value: 4221600
   Exists: 1
 --- !u!114 &-1065282167368390861
 MonoBehaviour:
@@ -81,19 +292,56 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -2270386221118953890}
-  - {fileID: -1065282167368390861}
+  - {fileID: 7944278946090224153}
+  - {fileID: -1095261682789711340}
   EditorEvents:
-  - {fileID: 858573468176718346}
-  - {fileID: 3342287798272314551}
+  - {fileID: 4426635239977124662}
+  - {fileID: -4649571383651041551}
+  - {fileID: 5280140524701208125}
+  - {fileID: 5178650537122527339}
+  - {fileID: 8862799034645737433}
+  - {fileID: 805291382504381105}
+  - {fileID: -7855920733909173527}
+  - {fileID: 2754919071297569052}
+  - {fileID: -4229424601279143523}
+  - {fileID: -6678234649880843473}
+  - {fileID: 5058541873153089042}
+  - {fileID: -1254700773938218179}
   EditorParameters:
-  - {fileID: -1877953882537699071}
+  - {fileID: -1400904505080736762}
   MasterBanks:
-  - {fileID: -1065282167368390861}
+  - {fileID: -1095261682789711340}
   StringsBanks:
-  - {fileID: -2270386221118953890}
-  cacheTime: 638733574682384900
+  - {fileID: 7944278946090224153}
+  cacheTime: 638734411804856789
   cacheVersion: 131621
+--- !u!114 &805291382504381105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Adulte/TakeDamage
+  m_EditorClassIdentifier: 
+  Path: event:/Adulte/TakeDamage
+  Guid:
+    Data1: 1070888005
+    Data2: 1175751561
+    Data3: 1302035895
+    Data4: 1278939812
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 304
 --- !u!114 &858573468176718346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,6 +369,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 781
+--- !u!114 &2754919071297569052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enfant/TakeDamage
+  m_EditorClassIdentifier: 
+  Path: event:/Enfant/TakeDamage
+  Guid:
+    Data1: -806841954
+    Data2: 1302518206
+    Data3: -1605584980
+    Data4: 975976640
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 562
 --- !u!114 &3342287798272314551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,6 +421,115 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters:
   - {fileID: 7801673730897788464}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 348667
+--- !u!114 &4426635239977124662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AH
+  m_EditorClassIdentifier: 
+  Path: event:/AH
+  Guid:
+    Data1: 946982678
+    Data2: 1145097450
+    Data3: -781816683
+    Data4: -2048778419
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 342
+--- !u!114 &5058541873153089042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bubble/BubbleSmall_Spawn
+  m_EditorClassIdentifier: 
+  Path: event:/Bubble/BubbleSmall_Spawn
+  Guid:
+    Data1: -1906615590
+    Data2: 1195487030
+    Data3: 1909269927
+    Data4: 1323933071
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 125
+--- !u!114 &5178650537122527339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bubble/BubbleBig_Spawn
+  m_EditorClassIdentifier: 
+  Path: event:/Bubble/BubbleBig_Spawn
+  Guid:
+    Data1: -398437059
+    Data2: 1080902613
+    Data3: -1653549678
+    Data4: 2146246388
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 140
+--- !u!114 &5280140524701208125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music
+  Guid:
+    Data1: 123196720
+    Data2: 1273436094
+    Data3: 22733472
+    Data4: -2008082205
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -2038084194775292564}
   MinDistance: 1
   MaxDistance: 20
   Length: 348667
@@ -177,3 +561,50 @@ MonoBehaviour:
   - 2
   - 3
   Exists: 1
+--- !u!114 &7944278946090224153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMODProject/BudWar/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638734395413212648
+  FileSizes:
+  - Name: Desktop
+    Value: 1502
+  Exists: 1
+--- !u!114 &8862799034645737433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enfant/Sleep
+  m_EditorClassIdentifier: 
+  Path: event:/Enfant/Sleep
+  Guid:
+    Data1: -1986928833
+    Data2: 1273044712
+    Data3: 170842246
+    Data4: -1496496862
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1406
