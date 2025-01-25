@@ -15,12 +15,6 @@ public class PlayerMenuManager : MonoBehaviour
     optionsMenu.SetActive(false);
   }
 
-  // Update is called once per frame
-  void Update()
-  {
-
-  }
-
   public void OpenArmoryMenu()
   {
     armoryMenu.SetActive(true);
