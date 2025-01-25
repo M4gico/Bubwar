@@ -6,7 +6,6 @@ public class BubbleBulletController : MonoBehaviour
 
     //Animations part
     private Animator animatorBubble;
-    [SerializeField] private AnimatorOverrideController overrideController;
 
     private void Awake()
     {

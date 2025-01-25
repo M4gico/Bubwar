@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7421656730413508002}
   - component: {fileID: 8686863323144367716}
   m_Layer: 0
-  m_Name: Bullet
+  m_Name: BulletEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 392887898a928ef4f8f39fdb6aec2c0b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 278f6e8c4e9caa64aa7641055a4d1144, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -153,7 +153,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Radius: 1.1611097
 --- !u!114 &7421656730413508002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,7 +167,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeBeforeDisappear: 2
-  overrideController: {fileID: 0}
 --- !u!95 &8686863323144367716
 Animator:
   serializedVersion: 7
@@ -178,7 +177,7 @@ Animator:
   m_GameObject: {fileID: 2292865514709121570}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3c1518aaeaf2ff5409c79913a3438bdb, type: 2}
+  m_Controller: {fileID: 9100000, guid: f3cbe617a3d07a946adb8c536694e21d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
