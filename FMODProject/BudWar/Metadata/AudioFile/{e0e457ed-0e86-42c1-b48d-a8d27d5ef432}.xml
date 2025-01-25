@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{e0e457ed-0e86-42c1-b48d-a8d27d5ef432}">
+		<property name="assetPath">
+			<value>Bubble/Bubl6.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.095333333333333339</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{80da7b72-2ecd-49f4-9bbe-7162b66b9951}</destination>
+		</relationship>
+	</object>
+</objects>

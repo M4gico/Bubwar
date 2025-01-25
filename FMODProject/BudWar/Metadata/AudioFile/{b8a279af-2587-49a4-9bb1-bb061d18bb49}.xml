@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{b8a279af-2587-49a4-9bb1-bb061d18bb49}">
+		<property name="assetPath">
+			<value>Enfant/male_hurt_02.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.51083900226757373</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{80da7b72-2ecd-49f4-9bbe-7162b66b9951}</destination>
+		</relationship>
+	</object>
+</objects>

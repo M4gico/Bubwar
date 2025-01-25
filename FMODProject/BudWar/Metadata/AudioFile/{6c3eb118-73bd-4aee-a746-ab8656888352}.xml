@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{6c3eb118-73bd-4aee-a746-ab8656888352}">
+		<property name="assetPath">
+			<value>Adulte/Punch.aiff</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.80700680272108849</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{80da7b72-2ecd-49f4-9bbe-7162b66b9951}</destination>
+		</relationship>
+	</object>
+</objects>

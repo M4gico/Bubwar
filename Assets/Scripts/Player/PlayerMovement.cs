@@ -7,12 +7,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float smoothFactor;
     [SerializeField] private Sprite[] playerSprite;
 
-    private Camera cam;
+  private Camera cam;
 
-    private Rigidbody2D rb;
+  private Rigidbody2D rb;
 
-    private InputAction moveAction;
-    private InputAction lookAction;
+  private InputAction moveAction;
+  private InputAction lookAction;
 
     //Movement and look of the player
     private Vector2 moveValue;
@@ -30,15 +30,15 @@ public class PlayerMovement : MonoBehaviour
 
     public static PlayerMovement instance;
 
-    private void Awake()
+  private void Awake()
+  {
+    if (instance != null)
     {
-        if(instance != null)
-        {
-            if (instance != null)
-            {
-                Debug.LogWarning("There is more than one instance of PlayerMovement");
-                return;
-            }
+      if (instance != null)
+      {
+        Debug.LogWarning("There is more than one instance of PlayerMovement");
+        return;
+      }
 
             instance = this;
         }
@@ -60,6 +60,12 @@ public class PlayerMovement : MonoBehaviour
         moveValue = moveAction.ReadValue<Vector2>();
         lookValue = lookAction.ReadValue<Vector2>();
 
+  private void Start()
+  {
+    moveAction = InputSystem.actions.FindAction("Move");
+    lookAction = InputSystem.actions.FindAction("CursorPos");
+  }
+  private void FixedUpdate(){
         //Find the position between the cursor and the character
         mousPos = (Vector2)cam.ScreenToWorldPoint(lookValue);
         angleRadMouse = Mathf.Atan2(mousPos.y - transform.position.y, mousPos.x - transform.position.x);
@@ -118,4 +124,5 @@ public class PlayerMovement : MonoBehaviour
         Vector3 vel = new Vector2(moveValue.x * moveSpeed, moveValue.y*moveSpeed);
         rb.linearVelocity = Vector3.SmoothDamp(rb.linearVelocity, vel, ref vectorZero, smoothFactor);
     }
+}
 }

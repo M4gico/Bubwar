@@ -29,12 +29,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.8
+    - _Alpha: 0.95
     - _CircleRadius: 0.08
     - _FOVAngle: 25
-    - _ViewDistance: 0.3
+    - _ViewDistance: 5
     m_Colors:
-    - _MousePosition: {r: 0.5530809, g: 1.1055409, b: 0, a: 0}
+    - _MousePosition: {r: 0.94808376, g: 2.004008, b: 0, a: 0}
     - _PlayerPosition: {r: 0.5, g: 0.547, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
