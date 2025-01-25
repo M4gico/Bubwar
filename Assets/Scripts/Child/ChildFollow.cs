@@ -5,7 +5,6 @@ public class ChildFollow : MonoBehaviour
     [SerializeField] private float moveSpeedChild;
     [SerializeField] private float smoothFactor;
     [SerializeField] private float lengthLimitToTarget;
-    [SerializeField] private float timeToStop;
 
     private Transform playerTransform;
     private float angleGOtoTarget;
@@ -29,10 +28,9 @@ public class ChildFollow : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(0f, 0f, angleGOtoTarget);
         Debug.DrawLine(transform.position, playerTransform.position, Color.red, Time.deltaTime);
-        Debug.Log(rb.linearVelocity.x);
 
         differenceToTarget = new Vector2(playerTransform.position.x - transform.position.x, playerTransform.position.y - transform.position.y);
-
+        
         //move to the player but not too close 
         if (differenceToTarget.magnitude > lengthLimitToTarget)
         {
