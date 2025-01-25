@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gamine_left_3_0: -4812986555727824522
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
