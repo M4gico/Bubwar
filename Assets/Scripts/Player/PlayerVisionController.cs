@@ -1,12 +1,18 @@
 using UnityEngine;
 
-public class VisionController : MonoBehaviour
+public class PlayerVisionController : MonoBehaviour
 {
-    public Material visionMaterial;
-    public float fovAngle = 60f;
-    public float viewDistance = 5f;
-    public float circleRadius = 2f;
-    public float shadowAlpha = 0.8f;
+    [Header("Vision Settings")]
+    [SerializeField]
+    private Material visionMaterial;
+    [SerializeField]
+    private float fovAngle = 60f;
+    [SerializeField]
+    private float viewDistance = 5f;
+    [SerializeField]
+    private float circleRadius = 2f;
+    [SerializeField]
+    private float shadowAlpha = 0.8f;
 
     void Update()
     {
