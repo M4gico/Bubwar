@@ -59,13 +59,6 @@ public class PlayerMovement : MonoBehaviour
         //Get the value of inputs
         moveValue = moveAction.ReadValue<Vector2>();
         lookValue = lookAction.ReadValue<Vector2>();
-
-  private void Start()
-  {
-    moveAction = InputSystem.actions.FindAction("Move");
-    lookAction = InputSystem.actions.FindAction("CursorPos");
-  }
-  private void FixedUpdate(){
         //Find the position between the cursor and the character
         mousPos = (Vector2)cam.ScreenToWorldPoint(lookValue);
         angleRadMouse = Mathf.Atan2(mousPos.y - transform.position.y, mousPos.x - transform.position.x);
@@ -125,4 +118,4 @@ public class PlayerMovement : MonoBehaviour
         rb.linearVelocity = Vector3.SmoothDamp(rb.linearVelocity, vel, ref vectorZero, smoothFactor);
     }
 }
-}
+

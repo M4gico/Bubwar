@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gamine_front_2_0: 7283484234792905294
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

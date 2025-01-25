@@ -15,15 +15,12 @@ public class BubblePlayerContoller : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!collision.CompareTag("Bubble") || !collision.CompareTag("Player"))
+        if (collision.gameObject.GetComponent<ChildHealth>() != null)
         {
-            if (collision.gameObject.GetComponent<ChildHealth>() != null)
-            {
-                collision.gameObject.GetComponent<ChildHealth>().TakeDamage(damage);
-            }
-            rb.linearVelocity = new Vector2(0, 0);
-            animator.SetBool("isDestroy", true);
+            collision.gameObject.GetComponent<ChildHealth>().TakeDamage(damage);
         }
+        rb.linearVelocity = new Vector2(0, 0);
+        animator.SetBool("isDestroy", true);
     }
 
     private void DestroyGO()
