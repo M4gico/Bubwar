@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class PlayerVisionController : MonoBehaviour
 {
+    static PlayerVisionController instance;
+
     [Header("Vision Settings")]
     [SerializeField]
     private Material visionMaterial;
@@ -14,6 +16,18 @@ public class PlayerVisionController : MonoBehaviour
     [SerializeField]
     private float shadowAlpha = 0.8f;
 
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Debug.LogWarning("There is more than one instance of PlayerVisionController");
+            return;
+        }
+
+        instance = this;
+    }
+
+
     void Update()
     {
         Vector3 playerPos = Camera.main.WorldToViewportPoint(transform.position);
@@ -25,5 +39,16 @@ public class PlayerVisionController : MonoBehaviour
         visionMaterial.SetFloat("_ViewDistance", viewDistance);
         visionMaterial.SetFloat("_CircleRadius", circleRadius);
         visionMaterial.SetFloat("_Alpha", shadowAlpha);
+    }
+
+
+    public static PlayerVisionController GetInstance()
+    {
+        return instance;
+    }
+
+    public static float GetViewRadius()
+    {
+        return instance.viewDistance;
     }
 }
