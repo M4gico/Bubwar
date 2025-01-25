@@ -10,7 +10,12 @@ public class ChildHealth : MonoBehaviour
         health -= damage;
         if(health <= 0)
         {
+            GetComponent<ChildSound>().PlayDeathSound();
             Destroy(gameObject);
+        }
+        else
+        {
+            GetComponent<ChildSound>().PlayTakeDamageSound();
         }
     }
 }
