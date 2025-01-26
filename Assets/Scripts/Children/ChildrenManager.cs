@@ -42,7 +42,8 @@ public class ChildrenManager : MonoBehaviour
 
 	private void Start()
 	{
-		spawnRadius = PlayerVisionController.GetViewRadius();
+        //spawnRadius = PlayerVisionController.GetViewRadius();
+        spawnRadius = 2;
 		UpdateEnableSpawnPoints();
 		StartSpawnChild();
 	}

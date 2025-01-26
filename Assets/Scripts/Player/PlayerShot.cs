@@ -17,7 +17,7 @@ public class PlayerShot : MonoBehaviour
     private Vector2 weaponTransformVector;
     private Vector2 differenceVector;
 
-    public float gaugeShot { get; private set; }
+    public float gaugeShot;
 
     private InputAction rightClickMouseAction;
     private float rightClickMouseState;
@@ -39,6 +39,8 @@ public class PlayerShot : MonoBehaviour
     {
         rightClickMouseAction = InputSystem.actions.FindAction("Attack");
     }
+
+
 
     private void Update()
     {

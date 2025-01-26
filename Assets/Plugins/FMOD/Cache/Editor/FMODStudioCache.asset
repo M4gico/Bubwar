@@ -254,7 +254,7 @@ MonoBehaviour:
   Path: FMODProject/BudWar/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638734411804856789
+  lastModified: 638734407705358290
   FileSizes:
   - Name: Desktop
     Value: 4221600
@@ -313,7 +313,7 @@ MonoBehaviour:
   - {fileID: -1095261682789711340}
   StringsBanks:
   - {fileID: 7944278946090224153}
-  cacheTime: 638734411804856789
+  cacheTime: 638734407705704660
   cacheVersion: 131621
 --- !u!114 &805291382504381105
 MonoBehaviour:
@@ -576,7 +576,7 @@ MonoBehaviour:
   Path: FMODProject/BudWar/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638734395413212648
+  lastModified: 638734407705704660
   FileSizes:
   - Name: Desktop
     Value: 1502

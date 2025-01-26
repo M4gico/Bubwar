@@ -32,15 +32,19 @@ public class ChildFollow : MonoBehaviour
         Debug.DrawLine(transform.position, playerTransform.position, Color.red, Time.deltaTime);
 
         differenceToTarget = new Vector2(playerTransform.position.x - transform.position.x, playerTransform.position.y - transform.position.y);
+        MoveToPlayer();
+    }
 
+    private void MoveToPlayer()
+    {
         //move to the player but not too close 
         if (differenceToTarget.magnitude > lengthLimitToTarget)
         {
-             vel = new Vector2(differenceToTarget.x * moveSpeedChild, differenceToTarget.y * moveSpeedChild);
+            vel = new Vector2(differenceToTarget.x * moveSpeedChild, differenceToTarget.y * moveSpeedChild);
         }
         else
         {
-             vel = new Vector2(0,0);
+            vel = new Vector2(0, 0);
         }
         //ref vectorZero write the actual velocity to continue to change it after
         rb.linearVelocity = Vector3.SmoothDamp(rb.linearVelocity, vel, ref vectorZero, smoothFactor);
