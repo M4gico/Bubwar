@@ -17,7 +17,6 @@ public class PlayerSound : MonoBehaviour
     public void PlayRegenAmmoSound()
     {
         PlayReference(regenAmmo);
-        Debug.LogWarning("Weshh");
     }
 
     public void PlayTakeDamageSound()
