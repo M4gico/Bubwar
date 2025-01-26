@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] private GameObject hearthGO;
+    [SerializeField] private Transform parentHearth;
+
     [SerializeField] private float initialHealth = 3;
     [SerializeField] private float health;
     [SerializeField] private float maxHealth;
@@ -22,8 +24,19 @@ public class PlayerHealth : MonoBehaviour
 
     private bool isInvincible;
 
+    public static PlayerHealth instance;
+
     private void Awake()
     {
+        if(instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
         graphics = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         playerMovement = GetComponent<PlayerMovement>();
@@ -67,7 +80,16 @@ public class PlayerHealth : MonoBehaviour
 
     public void GiveHP()
     {
+        
+        GameObject newHeart = Instantiate(hearthGO, parentHearth);
+        newHeart.transform.SetSiblingIndex(0);
+        hearthAnimator.Insert(0, newHeart.GetComponent<Animator>());
+        maxHealth++;
 
+        for (int i = 0; i < hearthAnimator.Count; i++) 
+        {
+            Debug.Log(hearthAnimator[i].GetComponentInParent<Transform>().name);
+        } 
     }
 
     public void AddLife(float life)
@@ -82,7 +104,7 @@ public class PlayerHealth : MonoBehaviour
         ActualiseHearth();
     }
 
-    private void ActualiseHearth()
+    public void ActualiseHearth()
     {
         for (int i = 0; i < hearthAnimator.Count; i++)
         {
