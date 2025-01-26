@@ -62,6 +62,7 @@ public class PlayerHealth : MonoBehaviour
         GameManager.instance.UnSetupPlayer();
         ResetPlayerHealth();
         ActualiseHearth();
+        PowerUpManager.instance.ResetPowerUp();
 
     }
 
