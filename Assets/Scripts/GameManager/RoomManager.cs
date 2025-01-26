@@ -84,8 +84,9 @@ public class RoomManager : MonoBehaviour
             nextSceneName = rooms[0]; // Default to the first room (children room)
 
         if (nextSceneName == rooms[0]) // Children room
-            GetRandomChildrenRoom();
+            nextSceneName = GetRandomChildrenRoom();
         currentRoomIndex++;
+        Debug.Log("Next scene: " + nextSceneName);
         SceneManager.LoadScene(nextSceneName);
     }
 
@@ -94,6 +95,8 @@ public class RoomManager : MonoBehaviour
         spawnTimeChildren *= 1 - ((100 / (10 + currentRoomIndex)) / 100);
         spawnNbChildren += UnityEngine.Random.Range(1, 3);
         spawnQuantityChildren += 1;
+
+        nbChildren = spawnQuantityChildren;
     }
 
     private string GetRandomChildrenRoom()
@@ -112,6 +115,8 @@ public class RoomManager : MonoBehaviour
     public void DecressNbChildren()
     {
         nbChildren--;
+        if (nbChildren <= 0)
+            GameObject.Find("FinalDoor").GetComponent<DoorManager>().OpenDoor();
     }
 
     public int GetNbChildren()
