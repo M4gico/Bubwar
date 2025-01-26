@@ -117,6 +117,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void ResetPlayerHealth()
     {
+        StartCoroutine(PlayerDead());
         maxHealth = initialHealth;
         health = maxHealth;
         isInvincible = false;
