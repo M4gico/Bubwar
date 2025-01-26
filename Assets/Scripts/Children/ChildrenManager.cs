@@ -45,6 +45,8 @@ public class ChildrenManager : MonoBehaviour
 
 	private void Start()
 	{
+		playerTransform = GameObject.Find("Player").transform;
+
 		spawnTime = RoomManager.instance.GetSpawnTimeChildren();
 		maxSpawnQuantity = RoomManager.instance.GetSpawnQuantityChildren();
 		nbChildren = RoomManager.instance.GetNbChildren();

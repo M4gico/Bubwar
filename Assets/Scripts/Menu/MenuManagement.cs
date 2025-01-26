@@ -12,6 +12,8 @@ public class MenuManagement : MonoBehaviour
 
   [Header("Intro")]
   [SerializeField]
+  private Button introButton;
+  [SerializeField]
   private GameObject intro;
   [SerializeField]
   private Image introBackground;
@@ -59,6 +61,7 @@ public class MenuManagement : MonoBehaviour
 
   public void IntroEnd()
   {
+    introButton.interactable = false;
     StartCoroutine(FadeImage(true));
     StartCoroutine(Wait(1.1f));
   }
@@ -67,6 +70,7 @@ public class MenuManagement : MonoBehaviour
   {
     yield return new WaitForSeconds(seconds);
     StartGame();
+    GameManager.instance.SetupPlayer();
   }
 
   private IEnumerator FadeImage(bool fadeAway)
