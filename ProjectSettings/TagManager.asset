@@ -8,6 +8,7 @@ TagManager:
   - Bubble
   - Interactive
   - Armuerie
+  - EndUI
   layers:
   - Default
   - TransparentFX

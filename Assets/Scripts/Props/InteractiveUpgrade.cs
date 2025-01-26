@@ -2,26 +2,50 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
 
-
 public class InteractiveUpgrade : MonoBehaviour
 {
-    private GameObject bubbleInteractive;
+    private enum ActionToPlay {Heal, End, Armurerie};
+    [SerializeField] private float AddHealing;
+
+    [SerializeField] private ActionToPlay actionChoose;
+    private SpriteRenderer bubbleInteractive;
     private Canvas armuerieCanva;
     private InputAction EKeyAction;
     private bool isInTrigger;
     private float EKeyValue;
+    
+    
     private bool armuerieState = true;
     private bool delayToActiveState;
+    private PlayerHealth playerHealth;
+
+    private Animator endAnimator;
+
 
     private void Awake()
     {
-        bubbleInteractive = GameObject.FindGameObjectWithTag("Interactive");
-        armuerieCanva = GameObject.FindWithTag("Armuerie").GetComponent<Canvas>();
+        bubbleInteractive = GameObject.FindGameObjectWithTag("Interactive").GetComponent<SpriteRenderer>();
+        if(actionChoose == ActionToPlay.Armurerie)
+        {
+            armuerieCanva = GameObject.FindWithTag("Armuerie").GetComponent<Canvas>();
+        }
+        else if(actionChoose == ActionToPlay.Heal)
+        {
+            playerHealth = GameObject.FindWithTag("Player").GetComponent<PlayerHealth>();
+        }
+        else
+        {
+            endAnimator = GameObject.FindWithTag("EndUI").GetComponent<Animator>();
+        }
+        
     }
 
     private void Start()
     {
-        armuerieCanva.enabled = false;
+        if (actionChoose == ActionToPlay.Armurerie)
+        {
+            armuerieCanva.enabled = false;
+        }
         EKeyAction = InputSystem.actions.FindAction("Interact");
     }
 
@@ -32,11 +56,22 @@ public class InteractiveUpgrade : MonoBehaviour
             EKeyValue = EKeyAction.ReadValue<float>();
             if(EKeyValue == 1f)
             {
-                StartCoroutine(ChangeStateArmuerie());
+                if(!delayToActiveState && actionChoose == ActionToPlay.Armurerie)
+                {
+                    StartCoroutine(ChangeStateArmuerie());
+                }
+                else if(actionChoose == ActionToPlay.Heal)
+                {
+                    playerHealth.AddLife(AddHealing);
+                    Destroy(gameObject);
+                }
+                else if(actionChoose == ActionToPlay.End)
+                {
+                    endAnimator.SetTrigger("FadeIn");
+                }
+                
             }
-
         }
-
     }
 
     private IEnumerator ChangeStateArmuerie()
@@ -52,7 +87,7 @@ public class InteractiveUpgrade : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            bubbleInteractive.SetActive(true);
+            bubbleInteractive.enabled = true;
             isInTrigger = true;
         }
     }
@@ -61,11 +96,13 @@ public class InteractiveUpgrade : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            bubbleInteractive.SetActive(false);
+            bubbleInteractive.enabled = false;
             isInTrigger = false;
-            armuerieCanva.enabled = false;
+            if(actionChoose == ActionToPlay.Armurerie)
+            {
+                armuerieCanva.enabled = false;
+            }
+            
         }
     }
-
-
 }

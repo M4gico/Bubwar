@@ -72,6 +72,7 @@ public class PlayerHealth : MonoBehaviour
         {
             health = maxHealth;
         }
+        Debug.Log("Give life");
         ActualiseHearth();
     }
 
