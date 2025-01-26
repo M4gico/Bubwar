@@ -17,7 +17,7 @@ public class PlayerShot : MonoBehaviour
     private Vector2 weaponTransformVector;
     private Vector2 differenceVector;
 
-    public float gaugeShot { get; private set; }
+    public float gaugeShot;
 
     private InputAction rightClickMouseAction;
     private float rightClickMouseState;
@@ -40,6 +40,8 @@ public class PlayerShot : MonoBehaviour
         rightClickMouseAction = InputSystem.actions.FindAction("Attack");
     }
 
+
+
     private void Update()
     {
         rightClickMouseState = rightClickMouseAction.ReadValue<float>();
@@ -50,7 +52,7 @@ public class PlayerShot : MonoBehaviour
         {
             if (rightClickMouseState == 1f)
             {
-                if(gaugeShot > 0.1f)
+                if (gaugeShot > 0.1f)
                 {
                     gunHeat += Time.deltaTime;
                     if (gunHeat > cooldownToShot)
