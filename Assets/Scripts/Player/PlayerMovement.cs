@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed;
+    public float moveSpeed;
     [SerializeField] private float smoothFactor;
     [SerializeField] private Sprite[] playerSprite;
 

@@ -7,8 +7,7 @@ public class PlayerVisionController : MonoBehaviour
     [Header("Vision Settings")]
     [SerializeField]
     private Material visionMaterial;
-    [SerializeField]
-    private float fovAngle = 60f;
+    public float fovAngle = 60f;
     [SerializeField]
     private float viewDistance = 5f;
     [SerializeField]
