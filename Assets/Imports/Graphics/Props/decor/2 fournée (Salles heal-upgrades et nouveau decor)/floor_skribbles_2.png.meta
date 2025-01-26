@@ -1,0 +1,1300 @@
+fileFormatVersion: 2
+guid: a768ca9d956edbe4589327d3f1d7cc96
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7443643723913483072
+    second: floor_skribbles_2_0
+  - first:
+      213: 3954358178382523273
+    second: floor_skribbles_2_1
+  - first:
+      213: 4410844007395196562
+    second: floor_skribbles_2_2
+  - first:
+      213: -8227900059994552310
+    second: floor_skribbles_2_3
+  - first:
+      213: -6862035096854292356
+    second: floor_skribbles_2_4
+  - first:
+      213: 2364533964954360428
+    second: floor_skribbles_2_5
+  - first:
+      213: -7919738179270179993
+    second: floor_skribbles_2_6
+  - first:
+      213: -4537706605650959560
+    second: floor_skribbles_2_7
+  - first:
+      213: 3689576521288368072
+    second: floor_skribbles_2_8
+  - first:
+      213: -8680641853433853381
+    second: floor_skribbles_2_9
+  - first:
+      213: 3651285465164965069
+    second: floor_skribbles_2_10
+  - first:
+      213: 6573656317323620661
+    second: floor_skribbles_2_11
+  - first:
+      213: -4363366264300998472
+    second: floor_skribbles_2_12
+  - first:
+      213: -4537355608805673994
+    second: floor_skribbles_2_13
+  - first:
+      213: -222077170145118006
+    second: floor_skribbles_2_14
+  - first:
+      213: 5212466721633128173
+    second: floor_skribbles_2_15
+  - first:
+      213: -1370245863883118906
+    second: floor_skribbles_2_16
+  - first:
+      213: -7791757189623984432
+    second: floor_skribbles_2_17
+  - first:
+      213: 3395346197652374082
+    second: floor_skribbles_2_18
+  - first:
+      213: 6977894576214736935
+    second: floor_skribbles_2_19
+  - first:
+      213: 7587815253422666216
+    second: floor_skribbles_2_20
+  - first:
+      213: 1680209253692015222
+    second: floor_skribbles_2_21
+  - first:
+      213: 6082636290620144691
+    second: floor_skribbles_2_22
+  - first:
+      213: 8923048530140531602
+    second: floor_skribbles_2_23
+  - first:
+      213: 4044240912980174053
+    second: floor_skribbles_2_24
+  - first:
+      213: 620489623686371645
+    second: floor_skribbles_2_25
+  - first:
+      213: -7853824823712234393
+    second: floor_skribbles_2_26
+  - first:
+      213: -5728524101723723536
+    second: floor_skribbles_2_27
+  - first:
+      213: 503449301155585734
+    second: floor_skribbles_2_28
+  - first:
+      213: -6205968837422854430
+    second: floor_skribbles_2_29
+  - first:
+      213: 6544711694812631867
+    second: floor_skribbles_2_30
+  - first:
+      213: 592678634143561479
+    second: floor_skribbles_2_31
+  - first:
+      213: 2945060398993193497
+    second: floor_skribbles_2_32
+  - first:
+      213: -2487054557778247559
+    second: floor_skribbles_2_33
+  - first:
+      213: 4078046176504158579
+    second: floor_skribbles_2_34
+  - first:
+      213: -3747017089336709523
+    second: floor_skribbles_2_35
+  - first:
+      213: -4118376257058974354
+    second: floor_skribbles_2_36
+  - first:
+      213: 9007419747317544905
+    second: floor_skribbles_2_37
+  - first:
+      213: -3549176282773449916
+    second: floor_skribbles_2_38
+  - first:
+      213: 5493491403189563844
+    second: floor_skribbles_2_39
+  - first:
+      213: 1062791865058145406
+    second: floor_skribbles_2_40
+  - first:
+      213: -6401642188909250431
+    second: floor_skribbles_2_41
+  - first:
+      213: 2375942363271991467
+    second: floor_skribbles_2_42
+  - first:
+      213: 7698946332484174071
+    second: floor_skribbles_2_43
+  - first:
+      213: 7855356965921553713
+    second: floor_skribbles_2_44
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: floor_skribbles_2_0
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 615
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc2291a87dd2b890800000000000000
+      internalID: -7443643723913483072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_1
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 415
+        width: 234
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98ba629efc3b0e630800000000000000
+      internalID: 3954358178382523273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_2
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 564
+        width: 68
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29e737c4147763d30800000000000000
+      internalID: 4410844007395196562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_3
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 583
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a080c9c1d70a0dd80800000000000000
+      internalID: -8227900059994552310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_4
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 559
+        width: 48
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c789cbf9f6725c0a0800000000000000
+      internalID: -6862035096854292356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_5
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 433
+        width: 177
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6a53700d1380d020800000000000000
+      internalID: 2364533964954360428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_6
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 548
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76380862610771290800000000000000
+      internalID: -7919738179270179993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_7
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 549
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8332b3b42e3d601c0800000000000000
+      internalID: -4537706605650959560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_8
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 547
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cfb3034c42043330800000000000000
+      internalID: 3689576521288368072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_9
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 467
+        width: 94
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3acfafe93a288780800000000000000
+      internalID: -8680641853433853381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_10
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 534
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc464b409c8fba230800000000000000
+      internalID: 3651285465164965069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_11
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 302
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 531b39587915a3b50800000000000000
+      internalID: 6573656317323620661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_12
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 310
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b07a6f20853273c0800000000000000
+      internalID: -4363366264300998472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_13
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 292
+        width: 39
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f3f28d1d131801c0800000000000000
+      internalID: -4537355608805673994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_14
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 271
+        width: 33
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac8b6c88df50becf0800000000000000
+      internalID: -222077170145118006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_15
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 257
+        width: 19
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deecc72ddd6665840800000000000000
+      internalID: 5212466721633128173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_16
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 265
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c66c4c85a8ebfce0800000000000000
+      internalID: -1370245863883118906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_17
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 262
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0decd585e1e1ed390800000000000000
+      internalID: -7791757189623984432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_18
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 261
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2420b80a061be1f20800000000000000
+      internalID: 3395346197652374082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_19
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 250
+        width: 101
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7208767852676d060800000000000000
+      internalID: 6977894576214736935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_20
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 239
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e17c8165c55d4960800000000000000
+      internalID: 7587815253422666216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_21
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 157
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67203a20a6d415710800000000000000
+      internalID: 1680209253692015222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_22
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 208
+        width: 35
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33c3058aa7dd96450800000000000000
+      internalID: 6082636290620144691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_23
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 220
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29b0990ac5905db70800000000000000
+      internalID: 8923048530140531602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_24
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 207
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e4e84cdea7002830800000000000000
+      internalID: 4044240912980174053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_25
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 200
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3954a6760c6c9800800000000000000
+      internalID: 620489623686371645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_26
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 217
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 764cc762feb910390800000000000000
+      internalID: -7853824823712234393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 202
+        width: 36
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f86e753ea13080b0800000000000000
+      internalID: -5728524101723723536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_28
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 209
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ce1cc5d87c9cf600800000000000000
+      internalID: 503449301155585734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_29
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 201
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ee44461938ffd9a0800000000000000
+      internalID: -6205968837422854430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_30
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 139
+        width: 93
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b33d6ae6c9c73da50800000000000000
+      internalID: 6544711694812631867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_31
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 211
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 707371ed31e993800800000000000000
+      internalID: 592678634143561479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_32
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 172
+        width: 46
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91a3f0c44d4fed820800000000000000
+      internalID: 2945060398993193497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_33
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 191
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9708c928e053c7dd0800000000000000
+      internalID: -2487054557778247559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_34
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 200
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3799b202461289830800000000000000
+      internalID: 4078046176504158579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_35
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 196
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6e64ce4fcbeffbc0800000000000000
+      internalID: -3747017089336709523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_36
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 19
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e65d8924d9698d6c0800000000000000
+      internalID: -4118376257058974354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_37
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 55
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c773bd6988c00d70800000000000000
+      internalID: 9007419747317544905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_38
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 64
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4431c04a9facebec0800000000000000
+      internalID: -3549176282773449916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_39
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 26
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c1b6cf435dcc3c40800000000000000
+      internalID: 5493491403189563844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_40
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 32
+        width: 14
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7437f2029bcfbe00800000000000000
+      internalID: 1062791865058145406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_41
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 3
+        width: 45
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 188f8e6b85cc827a0800000000000000
+      internalID: -6401642188909250431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_42
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 22
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba011a9bdfa09f020800000000000000
+      internalID: 2375942363271991467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_43
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 0
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f0048c06e628da60800000000000000
+      internalID: 7698946332484174071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_skribbles_2_44
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 1
+        width: 27
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13df4a18a85d30d60800000000000000
+      internalID: 7855356965921553713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      floor_skribbles_2_0: -7443643723913483072
+      floor_skribbles_2_1: 3954358178382523273
+      floor_skribbles_2_10: 3651285465164965069
+      floor_skribbles_2_11: 6573656317323620661
+      floor_skribbles_2_12: -4363366264300998472
+      floor_skribbles_2_13: -4537355608805673994
+      floor_skribbles_2_14: -222077170145118006
+      floor_skribbles_2_15: 5212466721633128173
+      floor_skribbles_2_16: -1370245863883118906
+      floor_skribbles_2_17: -7791757189623984432
+      floor_skribbles_2_18: 3395346197652374082
+      floor_skribbles_2_19: 6977894576214736935
+      floor_skribbles_2_2: 4410844007395196562
+      floor_skribbles_2_20: 7587815253422666216
+      floor_skribbles_2_21: 1680209253692015222
+      floor_skribbles_2_22: 6082636290620144691
+      floor_skribbles_2_23: 8923048530140531602
+      floor_skribbles_2_24: 4044240912980174053
+      floor_skribbles_2_25: 620489623686371645
+      floor_skribbles_2_26: -7853824823712234393
+      floor_skribbles_2_27: -5728524101723723536
+      floor_skribbles_2_28: 503449301155585734
+      floor_skribbles_2_29: -6205968837422854430
+      floor_skribbles_2_3: -8227900059994552310
+      floor_skribbles_2_30: 6544711694812631867
+      floor_skribbles_2_31: 592678634143561479
+      floor_skribbles_2_32: 2945060398993193497
+      floor_skribbles_2_33: -2487054557778247559
+      floor_skribbles_2_34: 4078046176504158579
+      floor_skribbles_2_35: -3747017089336709523
+      floor_skribbles_2_36: -4118376257058974354
+      floor_skribbles_2_37: 9007419747317544905
+      floor_skribbles_2_38: -3549176282773449916
+      floor_skribbles_2_39: 5493491403189563844
+      floor_skribbles_2_4: -6862035096854292356
+      floor_skribbles_2_40: 1062791865058145406
+      floor_skribbles_2_41: -6401642188909250431
+      floor_skribbles_2_42: 2375942363271991467
+      floor_skribbles_2_43: 7698946332484174071
+      floor_skribbles_2_44: 7855356965921553713
+      floor_skribbles_2_5: 2364533964954360428
+      floor_skribbles_2_6: -7919738179270179993
+      floor_skribbles_2_7: -4537706605650959560
+      floor_skribbles_2_8: 3689576521288368072
+      floor_skribbles_2_9: -8680641853433853381
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

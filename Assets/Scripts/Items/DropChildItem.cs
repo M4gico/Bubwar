@@ -14,7 +14,7 @@ public class DropChildItem : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            playerShot.gaugeShot += AddGaugeValue;
+            playerShot.AddGauge(AddGaugeValue);
             Destroy(gameObject);
         }
     }

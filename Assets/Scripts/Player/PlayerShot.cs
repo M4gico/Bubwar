@@ -10,14 +10,16 @@ public class PlayerShot : MonoBehaviour
 
     [SerializeField] private Transform rightForwardWeapon;
     [SerializeField] private Transform leftForwardWeapon;
+    [SerializeField] private SoapGaugeManager soapGaugeManager;
 
+    [Header("Gauge")]
     [SerializeField] private float decrementGauchePerShot;
 
     private Transform weaponTransform;
     private Vector2 weaponTransformVector;
     private Vector2 differenceVector;
 
-    public float gaugeShot;
+    private float gaugeShot;
 
     private InputAction rightClickMouseAction;
     private float rightClickMouseState;
@@ -52,7 +54,7 @@ public class PlayerShot : MonoBehaviour
         {
             if (rightClickMouseState == 1f)
             {
-                if (gaugeShot > 0.1f)
+                if (gaugeShot > 0f)
                 {
                     gunHeat += Time.deltaTime;
                     if (gunHeat > cooldownToShot)
@@ -75,8 +77,9 @@ public class PlayerShot : MonoBehaviour
 
                         //Get the orientation of the weapon compared to the mouse with transform.right
                         bubbleBulletrb.AddForce(differenceVector * forceToBubble);
-                        //gaugeShot -= decrementGauchePerShot;
-                        Debug.Log(gaugeShot);
+                        gaugeShot -= decrementGauchePerShot;
+                        soapGaugeManager.SetCrop(gaugeShot);
+                        Debug.Log("Gauge value" + gaugeShot);
                     }
                 }
                 else
@@ -85,5 +88,16 @@ public class PlayerShot : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void AddGauge(float gaugeValue)
+    {
+        gaugeShot += gaugeValue;
+        if(gaugeShot > 1f)
+        {
+            gaugeValue = 1f;
+        }
+        soapGaugeManager.SetCrop(gaugeShot);
+
     }
 }
