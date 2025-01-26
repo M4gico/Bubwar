@@ -43,6 +43,10 @@ public class ChildHealth : MonoBehaviour
 
                 graphics.sprite = deadChildSprite;
         }
+        else
+        {
+            GetComponent<ChildSound>().PlayTakeDamageSound();
+        }
     }
 }
 

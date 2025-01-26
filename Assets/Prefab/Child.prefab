@@ -152,6 +152,7 @@ GameObject:
   - component: {fileID: 1808596340648173268}
   - component: {fileID: 2098753589118982079}
   - component: {fileID: 3923852519770528980}
+  - component: {fileID: 2562692754954360568}
   m_Layer: 6
   m_Name: Child
   m_TagString: Child
@@ -353,5 +354,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  itemRecharge: {fileID: 574445711054416209, guid: 007bab8832240f2458099a3b4b8cc7af, type: 3}
-  deadChildSprite: {fileID: 21300000, guid: 13778c1b64f876d458294047016ff0af, type: 3}
+--- !u!114 &2562692754954360568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8890093302505974991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4ef21ebc0f20e84a957dffc6a7930e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  takeDamageSound:
+    Guid:
+      Data1: -806841954
+      Data2: 1302518206
+      Data3: -1605584980
+      Data4: 975976640
+    Path: event:/Enfant/TakeDamage
+  deathSound:
+    Guid:
+      Data1: -1986928833
+      Data2: 1273044712
+      Data3: 170842246
+      Data4: -1496496862
+    Path: event:/Enfant/Sleep

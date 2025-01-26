@@ -19,12 +19,12 @@ public class ArmoryManager : MonoBehaviour
   private List<Image>[] levelIcons;
 
   [SerializeField]
-  private GameObject levelIconPrefab;
+  private GameObject emptySpritePrefab;
+  [SerializeField]
+  private GameObject fullSpritePrefab;
 
   [SerializeField]
-  private Color basicColor = Color.white;
-  [SerializeField]
-  private Color upgradedColor = Color.green;
+  private Sprite fullSprite;
 
   private void Start()
   {
@@ -42,66 +42,74 @@ public class ArmoryManager : MonoBehaviour
     {
       for (int j = 0; j < upgradesMaxLevel[i]; j++)
       {
-        GameObject newImage = Instantiate(levelIconPrefab, levelIconsContainer[i].transform);
-        Image image = newImage.GetComponent<Image>();
+        GameObject objectIcon;
+
         if (j < upgradesLevel[i])
-        {
-          image.color = upgradedColor;
-        }
+          objectIcon = Instantiate(fullSpritePrefab, levelIconsContainer[i].transform);
         else
-        {
-          image.color = basicColor;
-        }
+          objectIcon = Instantiate(emptySpritePrefab, levelIconsContainer[i].transform);
+        Image image = objectIcon.GetComponent<Image>();
         levelIcons[i].Add(image);
       }
     }
   }
 
-  public void UpgradeWeapon()
+  public void UpgradeRadius()
   {
     upgradesLevel[0]++;
     if (upgradesLevel[0] <= upgradesMaxLevel[0])
     {
       Debug.Log("upgrade level : " + (upgradesLevel[0] - 1));
-      levelIcons[0][upgradesLevel[0] - 1].color = upgradedColor;
+      levelIcons[0][upgradesLevel[0] - 1].sprite = fullSprite;
     }
-    if (upgradesLevel[0] >= upgradesMaxLevel[0])
-      upgradesButtons[0].interactable = false;
+    DisableAllButtons();
   }
 
-  public void UpgradeHp()
+  public void UpgradeSpeed()
   {
     upgradesLevel[1]++;
     if (upgradesLevel[1] <= upgradesMaxLevel[1])
     {
       Debug.Log("upgrade level : " + (upgradesLevel[1] - 1));
-      levelIcons[1][upgradesLevel[1] - 1].color = upgradedColor;
+      levelIcons[1][upgradesLevel[1] - 1].sprite = fullSprite;
     }
-    if (upgradesLevel[1] >= upgradesMaxLevel[1])
-      upgradesButtons[1].interactable = false;
+    DisableAllButtons();
   }
 
-  public void UpgradeSpeed()
+  public void UpgradeWeapon()
   {
     upgradesLevel[2]++;
     if (upgradesLevel[2] <= upgradesMaxLevel[2])
     {
       Debug.Log("upgrade level : " + (upgradesLevel[2] - 1));
-      levelIcons[2][upgradesLevel[2] - 1].color = upgradedColor;
+      levelIcons[2][upgradesLevel[2] - 1].sprite = fullSprite;
     }
-    if (upgradesLevel[2] >= upgradesMaxLevel[2])
-      upgradesButtons[2].interactable = false;
+    DisableAllButtons();
   }
 
-  public void UpgradeRadius()
+  public void UpgradeHp()
   {
     upgradesLevel[3]++;
     if (upgradesLevel[3] <= upgradesMaxLevel[3])
     {
       Debug.Log("upgrade level : " + (upgradesLevel[3] - 1));
-      levelIcons[3][upgradesLevel[3] - 1].color = upgradedColor;
+      levelIcons[3][upgradesLevel[3] - 1].sprite = fullSprite;
     }
-    if (upgradesLevel[3] >= upgradesMaxLevel[3])
-      upgradesButtons[3].interactable = false;
+    DisableAllButtons();
+  }
+
+  private void DisableAllButtons()
+  {
+    foreach (Button button in upgradesButtons)
+      button.interactable = false;
+  }
+
+  public void EnableAllButtons()
+  {
+    for (int i = 0; i < upgradesButtons.Length; i++)
+    {
+      if (upgradesLevel[i] < upgradesMaxLevel[i])
+        upgradesButtons[i].interactable = true;
+    }
   }
 }
