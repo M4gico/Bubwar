@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 707fd5ca657bbf040a9f2787c8978b26
+guid: 384376d9bf473d847818725279901ec4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7932580701589374660
-    second: mur_dessin3_0
+      213: -6715589796785430680
+    second: BACKGROUND_INTRO_OUTRO_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mur_dessin3_0
+      name: BACKGROUND_INTRO_OUTRO_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 67
-        height: 74
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4c68a569e10361e60800000000000000
-      internalID: 7932580701589374660
+      spriteID: 86fdd5919ae6dc2a0800000000000000
+      internalID: -6715589796785430680
       vertices: []
       indices: 
       edges: []
@@ -138,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      mur_dessin3_0: 7932580701589374660
+      BACKGROUND_INTRO_OUTRO_0: -6715589796785430680
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
