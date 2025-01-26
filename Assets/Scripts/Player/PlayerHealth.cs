@@ -35,6 +35,11 @@ public class PlayerHealth : MonoBehaviour
             if (health <= 0)
             {
                 StartCoroutine(PlayerDead());
+                GetComponent<PlayerSound>().PlayDieSound();
+            }
+            else
+            {
+                GetComponent < PlayerSound>().PlayTakeDamageSound();
             }
             isInvincible = true;
             Debug.Log("Player health " + health);
@@ -56,6 +61,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void AddLife(float life)
     {
+        GetComponent<PlayerSound>().PlayRegenLifeSound();
         health += life;
         if (health > maxHealth)
         {

@@ -70,6 +70,7 @@ GameObject:
   - component: {fileID: 9168502840652395678}
   - component: {fileID: 2170484893472254941}
   - component: {fileID: 6840775677444736123}
+  - component: {fileID: 7382771555866619561}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -330,6 +331,53 @@ MonoBehaviour:
   viewDistance: 0.52
   circleRadius: 0.16
   shadowAlpha: 0.95
+--- !u!114 &7382771555866619561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4463402182354197220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7f711060e18f914bbd1b04cd23172db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  regenLife:
+    Guid:
+      Data1: 910737175
+      Data2: 1322388774
+      Data3: 1186909086
+      Data4: 2126092080
+    Path: event:/Adulte/RegenLife
+  regenAmmo:
+    Guid:
+      Data1: 1071238683
+      Data2: 1259042154
+      Data3: 507884940
+      Data4: -251410614
+    Path: event:/Adulte/RegenBubble
+  takeDamage:
+    Guid:
+      Data1: 1070888005
+      Data2: 1175751561
+      Data3: 1302035895
+      Data4: 1278939812
+    Path: event:/Adulte/TakeDamage
+  die:
+    Guid:
+      Data1: -1528292695
+      Data2: 1325720591
+      Data3: -45469542
+      Data4: 788954199
+    Path: event:/GameOver
+  noAmmo:
+    Guid:
+      Data1: -872009530
+      Data2: 1303218820
+      Data3: 700457389
+      Data4: -1240651930
+    Path: event:/Adulte/NoAmmo
 --- !u!1 &4990222761023347060
 GameObject:
   m_ObjectHideFlags: 0
