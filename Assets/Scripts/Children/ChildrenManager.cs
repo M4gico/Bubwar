@@ -91,7 +91,7 @@ public class ChildrenManager : MonoBehaviour
 
 	public void StartSpawnChild()
 	{
-		InvokeRepeating("SpawnChild", 0, spawnTime);
+		InvokeRepeating("SpawnChild", 2, spawnTime);
 	}
 
 	private void SpawnChild()

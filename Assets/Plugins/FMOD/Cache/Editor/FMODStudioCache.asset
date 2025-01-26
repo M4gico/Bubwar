@@ -134,7 +134,61 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 2
   MaxDistance: 25
-  Length: 1718
+  Length: 781
+--- !u!114 &-5349844129504610188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Victory
+  m_EditorClassIdentifier: 
+  Path: event:/Victory
+  Guid:
+    Data1: -1534588566
+    Data2: 1154609537
+    Data3: 952131472
+    Data4: 702689748
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1616
+--- !u!114 &-4783123520371108056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Upgrade_4
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Upgrade_4
+  Guid:
+    Data1: 446606292
+    Data2: 1212164930
+    Data3: 1029029807
+    Data4: 72919680
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1170
 --- !u!114 &-4649571383651041551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,6 +243,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 312
+--- !u!114 &-4046233633528089228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Upgrade_3
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Upgrade_3
+  Guid:
+    Data1: 1608487200
+    Data2: 1309319347
+    Data3: 2034170037
+    Data4: 1064900125
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 909
 --- !u!114 &-3108518778884824756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,6 +317,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1020
   Exists: 1
+--- !u!114 &-2090707994691531712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Backward
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Backward
+  Guid:
+    Data1: -812331498
+    Data2: 1178311632
+    Data3: -1081874036
+    Data4: 1943610556
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 240
 --- !u!114 &-2038084194775292564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,10 +470,10 @@ MonoBehaviour:
   Path: FMODProject/BudWar/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638734881538168541
+  lastModified: 638734958194952696
   FileSizes:
   - Name: Desktop
-    Value: 4571072
+    Value: 4826080
   Exists: 1
 --- !u!114 &-1065282167368390861
 MonoBehaviour:
@@ -447,13 +555,22 @@ MonoBehaviour:
   - {fileID: -6918956921528334917}
   - {fileID: 1888061619707952342}
   - {fileID: -7905806584380732398}
+  - {fileID: 1141151822587490606}
+  - {fileID: -2090707994691531712}
+  - {fileID: 2694393998162307817}
+  - {fileID: -4046233633528089228}
+  - {fileID: 3511215706206988597}
+  - {fileID: -5349844129504610188}
+  - {fileID: 4818889277476618675}
+  - {fileID: -4783123520371108056}
+  - {fileID: 5267856182140298550}
   EditorParameters:
   - {fileID: -1400904505080736762}
   MasterBanks:
   - {fileID: -1095261682789711340}
   StringsBanks:
   - {fileID: 7944278946090224153}
-  cacheTime: 638734881538168541
+  cacheTime: 638734958195045710
   cacheVersion: 131621
 --- !u!114 &805291382504381105
 MonoBehaviour:
@@ -509,6 +626,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 781
+--- !u!114 &1141151822587490606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Upgrade_2
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Upgrade_2
+  Guid:
+    Data1: -1912095736
+    Data2: 1119780509
+    Data3: -1118093682
+    Data4: -110841380
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 922
 --- !u!114 &1888061619707952342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -536,6 +680,33 @@ MonoBehaviour:
   MinDistance: 2
   MaxDistance: 25
   Length: 1468
+--- !u!114 &2694393998162307817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Adulte/RegenLife
+  m_EditorClassIdentifier: 
+  Path: event:/Adulte/RegenLife
+  Guid:
+    Data1: 910737175
+    Data2: 1322388774
+    Data3: 1186909086
+    Data4: 2126092080
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3375
 --- !u!114 &2754919071297569052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -591,6 +762,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 348667
+--- !u!114 &3511215706206988597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Upgrade_5
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Upgrade_5
+  Guid:
+    Data1: -739107271
+    Data2: 1096151387
+    Data3: -2056291151
+    Data4: 1649978563
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1330
 --- !u!114 &3766875286308580716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -645,6 +843,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 342
+--- !u!114 &4818889277476618675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Forward
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Forward
+  Guid:
+    Data1: -509259572
+    Data2: 1126094885
+    Data3: 2107065273
+    Data4: 1065667038
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 250
 --- !u!114 &5058541873153089042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -699,6 +924,33 @@ MonoBehaviour:
   MinDistance: 2
   MaxDistance: 25
   Length: 140
+--- !u!114 &5267856182140298550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Upgrade_1
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Upgrade_1
+  Guid:
+    Data1: -488533778
+    Data2: 1228442968
+    Data3: -1788979833
+    Data4: -1234620554
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 946
 --- !u!114 &5280140524701208125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -797,10 +1049,10 @@ MonoBehaviour:
   Path: FMODProject/BudWar/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638734831531877247
+  lastModified: 638734958195045710
   FileSizes:
   - Name: Desktop
-    Value: 1732
+    Value: 2090
   Exists: 1
 --- !u!114 &8862799034645737433
 MonoBehaviour:
