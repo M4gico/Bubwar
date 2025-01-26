@@ -159,7 +159,7 @@ MonoBehaviour:
   - ChildrenRoom
   - UpgradeRoom
   - HealthRoom
-  roomsProbabilities: 0a0000003200000028000000
+  roomsProbabilities: 3c0000001400000014000000
   nbChildren: 1
   spawnTimeChildren: 2
   spawnNbChildren: 1
