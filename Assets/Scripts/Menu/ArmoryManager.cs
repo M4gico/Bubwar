@@ -10,7 +10,7 @@ public class ArmoryManager : MonoBehaviour
     [SerializeField] private float speedPowerUp;
     [SerializeField] private float weaponPowerUp;
 
-    [SerializeField]
+  [SerializeField]
   private Button[] upgradesButtons;
 
   [SerializeField]
@@ -31,19 +31,20 @@ public class ArmoryManager : MonoBehaviour
   [SerializeField]
   private Sprite fullSprite;
 
-    private GameObject player;
+  private GameObject player;
 
-    private void Awake()
-    {
-        player = GameObject.FindWithTag("Player");
-    }
-    private void Start()
+  private void Awake()
+  {
+    player = GameObject.FindWithTag("Player");
+  }
+  private void Start()
   {
     levelIcons = new List<Image>[upgradesButtons.Length];
     for (int i = 0; i < upgradesButtons.Length; i++)
     {
       levelIcons[i] = new List<Image>();
     }
+    upgradesLevel = PowerUpManager.instance.GetPowerUps();
     GenerateLevelIcons();
   }
 
@@ -70,9 +71,11 @@ public class ArmoryManager : MonoBehaviour
     upgradesLevel[0]++;
     if (upgradesLevel[0] <= upgradesMaxLevel[0])
     {
+      GetComponent<ArmorySound>().PlayVisionUp(upgradesLevel[0]);
       player.GetComponent<PlayerVisionController>().fovAngle += fovPowerUp;
       Debug.Log("upgrade level : " + (upgradesLevel[0] - 1));
       levelIcons[0][upgradesLevel[0] - 1].sprite = fullSprite;
+      PowerUpManager.instance.SetPowerUp(0, upgradesLevel[0]);
     }
     DisableAllButtons();
   }
@@ -85,6 +88,7 @@ public class ArmoryManager : MonoBehaviour
             player.GetComponent<PlayerMovement>().moveSpeed += speedPowerUp;
             Debug.Log("upgrade level : " + (upgradesLevel[1] - 1));
       levelIcons[1][upgradesLevel[1] - 1].sprite = fullSprite;
+      PowerUpManager.instance.SetPowerUp(1, upgradesLevel[1]);
     }
     DisableAllButtons();
   }
@@ -97,6 +101,7 @@ public class ArmoryManager : MonoBehaviour
     player.GetComponentInChildren<PlayerShot>().decrementGauchePerShot /= weaponPowerUp;
     Debug.Log("upgrade level : " + (upgradesLevel[2] - 1));
       levelIcons[2][upgradesLevel[2] - 1].sprite = fullSprite;
+      PowerUpManager.instance.SetPowerUp(2, upgradesLevel[2]);
     }
     DisableAllButtons();
   }
@@ -110,6 +115,7 @@ public class ArmoryManager : MonoBehaviour
     player.GetComponent<PlayerHealth>().GiveHP();
     Debug.Log("upgrade level : " + (upgradesLevel[3] - 1));
       levelIcons[3][upgradesLevel[3] - 1].sprite = fullSprite;
+      PowerUpManager.instance.SetPowerUp(3, upgradesLevel[3]);
     }
     DisableAllButtons();
   }

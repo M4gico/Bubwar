@@ -77,6 +77,14 @@ public class InteractiveUpgrade : MonoBehaviour
 
     private IEnumerator ChangeStateArmuerie()
     {
+        if (armuerieState)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Armory/OpenArmory");
+        }
+        else
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Armory/CloseArmory");
+        }
         delayToActiveState = true;
         armuerieCanva.enabled = armuerieState;
         yield return new WaitForSeconds(0.5f);

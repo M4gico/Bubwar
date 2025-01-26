@@ -754,7 +754,7 @@
 			<value>73.846166666666647</value>
 		</property>
 		<property name="quantizationInterval">
-			<value>3</value>
+			<value>6</value>
 		</property>
 		<property name="transitionOffset">
 			<value>1</value>
@@ -843,7 +843,7 @@
 			<value>73.846166666666647</value>
 		</property>
 		<property name="quantizationInterval">
-			<value>3</value>
+			<value>6</value>
 		</property>
 		<property name="transitionOffset">
 			<value>1</value>
@@ -892,7 +892,7 @@
 			<value>73.846166666666647</value>
 		</property>
 		<property name="quantizationInterval">
-			<value>3</value>
+			<value>6</value>
 		</property>
 		<property name="transitionOffset">
 			<value>1</value>

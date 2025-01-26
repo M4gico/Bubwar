@@ -75,6 +75,7 @@ public class PlayerHealth : MonoBehaviour
         GameManager.instance.UnSetupPlayer();
         ResetPlayerHealth();
         ActualiseHearth();
+        PowerUpManager.instance.ResetPowerUp();
 
     }
 
@@ -138,6 +139,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void ResetPlayerHealth()
     {
+        StartCoroutine(PlayerDead());
         maxHealth = initialHealth;
         health = maxHealth;
         isInvincible = false;
