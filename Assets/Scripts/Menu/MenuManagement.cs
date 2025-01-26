@@ -9,6 +9,8 @@ public class MenuManagement : MonoBehaviour
   private GameObject mainMenu;
   [SerializeField]
   private GameObject optionsMenu;
+  [SerializeField]
+  private GameObject creditsMenu;
 
   [Header("Intro")]
   [SerializeField]
@@ -27,6 +29,7 @@ public class MenuManagement : MonoBehaviour
   {
     mainMenu.SetActive(true);
     optionsMenu.SetActive(false);
+    creditsMenu.SetActive(false);
   }
 
   public void OpenOptionsMenu()
@@ -39,6 +42,18 @@ public class MenuManagement : MonoBehaviour
   {
     mainMenu.SetActive(true);
     optionsMenu.SetActive(false);
+  }
+
+  public void OpenCreditsMenu()
+  {
+    mainMenu.SetActive(false);
+    creditsMenu.SetActive(true);
+  }
+
+  public void CloseCreditsMenu()
+  {
+    mainMenu.SetActive(true);
+    creditsMenu.SetActive(false);
   }
 
   private void StartGame()

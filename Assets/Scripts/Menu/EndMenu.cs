@@ -17,6 +17,9 @@ public class EndMenu : MonoBehaviour
     public void GoMainMenu()
     {
         SceneManager.LoadScene("MainMenuScene");
+
+        GameObject.Find("Player").GetComponent<PlayerHealth>().ResetPlayerHealth();
+        GameObject.Find("GameManager").GetComponent<GameManager>().UnSetupPlayer();
     }
 
     public void SetGoMainMenu()
