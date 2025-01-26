@@ -150,3 +150,17 @@ MonoBehaviour:
   doorOpen: {fileID: 21300000, guid: e1625552a21d2fc4292c92614408a74d, type: 3}
   doorClosed: {fileID: 21300000, guid: 0282ddf7a1ed4bd4482b714ececd8291, type: 3}
   isDoorOpen: 0
+  doorSound:
+    Guid:
+      Data1: 1207506012
+      Data2: 1328925739
+      Data3: -820360014
+      Data4: -1567676348
+    Path: event:/DoorOpen
+  victory:
+    Guid:
+      Data1: -1534588566
+      Data2: 1154609537
+      Data3: 952131472
+      Data4: 702689748
+    Path: event:/Victory
