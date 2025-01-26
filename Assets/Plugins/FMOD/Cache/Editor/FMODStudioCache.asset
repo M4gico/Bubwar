@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8282240589701712403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Forward
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Forward
+  Guid:
+    Data1: -509259572
+    Data2: 1126094885
+    Data3: 2107065273
+    Data4: 1065667038
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 250
 --- !u!114 &-7905806584380732398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1054,6 +1081,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 2090
   Exists: 1
+--- !u!114 &8782473392750558148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Adulte/RegenLife
+  m_EditorClassIdentifier: 
+  Path: event:/Adulte/RegenLife
+  Guid:
+    Data1: 910737175
+    Data2: 1322388774
+    Data3: 1186909086
+    Data4: 2126092080
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3375
 --- !u!114 &8862799034645737433
 MonoBehaviour:
   m_ObjectHideFlags: 0
