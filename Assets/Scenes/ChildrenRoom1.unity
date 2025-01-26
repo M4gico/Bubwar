@@ -384,6 +384,71 @@ Transform:
   - {fileID: 1492724858}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &985538240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 985538243}
+  - component: {fileID: 985538242}
+  - component: {fileID: 985538241}
+  m_Layer: 0
+  m_Name: MusicTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &985538241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985538240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Alarm
+  TriggerEvent: 11
+  Value: 0
+--- !u!114 &985538242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985538240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Phase
+  TriggerEvent: 11
+  Value: 1
+--- !u!4 &985538243
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985538240}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1006224860
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,6 +552,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorOpen: {fileID: 21300000, guid: e1625552a21d2fc4292c92614408a74d, type: 3}
   doorClosed: {fileID: 21300000, guid: 0282ddf7a1ed4bd4482b714ececd8291, type: 3}
+  isDoorOpen: 0
 --- !u!61 &1006224864
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -995,8 +1061,8 @@ MonoBehaviour:
   colliderSafeArea: {fileID: 2057324535}
   rightForwardWeapon: {fileID: 1452004047}
   leftForwardWeapon: {fileID: 1503209028}
+  soapGaugeManager: {fileID: 0}
   decrementGauchePerShot: 0.1
-  gaugeShot: 0
 --- !u!1 &1549257325
 GameObject:
   m_ObjectHideFlags: 0
@@ -2020,3 +2086,4 @@ SceneRoots:
   - {fileID: 1337684721}
   - {fileID: 1006224862}
   - {fileID: 1040531016}
+  - {fileID: 985538243}
