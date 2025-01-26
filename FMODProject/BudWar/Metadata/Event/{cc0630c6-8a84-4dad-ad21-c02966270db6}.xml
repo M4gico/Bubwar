@@ -57,11 +57,20 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{f35e61e3-729d-4462-be1b-ea4be36e431b}">
+		<property name="maxVoices">
+			<value>1</value>
+		</property>
+		<property name="voiceStealing">
+			<value>1</value>
+		</property>
 		<property name="minimumDistance">
 			<value>2</value>
 		</property>
 		<property name="maximumDistance">
 			<value>25</value>
+		</property>
+		<property name="triggerCooldown">
+			<value>200</value>
 		</property>
 	</object>
 	<object class="MarkerTrack" id="{e7d7c01d-1bc2-4a05-abd4-d250fea2df6a}" />
@@ -115,7 +124,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{5b9d5b39-29cd-4e67-bccb-9305ffc2f6b6}">
 		<property name="volume">
-			<value>5.30000019</value>
+			<value>2</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>

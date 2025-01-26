@@ -56,9 +56,10 @@ public class PlayerShot : MonoBehaviour
         {
             if (rightClickMouseState == 1f)
             {
+                gunHeat += Time.deltaTime;
                 if (gaugeShot > 0f)
                 {
-                    gunHeat += Time.deltaTime;
+                    
                     if (gunHeat > cooldownToShot)
                     {
                         //Know if the player is see at right or left
@@ -86,6 +87,7 @@ public class PlayerShot : MonoBehaviour
                 }
                 else
                 {
+                    GetComponentInParent<PlayerSound>().PlayNoAmmoSound();
                     Debug.Log("Plus de jauge");
                 }
             }
@@ -97,9 +99,10 @@ public class PlayerShot : MonoBehaviour
         gaugeShot += gaugeValue;
         if (gaugeShot > 1f)
         {
-            gaugeValue = 1f;
+            gaugeShot = 1f;
         }
         soapGaugeManager.SetCrop(gaugeShot);
+        GetComponentInParent<PlayerSound>().PlayRegenAmmoSound();
     }
 
     public void resetPlayerShot()

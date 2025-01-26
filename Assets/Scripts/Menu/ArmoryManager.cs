@@ -102,6 +102,8 @@ public class ArmoryManager : MonoBehaviour
   {
     foreach (Button button in upgradesButtons)
       button.interactable = false;
+
+    OpenDoor();
   }
 
   public void EnableAllButtons()
@@ -111,5 +113,15 @@ public class ArmoryManager : MonoBehaviour
       if (upgradesLevel[i] < upgradesMaxLevel[i])
         upgradesButtons[i].interactable = true;
     }
+  }
+
+  private void OpenDoor()
+  {
+    GameObject.Find("FinalDoor").GetComponent<DoorManager>().OpenDoor();
+  }
+
+  public void CloseArmory()
+  {
+    gameObject.SetActive(false);
   }
 }

@@ -4,7 +4,7 @@ using System.Collections;
 
 public class InteractiveUpgrade : MonoBehaviour
 {
-    private enum ActionToPlay {Heal, End, Armurerie};
+    private enum ActionToPlay { Heal, End, Armurerie };
     [SerializeField] private float AddHealing;
 
     [SerializeField] private ActionToPlay actionChoose;
@@ -13,8 +13,8 @@ public class InteractiveUpgrade : MonoBehaviour
     private InputAction EKeyAction;
     private bool isInTrigger;
     private float EKeyValue;
-    
-    
+
+
     private bool armuerieState = true;
     private bool delayToActiveState;
     private PlayerHealth playerHealth;
@@ -25,11 +25,11 @@ public class InteractiveUpgrade : MonoBehaviour
     private void Awake()
     {
         bubbleInteractive = GameObject.FindGameObjectWithTag("Interactive").GetComponent<SpriteRenderer>();
-        if(actionChoose == ActionToPlay.Armurerie)
+        if (actionChoose == ActionToPlay.Armurerie)
         {
             armuerieCanva = GameObject.FindWithTag("Armuerie").GetComponent<Canvas>();
         }
-        else if(actionChoose == ActionToPlay.Heal)
+        else if (actionChoose == ActionToPlay.Heal)
         {
             playerHealth = GameObject.FindWithTag("Player").GetComponent<PlayerHealth>();
         }
@@ -37,7 +37,7 @@ public class InteractiveUpgrade : MonoBehaviour
         {
             endAnimator = GameObject.FindWithTag("EndUI").GetComponent<Animator>();
         }
-        
+
     }
 
     private void Start()
@@ -54,22 +54,22 @@ public class InteractiveUpgrade : MonoBehaviour
         if (isInTrigger && !delayToActiveState)
         {
             EKeyValue = EKeyAction.ReadValue<float>();
-            if(EKeyValue == 1f)
+            if (EKeyValue == 1f)
             {
-                if(!delayToActiveState && actionChoose == ActionToPlay.Armurerie)
+                if (!delayToActiveState && actionChoose == ActionToPlay.Armurerie)
                 {
                     StartCoroutine(ChangeStateArmuerie());
                 }
-                else if(actionChoose == ActionToPlay.Heal)
+                else if (actionChoose == ActionToPlay.Heal)
                 {
                     playerHealth.AddLife(AddHealing);
                     Destroy(gameObject);
                 }
-                else if(actionChoose == ActionToPlay.End)
+                else if (actionChoose == ActionToPlay.End)
                 {
                     endAnimator.SetTrigger("FadeIn");
                 }
-                
+
             }
         }
     }
@@ -98,11 +98,11 @@ public class InteractiveUpgrade : MonoBehaviour
         {
             bubbleInteractive.enabled = false;
             isInTrigger = false;
-            if(actionChoose == ActionToPlay.Armurerie)
+            if (actionChoose == ActionToPlay.Armurerie)
             {
                 armuerieCanva.enabled = false;
             }
-            
+
         }
     }
 }
