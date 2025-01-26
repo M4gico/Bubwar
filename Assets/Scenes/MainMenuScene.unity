@@ -638,6 +638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8fe546834f9c91459f8f10e7a43479e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nbChildrenRooms: 1
   rooms:
   - ChildrenRoom
   roomsProbabilities: 64000000
