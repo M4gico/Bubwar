@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{3ab611ca-fd6e-4eff-b987-725e66a483ee}">
+		<property name="assetPath">
+			<value>Adulte/BubbluRegen_3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.71466666666666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{80da7b72-2ecd-49f4-9bbe-7162b66b9951}</destination>
+		</relationship>
+	</object>
+</objects>
