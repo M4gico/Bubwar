@@ -7,12 +7,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float smoothFactor;
     [SerializeField] private Sprite[] playerSprite;
 
-  private Camera cam;
+    private Camera cam;
 
-  private Rigidbody2D rb;
+    private Rigidbody2D rb;
 
-  private InputAction moveAction;
-  private InputAction lookAction;
+    private InputAction moveAction;
+    private InputAction lookAction;
 
     //Movement and look of the player
     private Vector2 moveValue;
@@ -30,15 +30,15 @@ public class PlayerMovement : MonoBehaviour
 
     public static PlayerMovement instance;
 
-  private void Awake()
-  {
-    if (instance != null)
+    private void Awake()
     {
-      if (instance != null)
-      {
-        Debug.LogWarning("There is more than one instance of PlayerMovement");
-        return;
-      }
+        if (instance != null)
+        {
+            if (instance != null)
+            {
+                Debug.LogWarning("There is more than one instance of PlayerMovement");
+                return;
+            }
 
             instance = this;
         }
@@ -74,12 +74,12 @@ public class PlayerMovement : MonoBehaviour
             spriteRenderer.sprite = playerSprite[0];
             isFacingRight = true;
         }
-        else if(angleRadMouse > Mathf.PI / 4f && angleRadMouse < Mathf.PI / 2f)
+        else if (angleRadMouse > Mathf.PI / 4f && angleRadMouse < Mathf.PI / 2f)
         {
             spriteRenderer.sprite = playerSprite[1];
             isFacingRight = true;
         }
-        else if(angleRadMouse > Mathf.PI / 2f && angleRadMouse < 3f*Mathf.PI / 4f)
+        else if (angleRadMouse > Mathf.PI / 2f && angleRadMouse < 3f * Mathf.PI / 4f)
         {
             spriteRenderer.sprite = playerSprite[2];
             isFacingRight = false;
@@ -89,17 +89,17 @@ public class PlayerMovement : MonoBehaviour
             spriteRenderer.sprite = playerSprite[3];
             isFacingRight = false;
         }
-        else if(angleRadMouse > -Mathf.PI && angleRadMouse < -3f * Mathf.PI / 4f)
+        else if (angleRadMouse > -Mathf.PI && angleRadMouse < -3f * Mathf.PI / 4f)
         {
             spriteRenderer.sprite = playerSprite[4];
             isFacingRight = false;
         }
-        else if(angleRadMouse > -3f * Mathf.PI / 4f && angleRadMouse < -Mathf.PI / 2f)
+        else if (angleRadMouse > -3f * Mathf.PI / 4f && angleRadMouse < -Mathf.PI / 2f)
         {
             spriteRenderer.sprite = playerSprite[5];
             isFacingRight = false;
         }
-        else if(angleRadMouse > -Mathf.PI / 2f && angleRadMouse < -Mathf.PI / 4f)
+        else if (angleRadMouse > -Mathf.PI / 2f && angleRadMouse < -Mathf.PI / 4f)
         {
             spriteRenderer.sprite = playerSprite[6];
             isFacingRight = true;
@@ -114,7 +114,7 @@ public class PlayerMovement : MonoBehaviour
         Debug.DrawLine(transform.position, mousPos, Color.white, Time.deltaTime);
 
         //Move the player
-        Vector3 vel = new Vector2(moveValue.x * moveSpeed, moveValue.y*moveSpeed);
+        Vector3 vel = new Vector2(moveValue.x * moveSpeed, moveValue.y * moveSpeed);
         rb.linearVelocity = Vector3.SmoothDamp(rb.linearVelocity, vel, ref vectorZero, smoothFactor);
     }
 }
