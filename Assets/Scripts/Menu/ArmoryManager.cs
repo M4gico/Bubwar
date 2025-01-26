@@ -5,11 +5,10 @@ using UnityEngine.UI;
 
 public class ArmoryManager : MonoBehaviour
 {
-  [Header("power ups")]
-  [SerializeField] private float fovPowerUp;
-  [SerializeField] private float speedPowerUp;
-  [SerializeField] private float weaponPowerUp;
-  [SerializeField] private float hpPowerUp;
+    [Header("power ups")]
+    [SerializeField] private float fovPowerUp;
+    [SerializeField] private float speedPowerUp;
+    [SerializeField] private float weaponPowerUp;
 
   [SerializeField]
   private Button[] upgradesButtons;
@@ -82,13 +81,12 @@ public class ArmoryManager : MonoBehaviour
   }
 
   public void UpgradeSpeed()
-  {
-    player.GetComponent<PlayerMovement>().moveSpeed += speedPowerUp;
-    upgradesLevel[1]++;
+  {   
+        upgradesLevel[1]++;
     if (upgradesLevel[1] <= upgradesMaxLevel[1])
     {
-      GetComponent<ArmorySound>().PlaySpeedUp(upgradesLevel[1]);
-      Debug.Log("upgrade level : " + (upgradesLevel[1] - 1));
+            player.GetComponent<PlayerMovement>().moveSpeed += speedPowerUp;
+            Debug.Log("upgrade level : " + (upgradesLevel[1] - 1));
       levelIcons[1][upgradesLevel[1] - 1].sprite = fullSprite;
       PowerUpManager.instance.SetPowerUp(1, upgradesLevel[1]);
     }
@@ -97,12 +95,11 @@ public class ArmoryManager : MonoBehaviour
 
   public void UpgradeWeapon()
   {
-    player.GetComponentInChildren<PlayerShot>().decrementGauchePerShot -= weaponPowerUp;
     upgradesLevel[2]++;
     if (upgradesLevel[2] <= upgradesMaxLevel[2])
     {
-      GetComponent<ArmorySound>().PlayGunUp(upgradesLevel[2]);
-      Debug.Log("upgrade level : " + (upgradesLevel[2] - 1));
+    player.GetComponentInChildren<PlayerShot>().decrementGauchePerShot /= weaponPowerUp;
+    Debug.Log("upgrade level : " + (upgradesLevel[2] - 1));
       levelIcons[2][upgradesLevel[2] - 1].sprite = fullSprite;
       PowerUpManager.instance.SetPowerUp(2, upgradesLevel[2]);
     }
@@ -111,12 +108,12 @@ public class ArmoryManager : MonoBehaviour
 
   public void UpgradeHp()
   {
-    player.GetComponent<PlayerHealth>().GiveHP();
-    upgradesLevel[3]++;
+        
+        upgradesLevel[3]++;
     if (upgradesLevel[3] <= upgradesMaxLevel[3])
     {
-      GetComponent<ArmorySound>().PlayHealthUp(upgradesLevel[3]);
-      Debug.Log("upgrade level : " + (upgradesLevel[3] - 1));
+    player.GetComponent<PlayerHealth>().GiveHP();
+    Debug.Log("upgrade level : " + (upgradesLevel[3] - 1));
       levelIcons[3][upgradesLevel[3] - 1].sprite = fullSprite;
       PowerUpManager.instance.SetPowerUp(3, upgradesLevel[3]);
     }

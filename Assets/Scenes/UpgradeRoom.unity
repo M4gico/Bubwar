@@ -746,6 +746,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 350b7fafa70d54946901f88281aedee7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fovPowerUp: 30
+  speedPowerUp: 1
+  weaponPowerUp: 1.5
   upgradesButtons:
   - {fileID: 169100877}
   - {fileID: 169100876}

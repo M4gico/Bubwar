@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class EndMenu : MonoBehaviour
 {
     private Animator animator;
+    [SerializeField] private GameObject player;
 
     private void Awake()
     {
@@ -16,6 +17,7 @@ public class EndMenu : MonoBehaviour
     }
     public void GoMainMenu()
     {
+        RoomManager.instance.ResetRoomManager();
         SceneManager.LoadScene("MainMenuScene");
 
         GameObject.Find("Player").GetComponent<PlayerHealth>().ResetPlayerHealth();
