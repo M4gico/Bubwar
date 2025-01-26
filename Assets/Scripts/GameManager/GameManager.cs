@@ -1,11 +1,19 @@
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
     private bool isGameOver;
+
+    [SerializeField]
+    private GameObject playerUI;
+    [SerializeField]
+    private GameObject player;
+    [SerializeField]
+    private PlayerShot playerShot;
 
     void Awake()
     {
@@ -47,5 +55,19 @@ public class GameManager : MonoBehaviour
     public bool IsGameOver()
     {
         return isGameOver;
+    }
+
+    public void SetupPlayer()
+    {
+        player.SetActive(true);
+        playerUI.SetActive(true);
+    }
+    public void UnSetupPlayer()
+    {
+        player.SetActive(false);
+        playerUI.SetActive(false);
+        playerShot.resetPlayerShot();
+
+        RoomManager.instance.ResetRoomManager();
     }
 }

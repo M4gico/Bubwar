@@ -46,7 +46,6 @@ public class PlayerMovement : MonoBehaviour
         cam = Camera.main;
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        transform.position = new Vector3(0, -4, 0);
     }
 
     private void Start()
