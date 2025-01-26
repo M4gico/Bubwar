@@ -94,6 +94,9 @@
 		<property name="priority">
 			<value>3</value>
 		</property>
+		<property name="maximumDistance">
+			<value>8.72222233</value>
+		</property>
 	</object>
 	<object class="MarkerTrack" id="{870d400d-0888-4f4a-9a34-eeb5c4824f74}" />
 	<object class="MarkerTrack" id="{66785302-8590-41e9-8d24-0fd2447335b3}" />
