@@ -36,9 +36,7 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         isGameOver = false;
-        SceneManager.LoadScene("ChildrenRoom");
-
-
+        RoomManager.instance.StartGame();
     }
 
     public void EndGame()
