@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 00059495306a7cf448a2e806aa56e636
+guid: 3e4805d809393c2498f470871ed545ac
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1380296956279149958
-    second: "options_carr\xE9_fond_0"
+      213: -8763498915000131489
+    second: base_salle_upgrade_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -52,7 +52,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 455, y: 446, z: 393, w: 71}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -96,27 +96,40 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "options_carr\xE9_fond_0"
+      name: base_salle_upgrade_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 875
-        height: 668
+        width: 1217
+        height: 978
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a7aad6c3b3338dce0800000000000000
-      internalID: -1380296956279149958
+      spriteID: f5065e5fa2cc16680800000000000000
+      internalID: -8763498915000131489
       vertices: []
       indices: 
       edges: []
@@ -126,7 +139,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "options_carr\xE9_fond_0": -1380296956279149958
+      base_salle_upgrade_0: -8763498915000131489
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

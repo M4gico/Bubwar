@@ -53,12 +53,21 @@
 			<destination>{5eed4de1-6d75-47dc-b7f1-74e6414555a5}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{9ae39226-2535-4320-a55e-5e15da6fc08e}</destination>
+			<destination>{d61c2ce0-bb13-4e29-bd78-2735a3946937}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{bed56829-13d2-4f78-97d6-b963bb69f066}">
 		<property name="maxVoices">
-			<value>20</value>
+			<value>5</value>
+		</property>
+		<property name="voiceStealing">
+			<value>1</value>
+		</property>
+		<property name="minimumDistance">
+			<value>2</value>
+		</property>
+		<property name="maximumDistance">
+			<value>25</value>
 		</property>
 	</object>
 	<object class="MarkerTrack" id="{e1afd3d7-e9a5-49d1-b36c-71205f4913a6}" />
@@ -77,7 +86,7 @@
 	</object>
 	<object class="EventMixerMaster" id="{be3de282-ae63-4b35-ad18-e4cc15df34d8}">
 		<property name="volume">
-			<value>4</value>
+			<value>2.4000001</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{6ffdab62-677f-46db-aa6d-afa0ae2b4cf0}</destination>
@@ -149,7 +158,7 @@
 			<value>volume</value>
 		</property>
 		<property name="amount">
-			<value>5</value>
+			<value>9.5</value>
 		</property>
 	</object>
 	<object class="RandomizerModulator" id="{895c9502-0fc3-43a9-8709-482633fd54a4}">
@@ -157,7 +166,7 @@
 			<value>pitch</value>
 		</property>
 		<property name="amount">
-			<value>9.5</value>
+			<value>11.5</value>
 		</property>
 	</object>
 	<object class="SingleSound" id="{23c2760a-30af-43be-902d-62b06c2e97ad}">
@@ -182,7 +191,7 @@
 	</object>
 	<object class="PlayPercentage" id="{15ce430b-4cab-4199-9a62-d340d51ed3df}">
 		<property name="percentage">
-			<value>8</value>
+			<value>5</value>
 		</property>
 		<relationship name="sound">
 			<destination>{1e441e96-9cd0-4a00-8a0f-c7d8953c2103}</destination>

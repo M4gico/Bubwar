@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Child
   - Bubble
+  - Interactive
+  - Armuerie
   layers:
   - Default
   - TransparentFX
@@ -16,7 +18,7 @@ TagManager:
   - Child
   - Player
   - Bubble
-  - 
+  - Item
   - 
   - 
   - 
@@ -42,6 +44,12 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 930314243
+    locked: 0
+  - name: Props
+    uniqueID: 3646945049
     locked: 0
   m_RenderingLayers:
   - Default

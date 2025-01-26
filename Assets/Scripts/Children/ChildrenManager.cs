@@ -25,6 +25,9 @@ public class ChildrenManager : MonoBehaviour
 	private int maxSpawnQuantity;
 
 	[SerializeField]
+	private int nbChildren;
+
+	[SerializeField]
 	private List<Transform> childrenSpawns = new List<Transform>();
 	[SerializeField]
 	private List<Transform> enabledChildrenSpawns = new List<Transform>();
@@ -42,7 +45,13 @@ public class ChildrenManager : MonoBehaviour
 
 	private void Start()
 	{
-		spawnRadius = PlayerVisionController.GetViewRadius();
+		playerTransform = GameObject.Find("Player").transform;
+
+		spawnTime = RoomManager.instance.GetSpawnTimeChildren();
+		maxSpawnQuantity = RoomManager.instance.GetSpawnQuantityChildren();
+		nbChildren = RoomManager.instance.GetNbChildren();
+
+		spawnRadius = 2f;
 		UpdateEnableSpawnPoints();
 		StartSpawnChild();
 	}
@@ -84,12 +93,15 @@ public class ChildrenManager : MonoBehaviour
 
 	public void StartSpawnChild()
 	{
-		InvokeRepeating("SpawnChild", 0, spawnTime);
+		InvokeRepeating("SpawnChild", 2, spawnTime);
 	}
 
 	private void SpawnChild()
 	{
 		int nbSpawn = UnityEngine.Random.Range(1, maxSpawnQuantity);
+		if (nbChildren < nbSpawn)
+			nbSpawn = nbChildren;
+
 		for (int i = 0; i < nbSpawn; i++)
 		{
 			SpawnOneChild();
@@ -98,6 +110,7 @@ public class ChildrenManager : MonoBehaviour
 
 	private void SpawnOneChild()
 	{
+		nbChildren--;
 		Vector2 spawnPos = UnityEngine.Random.insideUnitCircle * spawnRadius;
 		int randomIndex = UnityEngine.Random.Range(1, enabledChildrenSpawns.Count - 1);
 		Debug.Log("randomIndex: " + randomIndex);

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{0bedc4ff-9e4d-4988-a382-cc319c94589b}">
+		<property name="name">
+			<value>Alarm</value>
+		</property>
+		<relationship name="folder">
+			<destination>{4776e0ff-d4c9-4e52-8338-97bca16ac464}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{93559ccf-bb07-41ea-a8d4-13e7e26a2e6b}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{93559ccf-bb07-41ea-a8d4-13e7e26a2e6b}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>OFF</value>
+			<value>ON</value>
+		</property>
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>
