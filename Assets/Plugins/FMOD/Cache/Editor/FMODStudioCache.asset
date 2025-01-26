@@ -497,10 +497,10 @@ MonoBehaviour:
   Path: FMODProject/BudWar/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638734958194952696
+  lastModified: 638735007374969650
   FileSizes:
   - Name: Desktop
-    Value: 4826080
+    Value: 5217376
   Exists: 1
 --- !u!114 &-1065282167368390861
 MonoBehaviour:
@@ -591,13 +591,15 @@ MonoBehaviour:
   - {fileID: 4818889277476618675}
   - {fileID: -4783123520371108056}
   - {fileID: 5267856182140298550}
+  - {fileID: 5984747408909143256}
   EditorParameters:
   - {fileID: -1400904505080736762}
+  - {fileID: 8160415907176393463}
   MasterBanks:
   - {fileID: -1095261682789711340}
   StringsBanks:
   - {fileID: 7944278946090224153}
-  cacheTime: 638734958195045710
+  cacheTime: 638735007375336370
   cacheVersion: 131621
 --- !u!114 &805291382504381105
 MonoBehaviour:
@@ -707,6 +709,32 @@ MonoBehaviour:
   MinDistance: 2
   MaxDistance: 25
   Length: 1468
+--- !u!114 &2127066610395694037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Alarm
+  m_EditorClassIdentifier: 
+  Name: Alarm
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2821198323
+    data2: 2706569879
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - OFF
+  - ON
+  Exists: 1
 --- !u!114 &2694393998162307817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1003,6 +1031,7 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters:
   - {fileID: -2038084194775292564}
+  - {fileID: 2127066610395694037}
   MinDistance: 1
   MaxDistance: 20
   Length: 348667
@@ -1033,6 +1062,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1718
+--- !u!114 &5984747408909143256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Alarm
+  m_EditorClassIdentifier: 
+  Path: event:/Alarm
+  Guid:
+    Data1: -1007742626
+    Data2: 1165383480
+    Data3: 1577901447
+    Data4: 1600297089
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 22153
 --- !u!114 &7801673730897788464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1076,10 +1132,36 @@ MonoBehaviour:
   Path: FMODProject/BudWar/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638734958195045710
+  lastModified: 638735007375336370
   FileSizes:
   - Name: Desktop
-    Value: 2090
+    Value: 2172
+  Exists: 1
+--- !u!114 &8160415907176393463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Alarm
+  m_EditorClassIdentifier: 
+  Name: Alarm
+  StudioPath: parameter:/Alarm
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2821198323
+    data2: 2706569879
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - OFF
+  - ON
   Exists: 1
 --- !u!114 &8782473392750558148
 MonoBehaviour:
