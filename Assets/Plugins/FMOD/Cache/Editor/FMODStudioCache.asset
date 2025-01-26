@@ -81,6 +81,87 @@ MonoBehaviour:
   MinDistance: 2
   MaxDistance: 25
   Length: 250
+--- !u!114 &-7423467382401626898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Armory/Vision/V_2
+  m_EditorClassIdentifier: 
+  Path: event:/Armory/Vision/V_2
+  Guid:
+    Data1: -1226824121
+    Data2: 1087122353
+    Data3: 982880130
+    Data4: 359173357
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 946
+--- !u!114 &-7263197812298355500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Armory/Life/L_1
+  m_EditorClassIdentifier: 
+  Path: event:/Armory/Life/L_1
+  Guid:
+    Data1: -1959925593
+    Data2: 1260099648
+    Data3: 1760890815
+    Data4: 930534111
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 946
+--- !u!114 &-7069019875209812593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Armory/Speed/S_3
+  m_EditorClassIdentifier: 
+  Path: event:/Armory/Speed/S_3
+  Guid:
+    Data1: -1258390752
+    Data2: 1273548975
+    Data3: -1306996039
+    Data4: 1517054024
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 909
 --- !u!114 &-6918956921528334917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,9 +240,90 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters: []
-  MinDistance: 2
-  MaxDistance: 25
+  MinDistance: 5.4
+  MaxDistance: 75
   Length: 781
+--- !u!114 &-5771890086080308144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Armory/Life/L_Full
+  m_EditorClassIdentifier: 
+  Path: event:/Armory/Life/L_Full
+  Guid:
+    Data1: -1101695547
+    Data2: 1181114303
+    Data3: -2034488433
+    Data4: -524846896
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1330
+--- !u!114 &-5594826385224181799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Armory/Vision/V_4
+  m_EditorClassIdentifier: 
+  Path: event:/Armory/Vision/V_4
+  Guid:
+    Data1: 109453591
+    Data2: 1298213924
+    Data3: -545963855
+    Data4: 575851562
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1170
+--- !u!114 &-5495606115954338713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Armory/Speed/S_1
+  m_EditorClassIdentifier: 
+  Path: event:/Armory/Speed/S_1
+  Guid:
+    Data1: -1255265282
+    Data2: 1238581411
+    Data3: -1369848689
+    Data4: -1474148632
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 946
 --- !u!114 &-5349844129504610188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,6 +432,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 312
+--- !u!114 &-4055925571520860126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Armory/Life/L_3
+  m_EditorClassIdentifier: 
+  Path: event:/Armory/Life/L_3
+  Guid:
+    Data1: -1335967783
+    Data2: 1122823065
+    Data3: -784943744
+    Data4: -1574477358
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 909
 --- !u!114 &-4046233633528089228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,6 +513,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1468
+--- !u!114 &-2817128450468271327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Armory/Weapon/W_3
+  m_EditorClassIdentifier: 
+  Path: event:/Armory/Weapon/W_3
+  Guid:
+    Data1: 1688069937
+    Data2: 1289086299
+    Data3: -1270117491
+    Data4: -1856557551
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 909
 --- !u!114 &-2270386221118953890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -399,6 +615,33 @@ MonoBehaviour:
   - 2
   - 3
   Exists: 1
+--- !u!114 &-1988628419918993987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Armory/Vision/V_3
+  m_EditorClassIdentifier: 
+  Path: event:/Armory/Vision/V_3
+  Guid:
+    Data1: 439268385
+    Data2: 1093885185
+    Data3: -1734936408
+    Data4: 1061496751
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 946
 --- !u!114 &-1877953882537699071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -497,10 +740,10 @@ MonoBehaviour:
   Path: FMODProject/BudWar/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638735007374969650
+  lastModified: 638735086507622570
   FileSizes:
   - Name: Desktop
-    Value: 5217376
+    Value: 5452640
   Exists: 1
 --- !u!114 &-1065282167368390861
 MonoBehaviour:
@@ -522,6 +765,60 @@ MonoBehaviour:
   - Name: Desktop
     Value: 3897472
   Exists: 1
+--- !u!114 &-759534944782986485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Armory/Speed/S_2
+  m_EditorClassIdentifier: 
+  Path: event:/Armory/Speed/S_2
+  Guid:
+    Data1: -52395617
+    Data2: 1113049417
+    Data3: -1915095385
+    Data4: -863307514
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 922
+--- !u!114 &-533850344230654306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Armory/Weapon/W_Full
+  m_EditorClassIdentifier: 
+  Path: event:/Armory/Weapon/W_Full
+  Guid:
+    Data1: 265360664
+    Data2: 1321819975
+    Data3: -1782995059
+    Data4: 1321429346
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1330
 --- !u!114 &-475886678307205328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -549,6 +846,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 406
+--- !u!114 &-421154779814317977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Armory/Vision/V_Full
+  m_EditorClassIdentifier: 
+  Path: event:/Armory/Vision/V_Full
+  Guid:
+    Data1: -1819896286
+    Data2: 1236082751
+    Data3: 150304683
+    Data4: -135201699
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1330
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -592,6 +916,26 @@ MonoBehaviour:
   - {fileID: -4783123520371108056}
   - {fileID: 5267856182140298550}
   - {fileID: 5984747408909143256}
+  - {fileID: -5594826385224181799}
+  - {fileID: -533850344230654306}
+  - {fileID: -7069019875209812593}
+  - {fileID: -1988628419918993987}
+  - {fileID: -421154779814317977}
+  - {fileID: -2817128450468271327}
+  - {fileID: 8850221740448591793}
+  - {fileID: 8671691553074357713}
+  - {fileID: 2198169021302561058}
+  - {fileID: -7423467382401626898}
+  - {fileID: 6479869073514380160}
+  - {fileID: -759534944782986485}
+  - {fileID: -7263197812298355500}
+  - {fileID: -5771890086080308144}
+  - {fileID: 5437445191356520056}
+  - {fileID: 3677563999681458939}
+  - {fileID: -4055925571520860126}
+  - {fileID: 6347916101595432734}
+  - {fileID: 5434437497768015502}
+  - {fileID: -5495606115954338713}
   EditorParameters:
   - {fileID: -1400904505080736762}
   - {fileID: 8160415907176393463}
@@ -599,7 +943,7 @@ MonoBehaviour:
   - {fileID: -1095261682789711340}
   StringsBanks:
   - {fileID: 7944278946090224153}
-  cacheTime: 638735007375336370
+  cacheTime: 638735086507622570
   cacheVersion: 131621
 --- !u!114 &805291382504381105
 MonoBehaviour:
@@ -735,6 +1079,33 @@ MonoBehaviour:
   - OFF
   - ON
   Exists: 1
+--- !u!114 &2198169021302561058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Armory/Life/L_4
+  m_EditorClassIdentifier: 
+  Path: event:/Armory/Life/L_4
+  Guid:
+    Data1: 508094022
+    Data2: 1305953125
+    Data3: 526846119
+    Data4: -1419474126
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1170
 --- !u!114 &2694393998162307817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -844,6 +1215,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1330
+--- !u!114 &3677563999681458939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Armory/Life/L_2
+  m_EditorClassIdentifier: 
+  Path: event:/Armory/Life/L_2
+  Guid:
+    Data1: -1217253688
+    Data2: 1124901703
+    Data3: 577036212
+    Data4: 1389522967
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 922
 --- !u!114 &3766875286308580716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1062,6 +1460,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1718
+--- !u!114 &5434437497768015502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Armory/Weapon/W_4
+  m_EditorClassIdentifier: 
+  Path: event:/Armory/Weapon/W_4
+  Guid:
+    Data1: 104873449
+    Data2: 1272693897
+    Data3: 106916486
+    Data4: -1534065151
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1170
+--- !u!114 &5437445191356520056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Armory/Weapon/W_1
+  m_EditorClassIdentifier: 
+  Path: event:/Armory/Weapon/W_1
+  Guid:
+    Data1: 1317413318
+    Data2: 1237177807
+    Data3: 2052243074
+    Data4: 26540461
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 946
 --- !u!114 &5984747408909143256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1089,6 +1541,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 22153
+--- !u!114 &6347916101595432734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Armory/Speed/S_Full
+  m_EditorClassIdentifier: 
+  Path: event:/Armory/Speed/S_Full
+  Guid:
+    Data1: 996787427
+    Data2: 1338941853
+    Data3: -1899061085
+    Data4: -529771701
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1330
+--- !u!114 &6479869073514380160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Armory/Speed/S_4
+  m_EditorClassIdentifier: 
+  Path: event:/Armory/Speed/S_4
+  Guid:
+    Data1: -1341758581
+    Data2: 1247866330
+    Data3: 1159657875
+    Data4: -1568639521
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1170
 --- !u!114 &7801673730897788464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1132,10 +1638,10 @@ MonoBehaviour:
   Path: FMODProject/BudWar/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638735007375336370
+  lastModified: 638735083202234310
   FileSizes:
   - Name: Desktop
-    Value: 2172
+    Value: 2906
   Exists: 1
 --- !u!114 &8160415907176393463
 MonoBehaviour:
@@ -1163,6 +1669,33 @@ MonoBehaviour:
   - OFF
   - ON
   Exists: 1
+--- !u!114 &8671691553074357713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Armory/Weapon/W_2
+  m_EditorClassIdentifier: 
+  Path: event:/Armory/Weapon/W_2
+  Guid:
+    Data1: 1125474116
+    Data2: 1287664220
+    Data3: 124077707
+    Data4: 1461381781
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 922
 --- !u!114 &8782473392750558148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1190,6 +1723,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3375
+--- !u!114 &8850221740448591793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Armory/Vision/V_1
+  m_EditorClassIdentifier: 
+  Path: event:/Armory/Vision/V_1
+  Guid:
+    Data1: 987658298
+    Data2: 1136036083
+    Data3: 533193863
+    Data4: -1182205449
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 946
 --- !u!114 &8862799034645737433
 MonoBehaviour:
   m_ObjectHideFlags: 0

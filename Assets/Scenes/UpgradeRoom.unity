@@ -867,6 +867,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fab9326068045b4e983ebbb78b539a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AddHealing: 0
+  actionChoose: 2
 --- !u!1 &578565031
 GameObject:
   m_ObjectHideFlags: 0
