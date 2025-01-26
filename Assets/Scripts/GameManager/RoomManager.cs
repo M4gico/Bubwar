@@ -7,6 +7,9 @@ public class RoomManager : MonoBehaviour
     public static RoomManager instance;
     private int currentRoomIndex;
 
+    [SerializeField]
+    private Transform playerTransform;
+
     [Header("Rooms choose")]
     [SerializeField]
     private int nbChildrenRooms;
@@ -50,7 +53,8 @@ public class RoomManager : MonoBehaviour
     public void StartGame()
     {
         currentRoomIndex++;
-        SceneManager.LoadScene(GetRandomChildrenRoom()); // Load the first room
+        SceneManager.LoadScene(GetRandomChildrenRoom());
+        playerTransform.position = new Vector3(0, -4, 0);
     }
 
     void Update()
@@ -88,6 +92,7 @@ public class RoomManager : MonoBehaviour
         currentRoomIndex++;
         Debug.Log("Next scene: " + nextSceneName);
         SceneManager.LoadScene(nextSceneName);
+        playerTransform.position = new Vector3(0, -4, 0);
     }
 
     private void IncressDifficulty()
@@ -101,7 +106,7 @@ public class RoomManager : MonoBehaviour
 
     private string GetRandomChildrenRoom()
     {
-        int rand = UnityEngine.Random.Range(1, nbChildrenRooms);
+        int rand = UnityEngine.Random.Range(1, nbChildrenRooms + 1);
         Debug.Log("Random children room value: " + rand);
         IncressDifficulty();
         return rooms[0] + rand;
@@ -137,5 +142,15 @@ public class RoomManager : MonoBehaviour
     public int GetSpawnQuantityChildren()
     {
         return spawnQuantityChildren;
+    }
+
+    public void ResetRoomManager()
+    {
+        currentRoomIndex = 0;
+
+        nbChildren = 1;
+        spawnTimeChildren = 2f;
+        spawnNbChildren = 1;
+        spawnQuantityChildren = 1;
     }
 }

@@ -10,6 +10,9 @@ public class DoorManager : MonoBehaviour
     [SerializeField]
     private bool isDoorOpen;
 
+    public FMODUnity.EventReference doorSound;
+    public FMODUnity.EventReference victory;
+
     private void Start()
     {
         gameObject.GetComponent<SpriteRenderer>().sprite = doorClosed;
@@ -29,6 +32,9 @@ public class DoorManager : MonoBehaviour
         gameObject.GetComponent<BoxCollider2D>().size = new Vector2(1.75f, 0.7f);
 
         isDoorOpen = true;
+
+        FMODUnity.RuntimeManager.PlayOneShotAttached(doorSound,gameObject);
+        FMODUnity.RuntimeManager.PlayOneShotAttached(victory,gameObject);
     }
 
     public void OnTriggerEnter2D(Collider2D other)

@@ -19,6 +19,7 @@ public class PlayerShot : MonoBehaviour
     private Vector2 weaponTransformVector;
     private Vector2 differenceVector;
 
+    private float initialGaugeShot;
     private float gaugeShot;
 
     private InputAction rightClickMouseAction;
@@ -34,6 +35,7 @@ public class PlayerShot : MonoBehaviour
         //Get the playermovement script of the parent
         playerMovement = GetComponentInParent<PlayerMovement>();
         playerTransform = GetComponentInParent<Transform>();
+        initialGaugeShot = 1f;
         gaugeShot = 1f;
     }
 
@@ -93,11 +95,16 @@ public class PlayerShot : MonoBehaviour
     public void AddGauge(float gaugeValue)
     {
         gaugeShot += gaugeValue;
-        if(gaugeShot > 1f)
+        if (gaugeShot > 1f)
         {
             gaugeValue = 1f;
         }
         soapGaugeManager.SetCrop(gaugeShot);
+    }
 
+    public void resetPlayerShot()
+    {
+        gaugeShot = initialGaugeShot;
+        soapGaugeManager.SetCrop(gaugeShot);
     }
 }

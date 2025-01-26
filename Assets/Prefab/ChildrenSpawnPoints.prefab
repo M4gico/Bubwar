@@ -45,15 +45,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 0}
-  spawnTime: 1
+  spawnTime: 2
   spawnPointLimitUpLeft: {fileID: 649381069632633819}
   spawnPointLimitDownRight: {fileID: 3450276789845454961}
   spawnPointPrefab: {fileID: 7247698420474861064, guid: 5f24fdab4a8a8e4468172e099027c2bb, type: 3}
   spawnPointSpacing: 0.5
-  maxSpawnQuantity: 10
+  maxSpawnQuantity: 1
+  nbChildren: 0
   childrenSpawns: []
   enabledChildrenSpawns: []
-  childPrefab: {fileID: 5293979682498885401, guid: 47741ecdfb90bb44288580d8c90b5c7d, type: 3}
+  childPrefab: {fileID: 8890093302505974991, guid: d4891a4260f4171439089a5f896fe562, type: 3}
   spawnPointsContainer: {fileID: 6498942647147325453}
 --- !u!1 &4879537525287713087
 GameObject:
@@ -80,7 +81,7 @@ Transform:
   m_GameObject: {fileID: 4879537525287713087}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6, y: -3, z: 0}
+  m_LocalPosition: {x: 5.5, y: -4.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -145,7 +146,7 @@ Transform:
   m_GameObject: {fileID: 8073573794781367451}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6, y: 3, z: 0}
+  m_LocalPosition: {x: -5.5, y: 1.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
