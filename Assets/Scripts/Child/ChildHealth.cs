@@ -42,6 +42,11 @@ public class ChildHealth : MonoBehaviour
             rb.linearVelocity = Vector3.zero;
 
             animator.SetBool("isDead", true);
+            GetComponent<ChildSound>().PlayDeathSound();
+        }
+        else
+        {
+            GetComponent<ChildSound>().PlayTakeDamageSound();
         }
     }
 }
