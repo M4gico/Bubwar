@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8077090260770807967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Armory/CloseArmory
+  m_EditorClassIdentifier: 
+  Path: event:/Armory/CloseArmory
+  Guid:
+    Data1: -1472350233
+    Data2: 1177480257
+    Data3: 1154972081
+    Data4: -1659440590
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 406
 --- !u!114 &-7855920733909173527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27,6 +54,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 250
+--- !u!114 &-6781064419092676816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/DoorOpen
+  m_EditorClassIdentifier: 
+  Path: event:/DoorOpen
+  Guid:
+    Data1: 1207506012
+    Data2: 1328925739
+    Data3: -820360014
+    Data4: -1567676348
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1718
 --- !u!114 &-6678234649880843473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,6 +108,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 617
+--- !u!114 &-5947146777209659300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Adulte/NoAmmo
+  m_EditorClassIdentifier: 
+  Path: event:/Adulte/NoAmmo
+  Guid:
+    Data1: -872009530
+    Data2: 1303218820
+    Data3: 700457389
+    Data4: -1240651930
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 39
 --- !u!114 &-4649571383651041551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,6 +189,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 312
+--- !u!114 &-2327319141303466650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Armory/OpenArmory
+  m_EditorClassIdentifier: 
+  Path: event:/Armory/OpenArmory
+  Guid:
+    Data1: -1489504049
+    Data2: 1249555153
+    Data3: -555979882
+    Data4: 1004298478
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1468
 --- !u!114 &-2270386221118953890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,10 +362,10 @@ MonoBehaviour:
   Path: FMODProject/BudWar/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638734411804856789
+  lastModified: 638734560882663890
   FileSizes:
   - Name: Desktop
-    Value: 4221600
+    Value: 4571072
   Exists: 1
 --- !u!114 &-1065282167368390861
 MonoBehaviour:
@@ -307,13 +415,18 @@ MonoBehaviour:
   - {fileID: -6678234649880843473}
   - {fileID: 5058541873153089042}
   - {fileID: -1254700773938218179}
+  - {fileID: 8235830859948637112}
+  - {fileID: -6781064419092676816}
+  - {fileID: -5947146777209659300}
+  - {fileID: -2327319141303466650}
+  - {fileID: -8077090260770807967}
   EditorParameters:
   - {fileID: -1400904505080736762}
   MasterBanks:
   - {fileID: -1095261682789711340}
   StringsBanks:
   - {fileID: 7944278946090224153}
-  cacheTime: 638734411804856789
+  cacheTime: 638734560882914220
   cacheVersion: 131621
 --- !u!114 &805291382504381105
 MonoBehaviour:
@@ -576,11 +689,38 @@ MonoBehaviour:
   Path: FMODProject/BudWar/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638734395413212648
+  lastModified: 638734560882914220
   FileSizes:
   - Name: Desktop
-    Value: 1502
+    Value: 1732
   Exists: 1
+--- !u!114 &8235830859948637112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Adulte/RegenBubble
+  m_EditorClassIdentifier: 
+  Path: event:/Adulte/RegenBubble
+  Guid:
+    Data1: 1071238683
+    Data2: 1259042154
+    Data3: 507884940
+    Data4: -251410614
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 687
 --- !u!114 &8862799034645737433
 MonoBehaviour:
   m_ObjectHideFlags: 0
