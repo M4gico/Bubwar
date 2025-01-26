@@ -63,6 +63,7 @@ public class InteractiveUpgrade : MonoBehaviour
                 else if (actionChoose == ActionToPlay.Heal)
                 {
                     playerHealth.AddLife(AddHealing);
+                    GameObject.Find("FinalDoor").GetComponent<DoorManager>().OpenDoor();
                     Destroy(gameObject);
                 }
                 else if (actionChoose == ActionToPlay.End)

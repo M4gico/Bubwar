@@ -52,7 +52,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 2
-  MaxDistance: 25
+  MaxDistance: 9
   Length: 406
 --- !u!114 &-7855920733909173527
 MonoBehaviour:
@@ -79,7 +79,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 2
-  MaxDistance: 25
+  MaxDistance: 9
   Length: 250
 --- !u!114 &-7423467382401626898
 MonoBehaviour:
@@ -187,7 +187,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 2
-  MaxDistance: 25
+  MaxDistance: 9
   Length: 33
 --- !u!114 &-6678234649880843473
 MonoBehaviour:
@@ -214,7 +214,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 2
-  MaxDistance: 25
+  MaxDistance: 9
   Length: 617
 --- !u!114 &-6279415635736403186
 MonoBehaviour:
@@ -241,7 +241,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 5.4
-  MaxDistance: 75
+  MaxDistance: 42
   Length: 781
 --- !u!114 &-5771890086080308144
 MonoBehaviour:
@@ -349,7 +349,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 8.722222
   Length: 1616
 --- !u!114 &-4783123520371108056
 MonoBehaviour:
@@ -403,7 +403,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 2
-  MaxDistance: 25
+  MaxDistance: 9
   Length: 8000
 --- !u!114 &-4229424601279143523
 MonoBehaviour:
@@ -430,7 +430,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 8.722222
   Length: 312
 --- !u!114 &-4055925571520860126
 MonoBehaviour:
@@ -723,7 +723,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 2
-  MaxDistance: 25
+  MaxDistance: 9
   Length: 406
 --- !u!114 &-1095261682789711340
 MonoBehaviour:
@@ -740,7 +740,7 @@ MonoBehaviour:
   Path: FMODProject/BudWar/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638735086507622570
+  lastModified: 638735120858829476
   FileSizes:
   - Name: Desktop
     Value: 5452640
@@ -943,7 +943,7 @@ MonoBehaviour:
   - {fileID: -1095261682789711340}
   StringsBanks:
   - {fileID: 7944278946090224153}
-  cacheTime: 638735086507622570
+  cacheTime: 638735120858829476
   cacheVersion: 131621
 --- !u!114 &805291382504381105
 MonoBehaviour:
@@ -970,7 +970,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 2
-  MaxDistance: 25
+  MaxDistance: 9
   Length: 304
 --- !u!114 &858573468176718346
 MonoBehaviour:
@@ -1051,7 +1051,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 2
-  MaxDistance: 25
+  MaxDistance: 9
   Length: 1468
 --- !u!114 &2127066610395694037
 MonoBehaviour:
@@ -1131,7 +1131,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 8.722222
   Length: 3375
 --- !u!114 &2754919071297569052
 MonoBehaviour:
@@ -1158,7 +1158,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 2
-  MaxDistance: 25
+  MaxDistance: 9
   Length: 562
 --- !u!114 &3342287798272314551
 MonoBehaviour:
@@ -1267,7 +1267,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 2
-  MaxDistance: 25
+  MaxDistance: 32
   Length: 687
 --- !u!114 &4426635239977124662
 MonoBehaviour:
@@ -1294,7 +1294,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 8.722222
   Length: 342
 --- !u!114 &4818889277476618675
 MonoBehaviour:
@@ -1348,7 +1348,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 2
-  MaxDistance: 25
+  MaxDistance: 9
   Length: 125
 --- !u!114 &5178650537122527339
 MonoBehaviour:
@@ -1375,7 +1375,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 2
-  MaxDistance: 25
+  MaxDistance: 9
   Length: 140
 --- !u!114 &5267856182140298550
 MonoBehaviour:
@@ -1431,7 +1431,7 @@ MonoBehaviour:
   - {fileID: -2038084194775292564}
   - {fileID: 2127066610395694037}
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 8.722222
   Length: 348667
 --- !u!114 &5323742409749628562
 MonoBehaviour:
@@ -1539,7 +1539,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 8.722222
   Length: 22153
 --- !u!114 &6347916101595432734
 MonoBehaviour:
@@ -1638,7 +1638,7 @@ MonoBehaviour:
   Path: FMODProject/BudWar/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638735083202234310
+  lastModified: 638735087693190782
   FileSizes:
   - Name: Desktop
     Value: 2906
@@ -1775,5 +1775,5 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 2
-  MaxDistance: 25
+  MaxDistance: 9
   Length: 1406

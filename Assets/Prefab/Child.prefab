@@ -353,7 +353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5291213035c5c84badc3ba11ab66dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
+  health: 2
   itemRecharge: {fileID: 6510575029360630797, guid: affa3100be5452a4ea289f6ae9eefaf5, type: 3}
   deadChildSprite: {fileID: 21300000, guid: 13778c1b64f876d458294047016ff0af, type: 3}
 --- !u!114 &2562692754954360568
