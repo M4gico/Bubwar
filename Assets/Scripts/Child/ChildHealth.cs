@@ -41,6 +41,8 @@ public class ChildHealth : MonoBehaviour
             rb.bodyType = RigidbodyType2D.Kinematic;
             rb.linearVelocity = Vector3.zero;
 
+            RoomManager.instance.DecressNbChildren();
+
             animator.SetBool("isDead", true);
             GetComponent<ChildSound>().PlayDeathSound();
         }
