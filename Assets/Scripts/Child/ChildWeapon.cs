@@ -2,10 +2,12 @@ using UnityEngine;
 
 public class ChildWeapon : MonoBehaviour
 {
-    [SerializeField] private float cooldownToShot;
     [SerializeField] private GameObject bubbleBullet;
     [SerializeField] private Transform forwardWeapon;
     [SerializeField] private float forceOfTheShot;
+    [SerializeField] [Range(0.5f, 2f)] private float maxCooldownShoot;
+    [SerializeField] [Range(0.2f, 1f)] private float minCooldownShoot;
+
 
     private float gunHeat;
     private ChildFollow childFollow;
@@ -25,14 +27,15 @@ public class ChildWeapon : MonoBehaviour
         playerPosition = childFollow.playerTransform.position;
 
         gunHeat += Time.deltaTime;
-        if(gunHeat > cooldownToShot)
+
+        if (gunHeat > Random.Range(minCooldownShoot, maxCooldownShoot))
         {
             GameObject bubbleBulletGO = Instantiate(bubbleBullet, forwardWeapon.position, childTransform.rotation);
             gunHeat = 0;
             Rigidbody2D bubbleBulletrb = bubbleBulletGO.GetComponent<Rigidbody2D>();
 
             //Get the orientation of the weapon compared to the mouse
-            transform.right = new Vector2(playerPosition.x,playerPosition.y) - new Vector2(transform.position.x, transform.position.y);
+            transform.right = new Vector2(playerPosition.x, playerPosition.y) - new Vector2(transform.position.x, transform.position.y);
             bubbleBulletrb.AddForce(transform.right * forceOfTheShot);
         }
     }
