@@ -422,7 +422,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 48bc700a81f53aa4a8b55605553ebc8b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 02e663c0af4dc3348b800ff5e47bc77d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -710,6 +710,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd80886dfb019444c88bcda545efacd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerUI: {fileID: 0}
+  player: {fileID: 0}
+  playerShot: {fileID: 0}
 --- !u!4 &1355118888
 Transform:
   m_ObjectHideFlags: 0
@@ -737,7 +740,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8fe546834f9c91459f8f10e7a43479e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nbChildrenRooms: 1
+  playerTransform: {fileID: 0}
+  nbChildrenRooms: 3
   rooms:
   - ChildrenRoom
   roomsProbabilities: 64000000
@@ -931,6 +935,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMenu: {fileID: 1439441393}
   optionsMenu: {fileID: 932094450}
+  introButton: {fileID: 2052851168}
   intro: {fileID: 1411838906}
   introBackground: {fileID: 2052851169}
   introText: {fileID: 635385926}
@@ -1111,7 +1116,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1652,6 +1657,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2303813408369739172, guid: 7b34cee06a43bc14a8f0e60c5a0f034e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2303813408369739172, guid: 7b34cee06a43bc14a8f0e60c5a0f034e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1492725189}
@@ -1660,11 +1669,19 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2303813408369739172, guid: 7b34cee06a43bc14a8f0e60c5a0f034e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2303813408369739172, guid: 7b34cee06a43bc14a8f0e60c5a0f034e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: IntroStart
       objectReference: {fileID: 0}
     - target: {fileID: 2303813408369739172, guid: 7b34cee06a43bc14a8f0e60c5a0f034e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MenuManagement, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2303813408369739172, guid: 7b34cee06a43bc14a8f0e60c5a0f034e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: MenuManagement, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2303813408369739172, guid: 7b34cee06a43bc14a8f0e60c5a0f034e, type: 3}
