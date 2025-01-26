@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 72345638}
   - component: {fileID: 72345637}
   - component: {fileID: 72345640}
+  - component: {fileID: 72345641}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -150,15 +151,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8fe546834f9c91459f8f10e7a43479e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentRoomIndex: 0
   playerTransform: {fileID: 1900276730}
   finalRoomName: EndRoom
-  nbRooms: 5
+  nbRooms: 10
   nbChildrenRooms: 3
   rooms:
   - ChildrenRoom
   - UpgradeRoom
   - HealthRoom
-  roomsProbabilities: 3c0000001400000014000000
+  roomsProbabilities: 320000003200000000000000
   nbChildren: 1
   spawnTimeChildren: 2
   spawnNbChildren: 1
@@ -206,6 +208,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maskRectTransform: {fileID: 898885268}
+--- !u!114 &72345641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72345636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54806a9a07fb74d4d97afed958a89ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUps: 00000000000000000000000000000000
 --- !u!114 &118606850 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 624564541101500673, guid: 872cbc796dadc484f921f3e61776ff8a, type: 3}
