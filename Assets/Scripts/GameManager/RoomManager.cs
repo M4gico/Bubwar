@@ -5,12 +5,19 @@ using UnityEngine.SceneManagement;
 public class RoomManager : MonoBehaviour
 {
     public static RoomManager instance;
+
+    [SerializeField]
     private int currentRoomIndex;
 
     [SerializeField]
     private Transform playerTransform;
 
     [Header("Rooms choose")]
+    [SerializeField]
+    private string finalRoomName;
+    [SerializeField]
+    private int nbRooms;
+
     [SerializeField]
     private int nbChildrenRooms;
     [SerializeField]
@@ -65,6 +72,11 @@ public class RoomManager : MonoBehaviour
     public void LoadNextRoom()
     {
         currentRoomIndex++;
+        if (currentRoomIndex >= nbRooms)
+        {
+            SceneManager.LoadScene(finalRoomName);
+            return;
+        }
         LoadRandomRoom();
     }
 
@@ -79,7 +91,6 @@ public class RoomManager : MonoBehaviour
             roomProbabilityValue += roomsProbabilities[i];
             if (randRoomValue <= roomProbabilityValue)
             {
-                currentRoomIndex = i;
                 nextSceneName = rooms[i];
                 break;
             }

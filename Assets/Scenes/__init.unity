@@ -151,11 +151,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 1900276730}
+  finalRoomName: EndRoom
+  nbRooms: 5
   nbChildrenRooms: 3
   rooms:
   - ChildrenRoom
   - UpgradeRoom
-  roomsProbabilities: 3200000032000000
+  - HealthRoom
+  roomsProbabilities: 3c0000001400000014000000
   nbChildren: 1
   spawnTimeChildren: 2
   spawnNbChildren: 1

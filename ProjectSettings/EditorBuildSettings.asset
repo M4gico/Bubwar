@@ -23,6 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/UpgradeRoom.unity
     guid: c92c6655de80b0e41b7ab5f7fc3cb491
+  - enabled: 1
+    path: Assets/Scenes/HealthRoom.unity
+    guid: 7111ed950b7d94748af2857b061b64ac
+  - enabled: 1
+    path: Assets/Scenes/EndRoom.unity
+    guid: ad450aa2079879a499ee1380ce169e25
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
