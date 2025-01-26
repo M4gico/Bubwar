@@ -1,7 +1,8 @@
 using UnityEngine;
-using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Collections;
+using UnityEngine.SceneManagement;
+
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -13,7 +14,8 @@ public class PlayerHealth : MonoBehaviour
     [Header("UI part")]
     [SerializeField] private List<Animator> hearthAnimator;
 
-
+    private PlayerMovement playerMovement;
+    private Rigidbody2D rb;
     private SpriteRenderer graphics;
 
     private bool isInvincible;
@@ -21,6 +23,8 @@ public class PlayerHealth : MonoBehaviour
     private void Awake()
     {
         graphics = GetComponent<SpriteRenderer>();
+        rb = GetComponent<Rigidbody2D>();
+        playerMovement = GetComponent<PlayerMovement>();
     }
 
     public void TakeDamage(float damage)
@@ -28,9 +32,9 @@ public class PlayerHealth : MonoBehaviour
         if (!isInvincible)
         {
             health -= damage;
-            if (health < 0)
+            if (health <= 0)
             {
-                health = 0;
+                StartCoroutine(PlayerDead());
             }
             isInvincible = true;
             Debug.Log("Player health " + health);
@@ -39,6 +43,15 @@ public class PlayerHealth : MonoBehaviour
             StartCoroutine(InvincibilityFlash());
             StartCoroutine(HandleInvincibilityDelay());
         }
+    }
+
+    private IEnumerator PlayerDead()
+    {
+        rb.bodyType = RigidbodyType2D.Kinematic;
+        rb.linearVelocity = Vector3.zero;
+        playerMovement.enabled = false;
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("MainMenuScene");
     }
 
     public void AddLife(float life)

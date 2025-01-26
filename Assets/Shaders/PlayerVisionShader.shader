@@ -67,16 +67,16 @@ Shader "Custom/FieldOfViewSmooth"
                 if (angle < _FOVAngle * 0.5 && dist < _ViewDistance)
                 {
                     float edgeFade = smoothstep(_ViewDistance * 0.8, _ViewDistance, dist);
-                    return fixed4(0.14901960784313725,0.10196078431372549,0.054901960784313725, edgeFade * _Alpha);
+                    return fixed4(0.07450980392156863,0.058823529411764705,0.047058823529411764, edgeFade * _Alpha);
                 }
                 
                 if (dist < _CircleRadius)
                 {
                     visibilityFactor = smoothstep(_CircleRadius * 0.8, _CircleRadius, dist);
-                    return fixed4(0.14901960784313725,0.10196078431372549,0.054901960784313725, visibilityFactor * _Alpha);
+                    return fixed4(0.07450980392156863,0.058823529411764705,0.047058823529411764, visibilityFactor * _Alpha);
                 }
 
-                return fixed4(0.14901960784313725,0.10196078431372549,0.054901960784313725, _Alpha);
+                return fixed4(0.07450980392156863,0.058823529411764705,0.047058823529411764, _Alpha);
             }
             ENDCG
         }
