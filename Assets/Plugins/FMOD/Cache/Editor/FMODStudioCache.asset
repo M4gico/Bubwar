@@ -189,6 +189,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 312
+--- !u!114 &-3108518778884824756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Armory/OpenArmory
+  m_EditorClassIdentifier: 
+  Path: event:/Armory/OpenArmory
+  Guid:
+    Data1: -1489504049
+    Data2: 1249555153
+    Data3: -555979882
+    Data4: 1004298478
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1468
 --- !u!114 &-2270386221118953890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -360,6 +387,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 3897472
   Exists: 1
+--- !u!114 &-475886678307205328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Armory/CloseArmory
+  m_EditorClassIdentifier: 
+  Path: event:/Armory/CloseArmory
+  Guid:
+    Data1: -1472350233
+    Data2: 1177480257
+    Data3: 1154972081
+    Data4: -1659440590
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 406
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -673,6 +727,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 348667
+--- !u!114 &5323742409749628562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/DoorOpen
+  m_EditorClassIdentifier: 
+  Path: event:/DoorOpen
+  Guid:
+    Data1: 1207506012
+    Data2: 1328925739
+    Data3: -820360014
+    Data4: -1567676348
+  Banks:
+  - {fileID: -1095261682789711340}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1718
 --- !u!114 &7801673730897788464
 MonoBehaviour:
   m_ObjectHideFlags: 0
