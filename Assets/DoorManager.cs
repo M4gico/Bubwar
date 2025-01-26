@@ -33,8 +33,8 @@ public class DoorManager : MonoBehaviour
 
         isDoorOpen = true;
 
-        FMODUnity.RuntimeManager.PlayOneShotAttached(doorSound,gameObject);
-        FMODUnity.RuntimeManager.PlayOneShotAttached(victory,gameObject);
+        FMODUnity.RuntimeManager.PlayOneShotAttached(doorSound, gameObject);
+        FMODUnity.RuntimeManager.PlayOneShotAttached(victory, gameObject);
     }
 
     public void OnTriggerEnter2D(Collider2D other)
