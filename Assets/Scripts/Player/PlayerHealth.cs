@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
+    [SerializeField] private GameObject hearthGO;
     [SerializeField] private float initialHealth = 3;
     [SerializeField] private float health;
     [SerializeField] private float maxHealth;
@@ -61,6 +62,11 @@ public class PlayerHealth : MonoBehaviour
         GameManager.instance.UnSetupPlayer();
         ResetPlayerHealth();
         ActualiseHearth();
+
+    }
+
+    public void GiveHP()
+    {
 
     }
 

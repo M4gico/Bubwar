@@ -13,7 +13,7 @@ public class PlayerShot : MonoBehaviour
     [SerializeField] private SoapGaugeManager soapGaugeManager;
 
     [Header("Gauge")]
-    [SerializeField] private float decrementGauchePerShot;
+    public float decrementGauchePerShot;
 
     private Transform weaponTransform;
     private Vector2 weaponTransformVector;
