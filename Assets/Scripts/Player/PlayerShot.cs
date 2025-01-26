@@ -99,7 +99,7 @@ public class PlayerShot : MonoBehaviour
         gaugeShot += gaugeValue;
         if (gaugeShot > 1f)
         {
-            gaugeValue = 1f;
+            gaugeShot = 1f;
         }
         soapGaugeManager.SetCrop(gaugeShot);
         GetComponentInParent<PlayerSound>().PlayRegenAmmoSound();
