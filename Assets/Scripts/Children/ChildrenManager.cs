@@ -7,7 +7,9 @@ public class ChildrenManager : MonoBehaviour
 {
 	[SerializeField]
 	private Transform playerTransform;
-	private float spawnRadius;
+	[SerializeField]
+	[Range(1, 5)]
+	private float spawnRadius = 2f;
 
 	[SerializeField]
 	private float spawnTime;
@@ -51,7 +53,6 @@ public class ChildrenManager : MonoBehaviour
 		maxSpawnQuantity = RoomManager.instance.GetSpawnQuantityChildren();
 		nbChildren = RoomManager.instance.GetNbChildren();
 
-		spawnRadius = 2f;
 		UpdateEnableSpawnPoints();
 		StartSpawnChild();
 	}

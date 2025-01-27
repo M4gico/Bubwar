@@ -28,7 +28,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
         }
@@ -72,25 +72,25 @@ public class PlayerHealth : MonoBehaviour
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene("MainMenuScene");
 
-        GameManager.instance.UnSetupPlayer();
         ResetPlayerHealth();
         ActualiseHearth();
+        GameManager.instance.UnSetupPlayer();
         PowerUpManager.instance.ResetPowerUp();
 
     }
 
     public void GiveHP()
     {
-        
+
         GameObject newHeart = Instantiate(hearthGO, parentHearth);
         newHeart.transform.SetSiblingIndex(0);
         hearthAnimator.Insert(0, newHeart.GetComponent<Animator>());
         maxHealth++;
 
-        for (int i = 0; i < hearthAnimator.Count; i++) 
+        for (int i = 0; i < hearthAnimator.Count; i++)
         {
             Debug.Log(hearthAnimator[i].GetComponentInParent<Transform>().name);
-        } 
+        }
     }
 
     public void AddLife(float life)
@@ -140,6 +140,17 @@ public class PlayerHealth : MonoBehaviour
     public void ResetPlayerHealth()
     {
         StartCoroutine(PlayerDead());
+
+        foreach (GameObject h in GameObject.FindGameObjectsWithTag("HeartUI"))
+        {
+            Destroy(h);
+            Debug.Log("Destroy hearth");
+        }
+
+        hearthAnimator = hearthAnimator.GetRange(Mathf.Max(0, hearthAnimator.Count - 3), Mathf.Min(3, hearthAnimator.Count));
+
+
+
         maxHealth = initialHealth;
         health = maxHealth;
         isInvincible = false;

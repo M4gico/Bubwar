@@ -425,13 +425,13 @@ MonoBehaviour:
     Data4: 788954199
   Banks:
   - {fileID: -1095261682789711340}
-  IsStream: 1
+  IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 8.722222
-  Length: 312
+  Length: 327
 --- !u!114 &-4055925571520860126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -740,10 +740,10 @@ MonoBehaviour:
   Path: FMODProject/BudWar/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638735123866721590
+  lastModified: 638735602779624227
   FileSizes:
   - Name: Desktop
-    Value: 5452640
+    Value: 5453376
   Exists: 1
 --- !u!114 &-1065282167368390861
 MonoBehaviour:
@@ -943,7 +943,7 @@ MonoBehaviour:
   - {fileID: -1095261682789711340}
   StringsBanks:
   - {fileID: 7944278946090224153}
-  cacheTime: 638735123866721590
+  cacheTime: 638735602779636364
   cacheVersion: 131621
 --- !u!114 &805291382504381105
 MonoBehaviour:
@@ -1638,7 +1638,7 @@ MonoBehaviour:
   Path: FMODProject/BudWar/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638735083202234310
+  lastModified: 638735602779636364
   FileSizes:
   - Name: Desktop
     Value: 2906
