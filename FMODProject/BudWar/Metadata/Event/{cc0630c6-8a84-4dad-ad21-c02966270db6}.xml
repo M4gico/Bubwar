@@ -115,7 +115,7 @@
 			<value>0.068354166666666688</value>
 		</property>
 		<property name="volume">
-			<value>7</value>
+			<value>4.0999999</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{4ffab2b4-53f1-459e-b3e2-53ce3ec76618}</destination>
@@ -155,7 +155,7 @@
 			<value>volume</value>
 		</property>
 		<property name="amount">
-			<value>7.5</value>
+			<value>3</value>
 		</property>
 	</object>
 	<object class="RandomizerModulator" id="{8c349437-8818-45cd-8ec7-3518c050633c}">

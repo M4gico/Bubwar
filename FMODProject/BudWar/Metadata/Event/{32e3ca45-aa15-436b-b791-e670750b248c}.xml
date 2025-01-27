@@ -155,7 +155,7 @@
 			<value>volume</value>
 		</property>
 		<property name="amount">
-			<value>7</value>
+			<value>3</value>
 		</property>
 	</object>
 	<object class="SingleSound" id="{134d3323-50b6-4d08-981b-c2e8541d19f7}">

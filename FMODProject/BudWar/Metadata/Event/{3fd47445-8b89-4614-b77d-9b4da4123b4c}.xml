@@ -80,7 +80,7 @@
 	</object>
 	<object class="EventMixerMaster" id="{cab59d73-686e-4b92-a2c9-beb358c84ad8}">
 		<property name="volume">
-			<value>1.60000002</value>
+			<value>2.29999995</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{3ae380ad-6715-4935-b72c-74657a714b21}</destination>
@@ -131,7 +131,7 @@
 			<value>volume</value>
 		</property>
 		<property name="amount">
-			<value>7.5</value>
+			<value>3</value>
 		</property>
 	</object>
 	<object class="MixerBusEffectChain" id="{a65c4b5e-436e-4e11-be07-57a397ae6b43}">
