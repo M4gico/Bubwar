@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,6 +22,8 @@ public class MenuManagement : MonoBehaviour
   private Image introBackground;
   [SerializeField]
   private Image introText;
+  [SerializeField]
+  private TextMeshProUGUI introTextBis;
 
 
 
@@ -96,6 +99,7 @@ public class MenuManagement : MonoBehaviour
       {
         // introBackground.color = new Color(1, 1, 1, i);
         introText.color = new Color(1, 1, 1, i);
+        introTextBis.color = new Color(0.8156862745f, 0.7058823529f, 0.5803921569f, i);
         yield return null;
       }
     }
@@ -105,6 +109,7 @@ public class MenuManagement : MonoBehaviour
       {
         introBackground.color = new Color(1, 1, 1, i);
         introText.color = new Color(1, 1, 1, i);
+        introTextBis.color = new Color(0.8156862745f, 0.7058823529f, 0.5803921569f, i);
         yield return null;
       }
     }
