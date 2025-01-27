@@ -10,6 +10,7 @@ TagManager:
   - Armuerie
   - EndUI
   - HeartUI
+  - Weapon
   layers:
   - Default
   - TransparentFX

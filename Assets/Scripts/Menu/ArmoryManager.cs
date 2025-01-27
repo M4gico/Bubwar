@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class ArmoryManager : MonoBehaviour
 {
-    [Header("power ups")]
-    [SerializeField] private float fovPowerUp;
-    [SerializeField] private float speedPowerUp;
-    [SerializeField] private float weaponPowerUp;
+  [Header("power ups")]
+  [SerializeField] private float fovPowerUp;
+  [SerializeField] private float speedPowerUp;
+  [SerializeField] private float weaponPowerUp;
 
   [SerializeField]
   private Button[] upgradesButtons;
@@ -46,6 +46,7 @@ public class ArmoryManager : MonoBehaviour
     }
     upgradesLevel = PowerUpManager.instance.GetPowerUps();
     GenerateLevelIcons();
+    SetAllButtons();
   }
 
   private void GenerateLevelIcons()
@@ -81,12 +82,12 @@ public class ArmoryManager : MonoBehaviour
   }
 
   public void UpgradeSpeed()
-  {   
-        upgradesLevel[1]++;
+  {
+    upgradesLevel[1]++;
     if (upgradesLevel[1] <= upgradesMaxLevel[1])
     {
-            player.GetComponent<PlayerMovement>().moveSpeed += speedPowerUp;
-            Debug.Log("upgrade level : " + (upgradesLevel[1] - 1));
+      player.GetComponent<PlayerMovement>().moveSpeed += speedPowerUp;
+      Debug.Log("upgrade level : " + (upgradesLevel[1] - 1));
       levelIcons[1][upgradesLevel[1] - 1].sprite = fullSprite;
       PowerUpManager.instance.SetPowerUp(1, upgradesLevel[1]);
     }
@@ -98,8 +99,8 @@ public class ArmoryManager : MonoBehaviour
     upgradesLevel[2]++;
     if (upgradesLevel[2] <= upgradesMaxLevel[2])
     {
-    player.GetComponentInChildren<PlayerShot>().decrementGauchePerShot /= weaponPowerUp;
-    Debug.Log("upgrade level : " + (upgradesLevel[2] - 1));
+      player.GetComponentInChildren<PlayerShot>().decrementGauchePerShot /= weaponPowerUp;
+      Debug.Log("upgrade level : " + (upgradesLevel[2] - 1));
       levelIcons[2][upgradesLevel[2] - 1].sprite = fullSprite;
       PowerUpManager.instance.SetPowerUp(2, upgradesLevel[2]);
     }
@@ -108,12 +109,12 @@ public class ArmoryManager : MonoBehaviour
 
   public void UpgradeHp()
   {
-        
-        upgradesLevel[3]++;
+
+    upgradesLevel[3]++;
     if (upgradesLevel[3] <= upgradesMaxLevel[3])
     {
-    player.GetComponent<PlayerHealth>().GiveHP();
-    Debug.Log("upgrade level : " + (upgradesLevel[3] - 1));
+      player.GetComponent<PlayerHealth>().GiveHP();
+      Debug.Log("upgrade level : " + (upgradesLevel[3] - 1));
       levelIcons[3][upgradesLevel[3] - 1].sprite = fullSprite;
       PowerUpManager.instance.SetPowerUp(3, upgradesLevel[3]);
     }
@@ -128,12 +129,14 @@ public class ArmoryManager : MonoBehaviour
     OpenDoor();
   }
 
-  public void EnableAllButtons()
+  public void SetAllButtons()
   {
     for (int i = 0; i < upgradesButtons.Length; i++)
     {
       if (upgradesLevel[i] < upgradesMaxLevel[i])
         upgradesButtons[i].interactable = true;
+      else
+        upgradesButtons[i].interactable = false;
     }
   }
 
@@ -144,6 +147,6 @@ public class ArmoryManager : MonoBehaviour
 
   public void CloseArmory()
   {
-    gameObject.SetActive(false);
+    gameObject.GetComponent<Canvas>().enabled = false;
   }
 }

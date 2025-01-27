@@ -86,6 +86,7 @@ public class PlayerHealth : MonoBehaviour
         newHeart.transform.SetSiblingIndex(0);
         hearthAnimator.Insert(0, newHeart.GetComponent<Animator>());
         maxHealth++;
+        health++;
 
         for (int i = 0; i < hearthAnimator.Count; i++)
         {
@@ -144,7 +145,7 @@ public class PlayerHealth : MonoBehaviour
         foreach (GameObject h in GameObject.FindGameObjectsWithTag("HeartUI"))
         {
             Destroy(h);
-            Debug.Log("Destroy hearth");
+            Debug.Log("[PlayerHealth] Destroy hearth");
         }
 
         hearthAnimator = hearthAnimator.GetRange(Mathf.Max(0, hearthAnimator.Count - 3), Mathf.Min(3, hearthAnimator.Count));

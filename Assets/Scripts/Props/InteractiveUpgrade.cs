@@ -11,11 +11,14 @@ public class InteractiveUpgrade : MonoBehaviour
     private SpriteRenderer bubbleInteractive;
     private Canvas armuerieCanva;
     private InputAction EKeyAction;
+    [SerializeField]
     private bool isInTrigger;
     private float EKeyValue;
 
 
+    [SerializeField]
     private bool armuerieState = true;
+    [SerializeField]
     private bool delayToActiveState;
     private PlayerHealth playerHealth;
 
@@ -54,10 +57,12 @@ public class InteractiveUpgrade : MonoBehaviour
         if (isInTrigger && !delayToActiveState)
         {
             EKeyValue = EKeyAction.ReadValue<float>();
+            Debug.Log("[InteractiveUpgrade] EKeyValue: " + EKeyValue);
             if (EKeyValue == 1f)
             {
-                if (!delayToActiveState && actionChoose == ActionToPlay.Armurerie)
+                if (actionChoose == ActionToPlay.Armurerie)
                 {
+                    Debug.Log("[InteractiveUpgrade] Armurerie");
                     StartCoroutine(ChangeStateArmuerie());
                 }
                 else if (actionChoose == ActionToPlay.Heal)
@@ -87,6 +92,7 @@ public class InteractiveUpgrade : MonoBehaviour
         }
         delayToActiveState = true;
         armuerieCanva.enabled = armuerieState;
+        GameObject.FindGameObjectWithTag("Weapon").GetComponent<PlayerShot>().SetCanShot(!armuerieState);
         yield return new WaitForSeconds(0.5f);
         armuerieState = !armuerieState;
         delayToActiveState = false;
@@ -110,6 +116,8 @@ public class InteractiveUpgrade : MonoBehaviour
             if (actionChoose == ActionToPlay.Armurerie)
             {
                 armuerieCanva.enabled = false;
+                armuerieState = true;
+                GameObject.FindGameObjectWithTag("Weapon").GetComponent<PlayerShot>().SetCanShot(true);
             }
 
         }
