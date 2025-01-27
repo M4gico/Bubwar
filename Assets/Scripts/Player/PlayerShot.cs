@@ -30,6 +30,8 @@ public class PlayerShot : MonoBehaviour
     private Transform playerTransform;
     private PlayerMovement playerMovement;
 
+    private bool canShot = true;
+
     private void Awake()
     {
         //Get the playermovement script of the parent
@@ -57,9 +59,8 @@ public class PlayerShot : MonoBehaviour
             if (rightClickMouseState == 1f)
             {
                 gunHeat += Time.deltaTime;
-                if (gaugeShot > 0f)
+                if (gaugeShot > 0f && canShot)
                 {
-                    
                     if (gunHeat > cooldownToShot)
                     {
                         //Know if the player is see at right or left
@@ -109,5 +110,10 @@ public class PlayerShot : MonoBehaviour
     {
         gaugeShot = initialGaugeShot;
         soapGaugeManager.SetCrop(gaugeShot);
+    }
+
+    public void SetCanShot(bool canShot)
+    {
+        this.canShot = canShot;
     }
 }
