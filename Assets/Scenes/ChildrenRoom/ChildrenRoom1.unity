@@ -975,6 +975,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5276433454098882545, guid: 92f6f875b4e5778418aaac4103c3b231, type: 3}
+      propertyPath: spawnRadius
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5276433454098882545, guid: 92f6f875b4e5778418aaac4103c3b231, type: 3}
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 0}
@@ -1959,7 +1963,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 475151823303498707, guid: 4ad25f7efb4ed424a9834ec54f0c998c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
