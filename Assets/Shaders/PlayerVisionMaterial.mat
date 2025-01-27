@@ -34,7 +34,7 @@ Material:
     - _FOVAngle: 33.3
     - _ViewDistance: 0.52
     m_Colors:
-    - _MousePosition: {r: 1.1236162, g: 2.2213116, b: 0, a: 0}
-    - _PlayerPosition: {r: 0.50002146, g: 0.50017935, b: 0, a: 0}
+    - _MousePosition: {r: 1.1245388, g: 2.237705, b: 0, a: 0}
+    - _PlayerPosition: {r: 0.49921864, g: 0.49929184, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
