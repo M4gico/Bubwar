@@ -6,6 +6,13 @@ using System;
 public class ChildrenManager : MonoBehaviour
 {
 	[SerializeField]
+	private Transform[] obstaclesTransforms;
+	[SerializeField]
+	private float[] obstaclesRadius;
+
+
+
+	[SerializeField]
 	private Transform playerTransform;
 	[SerializeField]
 	[Range(1, 5)]
@@ -65,6 +72,12 @@ public class ChildrenManager : MonoBehaviour
 	{
 		Gizmos.color = Color.green;
 		Gizmos.DrawWireSphere(playerTransform.position, spawnRadius);
+
+		foreach (Transform obstacle in obstaclesTransforms)
+		{
+			Gizmos.color = Color.red;
+			Gizmos.DrawWireSphere(obstacle.position, obstaclesRadius[Array.IndexOf(obstaclesTransforms, obstacle)]);
+		}
 	}
 
 	private void GenerateSpawnPoints()
@@ -90,6 +103,10 @@ public class ChildrenManager : MonoBehaviour
 	private void UpdateEnableSpawnPoints()
 	{
 		enabledChildrenSpawns = childrenSpawns.Where(x => Vector2.Distance(x.position, playerTransform.position) > spawnRadius).ToList();
+		foreach (Transform obstacle in obstaclesTransforms)
+		{
+			enabledChildrenSpawns = enabledChildrenSpawns.Where(x => Vector2.Distance(x.position, obstacle.position) > obstaclesRadius[Array.IndexOf(obstaclesTransforms, obstacle)]).ToList();
+		}
 	}
 
 	public void StartSpawnChild()
