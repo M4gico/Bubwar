@@ -9,7 +9,7 @@ public class OptionManager : MonoBehaviour
     private Slider musicVolumeSlider;
     [SerializeField]
     private Slider effectVolumeSlider;
-    
+
 
     [Header("Resolution")]
     [SerializeField]
@@ -22,9 +22,9 @@ public class OptionManager : MonoBehaviour
     private int currentResolutionIndex = 0;
 
     [Header("Fullscreen")]
-    [SerializeField] 
+    [SerializeField]
     private Toggle fullscreenToggle;
-    
+
     public void Start()
     {
         // Volume settings
@@ -46,13 +46,14 @@ public class OptionManager : MonoBehaviour
 
         for (int i = 0; i < resolutions.Length; i++)
         {
-            if ((float)resolutions[i].refreshRateRatio.value == currentRefreshRate) 
+            if ((float)resolutions[i].refreshRateRatio.value == currentRefreshRate)
             {
                 filteredResolutions.Add(resolutions[i]);
             }
         }
 
-        filteredResolutions.Sort((a, b) => {
+        filteredResolutions.Sort((a, b) =>
+        {
             if (a.width != b.width)
                 return b.width.CompareTo(a.width);
             else
@@ -80,7 +81,7 @@ public class OptionManager : MonoBehaviour
     public void SetResolution(int resolutionIndex)
     {
         Resolution resolution = filteredResolutions[resolutionIndex];
-        Screen.SetResolution(resolution.width, resolution.height, true);
+        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     }
 
     // Fullscreen settings
@@ -102,5 +103,5 @@ public class OptionManager : MonoBehaviour
         FMODUnity.RuntimeManager.GetVCA("vca:/EffectVCA").setVolume(volume);
 
     }
-    
+
 }
