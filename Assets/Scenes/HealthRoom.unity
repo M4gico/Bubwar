@@ -440,7 +440,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 3371158599796914850, guid: bc0c4b8392f80394c9ad00fc5efafddb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1459,6 +1459,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AddHealing: 3
   actionChoose: 0
+  isInTrigger: 0
+  armuerieState: 1
+  delayToActiveState: 0
 --- !u!61 &944263386
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1675,7 +1678,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -6512235404544499385, guid: 7007b51f3388da249be8905b4b55627d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

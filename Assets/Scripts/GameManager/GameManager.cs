@@ -64,10 +64,14 @@ public class GameManager : MonoBehaviour
     }
     public void UnSetupPlayer()
     {
+        playerShot.resetPlayerShot(); // Reset player shot bubules price
+        PlayerMovement.instance.ResetMoveSpeed(); // Reset player speed
+        PlayerVisionController.instance.ResetVision(); // Reset player vision
+
         player.SetActive(false);
         playerUI.SetActive(false);
-        playerShot.resetPlayerShot();
 
-        RoomManager.instance.ResetRoomManager();
+        PowerUpManager.instance.ResetPowerUp(); // Reset power up levels
+        RoomManager.instance.ResetRoomManager(); // Reset room manager stats
     }
 }

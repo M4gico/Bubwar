@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public float initialMoveSpeed;
     public float moveSpeed;
     [SerializeField] private float smoothFactor;
     [SerializeField] private Sprite[] playerSprite;
@@ -32,15 +33,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
-        if (instance != null)
-        {
-            if (instance != null)
-            {
-                Debug.LogWarning("There is more than one instance of PlayerMovement");
-                return;
-            }
-
+        if (instance == null)
             instance = this;
+        else
+        {
+            Debug.LogWarning("There is more than one instance of PlayerMovement");
+            Destroy(gameObject);
         }
 
         cam = Camera.main;
@@ -116,6 +114,11 @@ public class PlayerMovement : MonoBehaviour
         //Move the player
         Vector3 vel = new Vector2(moveValue.x * moveSpeed, moveValue.y * moveSpeed);
         rb.linearVelocity = Vector3.SmoothDamp(rb.linearVelocity, vel, ref vectorZero, smoothFactor);
+    }
+
+    public void ResetMoveSpeed()
+    {
+        moveSpeed = initialMoveSpeed;
     }
 }
 
