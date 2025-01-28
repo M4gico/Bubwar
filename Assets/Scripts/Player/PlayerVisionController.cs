@@ -2,12 +2,14 @@ using UnityEngine;
 
 public class PlayerVisionController : MonoBehaviour
 {
-    static PlayerVisionController instance;
+    static public PlayerVisionController instance;
 
     [Header("Vision Settings")]
     [SerializeField]
     private Material visionMaterial;
-    public float fovAngle = 60f;
+    [SerializeField]
+    private float initialFovAngle = 33.3f;
+    public float fovAngle = 33.3f;
     [SerializeField]
     private float viewDistance = 5f;
     [SerializeField]
@@ -17,13 +19,14 @@ public class PlayerVisionController : MonoBehaviour
 
     private void Awake()
     {
-        if (instance != null)
+        if (instance == null)
+            instance = this;
+        else
         {
             Debug.LogWarning("There is more than one instance of PlayerVisionController");
-            return;
+            Destroy(gameObject);
         }
 
-        instance = this;
     }
 
 
@@ -49,5 +52,10 @@ public class PlayerVisionController : MonoBehaviour
     public static float GetViewRadius()
     {
         return instance.viewDistance;
+    }
+
+    public void ResetVision()
+    {
+        fovAngle = initialFovAngle;
     }
 }

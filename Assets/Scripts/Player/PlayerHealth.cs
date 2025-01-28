@@ -75,8 +75,6 @@ public class PlayerHealth : MonoBehaviour
         ResetPlayerHealth();
         ActualiseHearth();
         GameManager.instance.UnSetupPlayer();
-        PowerUpManager.instance.ResetPowerUp();
-
     }
 
     public void GiveHP()

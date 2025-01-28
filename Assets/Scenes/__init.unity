@@ -160,7 +160,7 @@ MonoBehaviour:
   - ChildrenRoom
   - UpgradeRoom
   - HealthRoom
-  roomsProbabilities: 320000003200000000000000
+  roomsProbabilities: 1e0000004600000000000000
   nbChildren: 1
   spawnTimeChildren: 2
   spawnNbChildren: 1
@@ -1014,6 +1014,10 @@ PrefabInstance:
     - target: {fileID: 4463402182354197220, guid: 872cbc796dadc484f921f3e61776ff8a, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9168502840652395678, guid: 872cbc796dadc484f921f3e61776ff8a, type: 3}
+      propertyPath: initialMoveSpeed
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
