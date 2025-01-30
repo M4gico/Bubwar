@@ -87,3 +87,9 @@ crashlytics-build.properties
 fmod_editor.log
 FMODProject/BudWar/.cache/*
 
+Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset
+/Assets/Plugins/FMOD
+Assets/Imports/Fonts/CrayonLibre SDF.asset
+ProjectSettings/ShaderGraphSettings.asset
+Assets/TextMesh Pro/Fonts/CrayonLibre SDF.asset
+Assets/Shaders/PlayerVisionMaterial.mat
