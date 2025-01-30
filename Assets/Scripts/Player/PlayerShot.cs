@@ -6,20 +6,23 @@ using UnityEngine.UI;
 public class PlayerShot : MonoBehaviour
 {
     [SerializeField] private GameObject bubbleBullet;
-    [SerializeField] private float cooldownToShot;
     [SerializeField] private float forceToBubble;
     [SerializeField] private BoxCollider2D colliderSafeArea;
 
     [SerializeField] private Transform rightForwardWeapon;
     [SerializeField] private Transform leftForwardWeapon;
-    [SerializeField] private SoapGaugeManager soapGaugeManager;
 
+    [Header("Cooldown")]
     [SerializeField] private GameObject cooldownSliderObject;
     private Slider cooldownSlider;
     private float timeToCooldown;
+    [SerializeField] private float cooldownToShot;
 
     [Header("Gauge")]
+    [SerializeField] private SoapGaugeManager soapGaugeManager;
     public float decrementGauchePerShot;
+    [SerializeField]
+    private float initialDecrementGauchePerShot = 0.05f;
 
     private Transform weaponTransform;
     private Vector2 weaponTransformVector;
@@ -42,9 +45,9 @@ public class PlayerShot : MonoBehaviour
 
     private void Awake()
     {
-        if(instance != null)
+        if (instance != null)
         {
-            Debug.LogWarning("Il y a plus d'une instance de PlayerShot dans la scène");
+            Debug.LogWarning("Il y a plus d'une instance de PlayerShot dans la scï¿½ne");
             return;
         }
         instance = this;
@@ -116,7 +119,7 @@ public class PlayerShot : MonoBehaviour
         cooldownSliderObject.SetActive(true);
         while (timeToCooldown < cooldownToShot)
         {
-            cooldownSlider.value = Mathf.Lerp(0, cooldownToShot, timeToCooldown/cooldownToShot);
+            cooldownSlider.value = Mathf.Lerp(0, cooldownToShot, timeToCooldown / cooldownToShot);
             timeToCooldown += Time.deltaTime;
             yield return null;
         }
@@ -138,6 +141,8 @@ public class PlayerShot : MonoBehaviour
     {
         gaugeShot = initialGaugeShot;
         soapGaugeManager.SetCrop(gaugeShot);
+
+        decrementGauchePerShot = initialDecrementGauchePerShot;
     }
 
     public void SetCanShot(bool canShot)
