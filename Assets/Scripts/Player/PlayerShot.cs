@@ -1,5 +1,7 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PlayerShot : MonoBehaviour
 {
@@ -11,6 +13,10 @@ public class PlayerShot : MonoBehaviour
     [SerializeField] private Transform rightForwardWeapon;
     [SerializeField] private Transform leftForwardWeapon;
     [SerializeField] private SoapGaugeManager soapGaugeManager;
+
+    [SerializeField] private GameObject cooldownSliderObject;
+    private Slider cooldownSlider;
+    private float timeToCooldown;
 
     [Header("Gauge")]
     public float decrementGauchePerShot;
@@ -32,11 +38,21 @@ public class PlayerShot : MonoBehaviour
 
     private bool canShot = true;
 
+    public static PlayerShot instance;
+
     private void Awake()
     {
+        if(instance != null)
+        {
+            Debug.LogWarning("Il y a plus d'une instance de PlayerShot dans la scène");
+            return;
+        }
+        instance = this;
         //Get the playermovement script of the parent
         playerMovement = GetComponentInParent<PlayerMovement>();
         playerTransform = GetComponentInParent<Transform>();
+        cooldownSlider = cooldownSliderObject.GetComponent<Slider>();
+        cooldownSlider.maxValue = cooldownToShot;
         initialGaugeShot = 1f;
         gaugeShot = 1f;
     }
@@ -63,6 +79,7 @@ public class PlayerShot : MonoBehaviour
                 {
                     if (gunHeat > cooldownToShot)
                     {
+                        StartCoroutine(ChangeCooldownSlider());
                         //Know if the player is see at right or left
                         if (playerMovement.isFacingRight)
                         {
@@ -83,16 +100,27 @@ public class PlayerShot : MonoBehaviour
                         bubbleBulletrb.AddForce(differenceVector * forceToBubble);
                         gaugeShot -= decrementGauchePerShot;
                         soapGaugeManager.SetCrop(gaugeShot);
-                        Debug.Log("Gauge value" + gaugeShot);
                     }
                 }
                 else
                 {
                     GetComponentInParent<PlayerSound>().PlayNoAmmoSound();
-                    Debug.Log("Plus de jauge");
                 }
             }
         }
+    }
+
+    private IEnumerator ChangeCooldownSlider()
+    {
+        timeToCooldown = 0;
+        cooldownSliderObject.SetActive(true);
+        while (timeToCooldown < cooldownToShot)
+        {
+            cooldownSlider.value = Mathf.Lerp(0, cooldownToShot, timeToCooldown/cooldownToShot);
+            timeToCooldown += Time.deltaTime;
+            yield return null;
+        }
+        cooldownSliderObject.SetActive(false);
     }
 
     public void AddGauge(float gaugeValue)
