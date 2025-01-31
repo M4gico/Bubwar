@@ -1207,6 +1207,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AddHealing: 0
   actionChoose: 1
+  isInTrigger: 0
+  armuerieState: 1
+  delayToActiveState: 0
 --- !u!1 &931093361
 GameObject:
   m_ObjectHideFlags: 0
@@ -2403,6 +2406,7 @@ GameObject:
   - component: {fileID: 1513263516}
   - component: {fileID: 1513263515}
   - component: {fileID: 1513263514}
+  - component: {fileID: 1513263517}
   m_Layer: 0
   m_Name: MusicTrigger
   m_TagString: Untagged
@@ -2457,6 +2461,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1513263517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513263513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Tir
+  TriggerEvent: 11
+  Value: 0
 --- !u!1 &1578526333
 GameObject:
   m_ObjectHideFlags: 0
@@ -3144,6 +3164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad794ffcf5f82a74d93570da1b56bab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!1 &2056561888
 GameObject:
   m_ObjectHideFlags: 0

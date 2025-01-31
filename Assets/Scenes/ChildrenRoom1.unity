@@ -395,6 +395,7 @@ GameObject:
   - component: {fileID: 985538243}
   - component: {fileID: 985538242}
   - component: {fileID: 985538241}
+  - component: {fileID: 985538244}
   m_Layer: 0
   m_Name: MusicTrigger
   m_TagString: Untagged
@@ -449,6 +450,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &985538244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985538240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Tir
+  TriggerEvent: 11
+  Value: 0
 --- !u!1 &1040531015
 GameObject:
   m_ObjectHideFlags: 0
@@ -906,13 +923,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bubbleBullet: {fileID: 2292865514709121570, guid: cbe4c64f62cc3c24fb3b31a156116a8b, type: 3}
-  cooldownToShot: 0.2
   forceToBubble: 150
   colliderSafeArea: {fileID: 2057324535}
   rightForwardWeapon: {fileID: 1452004047}
   leftForwardWeapon: {fileID: 1503209028}
+  cooldownSliderObject: {fileID: 0}
+  cooldownToShot: 0.2
   soapGaugeManager: {fileID: 0}
   decrementGauchePerShot: 0.1
+  initialDecrementGauchePerShot: 0.05
 --- !u!1 &1549257325
 GameObject:
   m_ObjectHideFlags: 0
@@ -1229,6 +1248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be0713ee98fa975428261cab151d7e8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialMoveSpeed: 0
   moveSpeed: 5
   smoothFactor: 0.1
   playerSprite:
@@ -1398,6 +1418,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adf4d42f8bb0d2b429db1f8f5693e32e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hearthGO: {fileID: 0}
+  parentHearth: {fileID: 0}
+  initialHealth: 3
   health: 3
   maxHealth: 3
   invincibilityFlashDelay: 0.2

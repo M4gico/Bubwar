@@ -1066,6 +1066,7 @@ GameObject:
   - component: {fileID: 1594345810}
   - component: {fileID: 1594345812}
   - component: {fileID: 1594345813}
+  - component: {fileID: 1594345814}
   m_Layer: 0
   m_Name: Music
   m_TagString: Untagged
@@ -1103,7 +1104,7 @@ MonoBehaviour:
   Params: []
   OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideMaxDistance: 8.722222
 --- !u!4 &1594345811
 Transform:
   m_ObjectHideFlags: 0
@@ -1151,6 +1152,22 @@ MonoBehaviour:
   Parameter: Alarm
   TriggerEvent: 11
   Value: 0
+--- !u!114 &1594345814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594345809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Tir
+  TriggerEvent: 11
+  Value: 1
 --- !u!114 &1826596655 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5052510411025399200, guid: 69048effe70dd9446850e238943ac5ce, type: 3}
@@ -1482,6 +1499,8 @@ GameObject:
   - component: {fileID: 2052851170}
   - component: {fileID: 2052851169}
   - component: {fileID: 2052851168}
+  - component: {fileID: 2052851172}
+  - component: {fileID: 2052851171}
   m_Layer: 5
   m_Name: Intro
   m_TagString: Untagged
@@ -1566,6 +1585,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2052851172}
+        m_TargetAssemblyTypeName: FMODUnity.StudioGlobalParameterTrigger, FMODUnity
+        m_MethodName: TriggerParameters
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2052851171}
+        m_TargetAssemblyTypeName: FMODUnity.StudioGlobalParameterTrigger, FMODUnity
+        m_MethodName: TriggerParameters
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2052851169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1604,6 +1647,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2052851166}
   m_CullTransparentMesh: 1
+--- !u!114 &2052851171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052851166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Alarm
+  TriggerEvent: 0
+  Value: 0
+--- !u!114 &2052851172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052851166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Phase
+  TriggerEvent: 0
+  Value: 1
 --- !u!114 &2092817585 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5692316602457724335, guid: 69048effe70dd9446850e238943ac5ce, type: 3}
@@ -1950,6 +2025,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1997893478987063594, guid: 69048effe70dd9446850e238943ac5ce, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1997893478987063594, guid: 69048effe70dd9446850e238943ac5ce, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1492725188}
+    - target: {fileID: 1997893478987063594, guid: 69048effe70dd9446850e238943ac5ce, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateEffectVolume
+      objectReference: {fileID: 0}
     - target: {fileID: 2035952111090550230, guid: 69048effe70dd9446850e238943ac5ce, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2202,6 +2289,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button
       objectReference: {fileID: 0}
+    - target: {fileID: 5692316602457724335, guid: 69048effe70dd9446850e238943ac5ce, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5692316602457724335, guid: 69048effe70dd9446850e238943ac5ce, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5692316602457724335, guid: 69048effe70dd9446850e238943ac5ce, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1492725188}
+    - target: {fileID: 5692316602457724335, guid: 69048effe70dd9446850e238943ac5ce, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5692316602457724335, guid: 69048effe70dd9446850e238943ac5ce, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateMusicVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 5692316602457724335, guid: 69048effe70dd9446850e238943ac5ce, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: OptionManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 6006380027334148954, guid: 69048effe70dd9446850e238943ac5ce, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2366,7 +2477,8 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7994509345520946845, guid: 69048effe70dd9446850e238943ac5ce, type: 3}
     m_RemovedGameObjects:
     - {fileID: 7982483118032637871, guid: 69048effe70dd9446850e238943ac5ce, type: 3}
     - {fileID: 7673603682517260715, guid: 69048effe70dd9446850e238943ac5ce, type: 3}

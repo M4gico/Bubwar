@@ -34,8 +34,8 @@ public class OptionManager : MonoBehaviour
         effectVolumeSlider.minValue = 0;
         musicVolumeSlider.value = PlayerPrefs.GetFloat("MusicVolume", 0.5f);
         effectVolumeSlider.value = PlayerPrefs.GetFloat("EffectVolume", 0.5f);
-        SetMusicVolume(musicVolumeSlider.value);
-        SetEffectVolume(effectVolumeSlider.value);
+        UpdateMusicVolume();
+        UpdateEffectVolume();
 
         // Resolution settings 
         resolutions = Screen.resolutions;
@@ -91,14 +91,16 @@ public class OptionManager : MonoBehaviour
     }
 
     // Volume settings
-    public void SetMusicVolume(float volume)
+    public void UpdateMusicVolume()
     {
+        float volume = musicVolumeSlider.value;
         PlayerPrefs.SetFloat("MusicVolume", volume);
         FMODUnity.RuntimeManager.GetVCA("vca:/MusicVCA").setVolume(volume);
     }
 
-    public void SetEffectVolume(float volume)
+    public void UpdateEffectVolume()
     {
+        float volume = effectVolumeSlider.value;
         PlayerPrefs.SetFloat("EffectVolume", volume);
         FMODUnity.RuntimeManager.GetVCA("vca:/EffectVCA").setVolume(volume);
 
