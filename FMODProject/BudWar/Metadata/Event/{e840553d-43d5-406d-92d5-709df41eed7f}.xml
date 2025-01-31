@@ -103,7 +103,7 @@
 			<value>0.140625</value>
 		</property>
 		<property name="volume">
-			<value>-7.5</value>
+			<value>-0.5</value>
 		</property>
 		<property name="pitch">
 			<value>-11.5</value>
@@ -157,7 +157,7 @@
 			<value>volume</value>
 		</property>
 		<property name="amount">
-			<value>3</value>
+			<value>2.9000001</value>
 		</property>
 	</object>
 	<object class="SingleSound" id="{1f425a38-2bb3-475b-8d4c-b15cd6960112}">
