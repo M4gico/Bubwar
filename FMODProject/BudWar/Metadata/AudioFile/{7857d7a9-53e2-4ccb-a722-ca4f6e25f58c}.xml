@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{7857d7a9-53e2-4ccb-a722-ca4f6e25f58c}">
+		<property name="assetPath">
+			<value>GGJ25_Ouchh_.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>2.4533541666666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{80da7b72-2ecd-49f4-9bbe-7162b66b9951}</destination>
+		</relationship>
+	</object>
+</objects>
