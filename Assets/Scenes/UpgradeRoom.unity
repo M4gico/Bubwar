@@ -1325,6 +1325,7 @@ MonoBehaviour:
   isInTrigger: 0
   armuerieState: 1
   delayToActiveState: 0
+  armorySound: {fileID: 169100878}
 --- !u!114 &551111777
 MonoBehaviour:
   m_ObjectHideFlags: 0

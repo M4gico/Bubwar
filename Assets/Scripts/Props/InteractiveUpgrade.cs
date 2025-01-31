@@ -24,6 +24,7 @@ public class InteractiveUpgrade : MonoBehaviour
 
     private Animator endAnimator;
 
+    public ArmorySound armorySound;
 
     private void Awake()
     {
@@ -62,6 +63,7 @@ public class InteractiveUpgrade : MonoBehaviour
             {
                 if (actionChoose == ActionToPlay.Armurerie)
                 {
+                    PlayArmoryOpenClosedSound();
                     Debug.Log("[InteractiveUpgrade] Armurerie");
                     StartCoroutine(ChangeStateArmuerie());
                 }
@@ -82,14 +84,7 @@ public class InteractiveUpgrade : MonoBehaviour
 
     private IEnumerator ChangeStateArmuerie()
     {
-        if (armuerieState)
-        {
-            FMODUnity.RuntimeManager.PlayOneShot("event:/Armory/OpenArmory");
-        }
-        else
-        {
-            FMODUnity.RuntimeManager.PlayOneShot("event:/Armory/CloseArmory");
-        }
+
         delayToActiveState = true;
         armuerieCanva.enabled = armuerieState;
         GameObject.FindGameObjectWithTag("Weapon").GetComponent<PlayerShot>().SetCanShot(!armuerieState);
@@ -113,13 +108,26 @@ public class InteractiveUpgrade : MonoBehaviour
         {
             bubbleInteractive.enabled = false;
             isInTrigger = false;
-            if (actionChoose == ActionToPlay.Armurerie)
+            if (actionChoose == ActionToPlay.Armurerie && armuerieCanva.enabled)
             {
                 armuerieCanva.enabled = false;
                 armuerieState = true;
                 GameObject.FindGameObjectWithTag("Weapon").GetComponent<PlayerShot>().SetCanShot(true);
+                armorySound.PlayOpenArmory();
             }
 
+        }
+    }
+
+    private void PlayArmoryOpenClosedSound()
+    {
+        if (armuerieCanva.enabled)
+        {
+            armorySound.PlayOpenArmory();
+        }
+        else
+        {
+            armorySound.PlayCloseArmory();
         }
     }
 }

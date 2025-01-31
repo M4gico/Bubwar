@@ -5,7 +5,7 @@
 			<value>OpenArmory</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{18e37f14-4614-4ce8-a2b1-04698126c378}</destination>
@@ -208,7 +208,6 @@
 	<object class="MixerBusEffectChain" id="{8b4500c3-9457-46d7-aa7c-38ba3f968171}">
 		<relationship name="effects">
 			<destination>{e1d396c2-d014-448b-8f0f-cdec9f391a6c}</destination>
-			<destination>{0d2139a0-8872-47f6-ab74-98ca68014b2a}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{9592068c-de11-433d-8eac-7ac1113c1a3d}" />
@@ -243,7 +242,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{fe6b81f9-6435-4124-9a71-94772bd0049a}" />
 	<object class="MixerBusFader" id="{e1d396c2-d014-448b-8f0f-cdec9f391a6c}" />
-	<object class="SpatialiserEffect" id="{0d2139a0-8872-47f6-ab74-98ca68014b2a}" />
 	<object class="PitchShifterEffect" id="{47b9d9ce-3111-479e-b2f5-5cad2748dd2f}">
 		<property name="pitch">
 			<value>0.998000026</value>
