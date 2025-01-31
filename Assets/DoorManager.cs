@@ -12,6 +12,7 @@ public class DoorManager : MonoBehaviour
 
     public FMODUnity.EventReference doorSound;
     public FMODUnity.EventReference victory;
+    public bool playVictorySound = true;
 
     private void Start()
     {
@@ -34,7 +35,10 @@ public class DoorManager : MonoBehaviour
         isDoorOpen = true;
 
         FMODUnity.RuntimeManager.PlayOneShotAttached(doorSound, gameObject);
-        FMODUnity.RuntimeManager.PlayOneShotAttached(victory, gameObject);
+        if (playVictorySound)
+        {
+            FMODUnity.RuntimeManager.PlayOneShotAttached(victory, gameObject);
+        }
     }
 
     public void OnTriggerEnter2D(Collider2D other)

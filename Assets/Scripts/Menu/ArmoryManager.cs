@@ -86,6 +86,7 @@ public class ArmoryManager : MonoBehaviour
     upgradesLevel[1]++;
     if (upgradesLevel[1] <= upgradesMaxLevel[1])
     {
+      GetComponent<ArmorySound>().PlaySpeedUp(upgradesLevel[1]);
       player.GetComponent<PlayerMovement>().moveSpeed += speedPowerUp;
       Debug.Log("upgrade level : " + (upgradesLevel[1] - 1));
       levelIcons[1][upgradesLevel[1] - 1].sprite = fullSprite;
@@ -99,6 +100,7 @@ public class ArmoryManager : MonoBehaviour
     upgradesLevel[2]++;
     if (upgradesLevel[2] <= upgradesMaxLevel[2])
     {
+      GetComponent<ArmorySound>().PlayGunUp(upgradesLevel[2]);
       player.GetComponentInChildren<PlayerShot>().decrementGauchePerShot /= weaponPowerUp;
       Debug.Log("upgrade level : " + (upgradesLevel[2] - 1));
       levelIcons[2][upgradesLevel[2] - 1].sprite = fullSprite;
@@ -113,6 +115,7 @@ public class ArmoryManager : MonoBehaviour
     upgradesLevel[3]++;
     if (upgradesLevel[3] <= upgradesMaxLevel[3])
     {
+      GetComponent<ArmorySound>().PlayHealthUp(upgradesLevel[3]);
       player.GetComponent<PlayerHealth>().GiveHP();
       Debug.Log("upgrade level : " + (upgradesLevel[3] - 1));
       levelIcons[3][upgradesLevel[3] - 1].sprite = fullSprite;

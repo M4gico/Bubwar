@@ -832,6 +832,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fad0ffef6209a664689b01e0f5f492d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tirTriggerON: {fileID: 169100880}
+  tirTriggerOFF: {fileID: 169100879}
+  open:
+    Guid:
+      Data1: -1489504049
+      Data2: 1249555153
+      Data3: -555979882
+      Data4: 1004298478
+    Path: event:/Armory/OpenArmory
+  close:
+    Guid:
+      Data1: -1472350233
+      Data2: 1177480257
+      Data3: 1154972081
+      Data4: -1659440590
+    Path: event:/Armory/CloseArmory
   v1:
     Guid:
       Data1: 987658298
@@ -981,28 +997,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 169100872}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -1472350233
-      Data2: 1177480257
-      Data3: 1154972081
-      Data4: -1659440590
-    Path: event:/Armory/CloseArmory
-  Event: 
-  EventPlayTrigger: 12
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 2
-  OverrideMaxDistance: 9
+  Parameter: Tir
+  TriggerEvent: 0
+  Value: 1
 --- !u!114 &169100880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1012,28 +1013,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 169100872}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -1489504049
-      Data2: 1249555153
-      Data3: -555979882
-      Data4: 1004298478
-    Path: event:/Armory/OpenArmory
-  Event: 
-  EventPlayTrigger: 11
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 2
-  OverrideMaxDistance: 9
+  Parameter: Tir
+  TriggerEvent: 0
+  Value: 0
 --- !u!1 &191964147 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3565125898816529553, guid: cb0188f6903ea294681083cba42a3882, type: 3}
@@ -2759,6 +2745,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1360293272793052613, guid: c020a1f4322df1f4c83a382331eecc8c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644509524654428873, guid: c020a1f4322df1f4c83a382331eecc8c, type: 3}
+      propertyPath: playVictorySound
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

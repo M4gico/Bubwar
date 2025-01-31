@@ -82,6 +82,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{991f061b-cb19-4727-9bb4-dde2f6e186e6}">
+		<property name="volume">
+			<value>7</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{fdf7198a-946e-451f-9fe4-a85158851a68}</destination>
 		</relationship>
@@ -133,7 +136,6 @@
 		<property name="timelockedOffset">
 			<value>0.15625</value>
 		</property>
-		<property name="name" />
 		<property name="volume">
 			<value>-9.5</value>
 		</property>
