@@ -7,7 +7,7 @@ public class PlayerSound : MonoBehaviour
     public FMODUnity.EventReference takeDamage; 
     public FMODUnity.EventReference die;
     public FMODUnity.EventReference noAmmo;
-
+    public FMODUnity.StudioGlobalParameterTrigger gameOverTrigger;
 
     public void PlayRegenLifeSound()
     {
@@ -27,6 +27,7 @@ public class PlayerSound : MonoBehaviour
     public void PlayDieSound()
     {
         PlayReference(die);
+        gameOverTrigger.TriggerParameters();
     }
 
     public void PlayNoAmmoSound()

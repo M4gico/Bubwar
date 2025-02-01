@@ -47,13 +47,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bubbleBullet: {fileID: 2292865514709121570, guid: cbe4c64f62cc3c24fb3b31a156116a8b, type: 3}
-  cooldownToShot: 0.2
   forceToBubble: 150
   colliderSafeArea: {fileID: 4992780727083852142}
   rightForwardWeapon: {fileID: 3617637325196524124}
   leftForwardWeapon: {fileID: 962145831030221796}
+  cooldownSliderObject: {fileID: 0}
+  cooldownToShot: 0.2
   soapGaugeManager: {fileID: 0}
   decrementGauchePerShot: 0.05
+  initialDecrementGauchePerShot: 0.05
 --- !u!1 &4463402182354197220
 GameObject:
   m_ObjectHideFlags: 0
@@ -72,6 +74,7 @@ GameObject:
   - component: {fileID: 6840775677444736123}
   - component: {fileID: 7382771555866619561}
   - component: {fileID: 4324591761942223064}
+  - component: {fileID: 7826799452792074627}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -284,6 +287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be0713ee98fa975428261cab151d7e8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialMoveSpeed: 0
   moveSpeed: 5
   smoothFactor: 0.1
   playerSprite:
@@ -307,6 +311,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adf4d42f8bb0d2b429db1f8f5693e32e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hearthGO: {fileID: 0}
+  parentHearth: {fileID: 0}
   initialHealth: 3
   health: 3
   maxHealth: 3
@@ -329,6 +335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visionMaterial: {fileID: 2100000, guid: eb1ab533c45141c49aebe7a37c43c8a9, type: 2}
+  initialFovAngle: 33.3
   fovAngle: 33.3
   viewDistance: 0.52
   circleRadius: 0.16
@@ -380,6 +387,7 @@ MonoBehaviour:
       Data3: 700457389
       Data4: -1240651930
     Path: event:/Adulte/NoAmmo
+  gameOverTrigger: {fileID: 7826799452792074627}
 --- !u!114 &4324591761942223064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -394,6 +402,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nonRigidbodyVelocity: 0
   attenuationObject: {fileID: 0}
+--- !u!114 &7826799452792074627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4463402182354197220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Phase
+  TriggerEvent: 0
+  Value: 0
 --- !u!1 &4990222761023347060
 GameObject:
   m_ObjectHideFlags: 0
