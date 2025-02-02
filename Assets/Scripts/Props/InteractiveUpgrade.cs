@@ -119,7 +119,7 @@ public class InteractiveUpgrade : MonoBehaviour
         }
     }
 
-    private void PlayArmoryOpenClosedSound()
+    public void PlayArmoryOpenClosedSound()
     {
         if (armuerieCanva.enabled)
         {
@@ -129,5 +129,10 @@ public class InteractiveUpgrade : MonoBehaviour
         {
             armorySound.PlayCloseArmory();
         }
+    }
+
+    public void SetArmoryState(bool state)
+    {
+        armuerieState = state;
     }
 }

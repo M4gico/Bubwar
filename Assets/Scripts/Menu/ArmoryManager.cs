@@ -151,5 +151,9 @@ public class ArmoryManager : MonoBehaviour
   public void CloseArmory()
   {
     gameObject.GetComponent<Canvas>().enabled = false;
+    InteractiveUpgrade interactiveUpgrade = GameObject.Find("tableauUpgrade").GetComponent<InteractiveUpgrade>();
+
+    interactiveUpgrade.PlayArmoryOpenClosedSound();
+    interactiveUpgrade.SetArmoryState(true);
   }
 }
