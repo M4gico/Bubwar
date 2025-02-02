@@ -67,6 +67,8 @@ public class PlayerHealth : MonoBehaviour
                 StartCoroutine(InvincibilityFlash());
                 StartCoroutine(HandleInvincibilityDelay());
             }
+            else
+                isInvincible = false;
         }
     }
 
