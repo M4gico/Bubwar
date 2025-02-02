@@ -152,6 +152,7 @@ public class ArmoryManager : MonoBehaviour
   {
     gameObject.GetComponent<Canvas>().enabled = false;
     InteractiveUpgrade interactiveUpgrade = GameObject.Find("tableauUpgrade").GetComponent<InteractiveUpgrade>();
+    GameObject.FindGameObjectWithTag("Weapon").GetComponent<PlayerShot>().SetCanShot(true);
 
     interactiveUpgrade.PlayArmoryOpenClosedSound();
     interactiveUpgrade.SetArmoryState(true);
