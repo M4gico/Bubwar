@@ -22,11 +22,7 @@ public class PlayerVisionController : MonoBehaviour
         if (instance == null)
             instance = this;
         else
-        {
-            Debug.LogWarning("There is more than one instance of PlayerVisionController");
             Destroy(gameObject);
-        }
-
     }
 
 

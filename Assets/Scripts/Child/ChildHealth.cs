@@ -25,7 +25,6 @@ public class ChildHealth : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        Debug.Log(health);
         health -= damage;
         if (health <= 0)
         {

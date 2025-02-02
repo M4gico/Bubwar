@@ -74,7 +74,6 @@ public class ArmoryManager : MonoBehaviour
     {
       GetComponent<ArmorySound>().PlayVisionUp(upgradesLevel[0]);
       player.GetComponent<PlayerVisionController>().fovAngle += fovPowerUp;
-      Debug.Log("upgrade level : " + (upgradesLevel[0] - 1));
       levelIcons[0][upgradesLevel[0] - 1].sprite = fullSprite;
       PowerUpManager.instance.SetPowerUp(0, upgradesLevel[0]);
     }
@@ -88,7 +87,6 @@ public class ArmoryManager : MonoBehaviour
     {
       GetComponent<ArmorySound>().PlaySpeedUp(upgradesLevel[1]);
       player.GetComponent<PlayerMovement>().moveSpeed += speedPowerUp;
-      Debug.Log("upgrade level : " + (upgradesLevel[1] - 1));
       levelIcons[1][upgradesLevel[1] - 1].sprite = fullSprite;
       PowerUpManager.instance.SetPowerUp(1, upgradesLevel[1]);
     }
@@ -102,7 +100,6 @@ public class ArmoryManager : MonoBehaviour
     {
       GetComponent<ArmorySound>().PlayGunUp(upgradesLevel[2]);
       player.GetComponentInChildren<PlayerShot>().decrementGauchePerShot /= weaponPowerUp;
-      Debug.Log("upgrade level : " + (upgradesLevel[2] - 1));
       levelIcons[2][upgradesLevel[2] - 1].sprite = fullSprite;
       PowerUpManager.instance.SetPowerUp(2, upgradesLevel[2]);
     }
@@ -117,7 +114,6 @@ public class ArmoryManager : MonoBehaviour
     {
       GetComponent<ArmorySound>().PlayHealthUp(upgradesLevel[3]);
       player.GetComponent<PlayerHealth>().GiveHP();
-      Debug.Log("upgrade level : " + (upgradesLevel[3] - 1));
       levelIcons[3][upgradesLevel[3] - 1].sprite = fullSprite;
       PowerUpManager.instance.SetPowerUp(3, upgradesLevel[3]);
     }
