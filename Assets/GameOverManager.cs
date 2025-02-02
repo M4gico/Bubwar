@@ -60,7 +60,7 @@ public class GameOverManager : MonoBehaviour
         restartButton.interactable = false;
         mainMenuButton.interactable = false;
         yield return StartCoroutine(FadeImage(true));
-        yield return StartCoroutine(Wait(0.9f));
+        yield return new WaitForSeconds(0.9f);
         GameManager.instance.UnSetupPlayer();
 
         RoomManager.instance.ResetRoomManager();
@@ -76,19 +76,13 @@ public class GameOverManager : MonoBehaviour
         restartButton.interactable = false;
         mainMenuButton.interactable = false;
         yield return StartCoroutine(FadeImage(true));
-        yield return StartCoroutine(Wait(0.9f));
+        yield return new WaitForSeconds(0.9f);
         GameManager.instance.UnSetupPlayer();
 
         SceneManager.LoadScene("MainMenuScene");
         restartButton.interactable = true;
         mainMenuButton.interactable = true;
         gameOverUI.SetActive(false);
-    }
-
-    private IEnumerator Wait(float seconds)
-    {
-        yield return new WaitForSeconds(seconds);
-        GameManager.instance.UnSetupPlayer();
     }
 
     private IEnumerator FadeImage(bool fadeAway)
