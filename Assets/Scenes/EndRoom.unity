@@ -1210,6 +1210,7 @@ MonoBehaviour:
   isInTrigger: 0
   armuerieState: 1
   delayToActiveState: 0
+  armorySound: {fileID: 0}
 --- !u!1 &931093361
 GameObject:
   m_ObjectHideFlags: 0
@@ -3450,12 +3451,48 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5099912505844249657, guid: b3b0d34b01f37aa409a4e9f97e85d311, type: 3}
+      propertyPath: m_fontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5099912505844249657, guid: b3b0d34b01f37aa409a4e9f97e85d311, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5099912505844249657, guid: b3b0d34b01f37aa409a4e9f97e85d311, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 16777215
       objectReference: {fileID: 0}
     - target: {fileID: 5785524504374921523, guid: b3b0d34b01f37aa409a4e9f97e85d311, type: 3}
+      propertyPath: m_fontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785524504374921523, guid: b3b0d34b01f37aa409a4e9f97e85d311, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785524504374921523, guid: b3b0d34b01f37aa409a4e9f97e85d311, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 16777215
+      objectReference: {fileID: 0}
+    - target: {fileID: 5869723432119039248, guid: b3b0d34b01f37aa409a4e9f97e85d311, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 428.6702
+      objectReference: {fileID: 0}
+    - target: {fileID: 5869723432119039248, guid: b3b0d34b01f37aa409a4e9f97e85d311, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 116.6765
+      objectReference: {fileID: 0}
+    - target: {fileID: 5869723432119039248, guid: b3b0d34b01f37aa409a4e9f97e85d311, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 142
+      objectReference: {fileID: 0}
+    - target: {fileID: 6056991354336776063, guid: b3b0d34b01f37aa409a4e9f97e85d311, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 428.6702
+      objectReference: {fileID: 0}
+    - target: {fileID: 6056991354336776063, guid: b3b0d34b01f37aa409a4e9f97e85d311, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -288.20282
       objectReference: {fileID: 0}
     - target: {fileID: 6439660044998352163, guid: b3b0d34b01f37aa409a4e9f97e85d311, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size

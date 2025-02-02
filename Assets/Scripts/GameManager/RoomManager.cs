@@ -71,9 +71,9 @@ public class RoomManager : MonoBehaviour
 
     public void LoadNextRoom()
     {
-        currentRoomIndex++;
-        if (currentRoomIndex >= nbRooms)
+        if (currentRoomIndex + 1 >= nbRooms)
         {
+            playerTransform.position = new Vector3(0, -4, 0);
             SceneManager.LoadScene(finalRoomName);
             return;
         }

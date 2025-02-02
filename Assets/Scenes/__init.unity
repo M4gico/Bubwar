@@ -291,13 +291,13 @@ MonoBehaviour:
   currentRoomIndex: 0
   playerTransform: {fileID: 1900276730}
   finalRoomName: EndRoom
-  nbRooms: 30
+  nbRooms: 15
   nbChildrenRooms: 3
   rooms:
   - ChildrenRoom
   - UpgradeRoom
   - HealthRoom
-  roomsProbabilities: 1e0000004600000000000000
+  roomsProbabilities: 3c0000001400000014000000
   nbChildren: 1
   spawnTimeChildren: 2
   spawnNbChildren: 1
@@ -2309,6 +2309,14 @@ PrefabInstance:
     - target: {fileID: 4463402182354197220, guid: 872cbc796dadc484f921f3e61776ff8a, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5070062521787934563, guid: 872cbc796dadc484f921f3e61776ff8a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428977288821312660, guid: 872cbc796dadc484f921f3e61776ff8a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9168502840652395678, guid: 872cbc796dadc484f921f3e61776ff8a, type: 3}
       propertyPath: initialMoveSpeed
