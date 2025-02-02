@@ -24,19 +24,21 @@ public class ChildFollow : MonoBehaviour
 
     private void Update()
     {
-        
+
         //Rotate the object to the player transform (target)
         angleGOtoTarget = Mathf.Atan2(playerTransform.position.y - transform.position.y, playerTransform.position.x - transform.position.x);
-        
-        if(angleGOtoTarget > -Mathf.PI/4 && angleGOtoTarget < Mathf.PI / 4)
+
+        if (angleGOtoTarget > -Mathf.PI / 4 && angleGOtoTarget < Mathf.PI / 4)
         {
             //Right
             animator.SetInteger("IdleSide", 0);
-        }else if(angleGOtoTarget > Mathf.PI / 4 && angleGOtoTarget < 3*Mathf.PI / 4)
+        }
+        else if (angleGOtoTarget > Mathf.PI / 4 && angleGOtoTarget < 3 * Mathf.PI / 4)
         {
             //Front
             animator.SetInteger("IdleSide", 3);
-        }else if((angleGOtoTarget > 3*Mathf.PI / 4 && angleGOtoTarget < Mathf.PI) || (angleGOtoTarget < -3 * Mathf.PI / 4 && angleGOtoTarget > -Mathf.PI))
+        }
+        else if ((angleGOtoTarget > 3 * Mathf.PI / 4 && angleGOtoTarget < Mathf.PI) || (angleGOtoTarget < -3 * Mathf.PI / 4 && angleGOtoTarget > -Mathf.PI))
         {
             //Left
             animator.SetInteger("IdleSide", 1);
@@ -46,7 +48,7 @@ public class ChildFollow : MonoBehaviour
             //Back
             animator.SetInteger("IdleSide", 2);
         }
-        
+
         /*
         angleGOtoTarget = (180 / Mathf.PI) * angleGOtoTarget - 90;
 
