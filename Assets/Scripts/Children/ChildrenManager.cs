@@ -131,8 +131,6 @@ public class ChildrenManager : MonoBehaviour
 		nbChildren--;
 		Vector2 spawnPos = UnityEngine.Random.insideUnitCircle * spawnRadius;
 		int randomIndex = UnityEngine.Random.Range(1, enabledChildrenSpawns.Count - 1);
-		Debug.Log("randomIndex: " + randomIndex);
-		Debug.Log("enabledChildrenSpawns.Count: " + enabledChildrenSpawns.Count);
 
 		Transform spawnPoint = enabledChildrenSpawns[randomIndex];
 		Instantiate(childPrefab, spawnPoint.position, Quaternion.identity);

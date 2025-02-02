@@ -57,6 +57,7 @@ public class GameManager : MonoBehaviour
     public void SetupPlayer()
     {
         player.SetActive(true);
+        GameObject.Find("Player").GetComponent<PlayerHealth>().ResetPlayerHealth();
         foreach (GameObject pUI in playerUI)
         {
             pUI.SetActive(true);
