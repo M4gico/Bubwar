@@ -35,13 +35,13 @@ public class ArmorySound : MonoBehaviour
     public void PlayOpenArmory()
     {
         PlayR(open);
-        tirTriggerON.TriggerParameters();
+        tirTriggerOFF.TriggerParameters();
     }
 
     public void PlayCloseArmory()
     {
         PlayR(close);
-        tirTriggerOFF.TriggerParameters();
+        tirTriggerON.TriggerParameters();
     }
 
     public void PlayVisionUp(int level = 0)

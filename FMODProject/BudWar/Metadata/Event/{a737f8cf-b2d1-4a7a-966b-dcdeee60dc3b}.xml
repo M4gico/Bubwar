@@ -59,6 +59,12 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{6bf2c376-7c46-4cef-a18b-b05ca7350ea1}">
+		<property name="maxVoices">
+			<value>1</value>
+		</property>
+		<property name="voiceStealing">
+			<value>1</value>
+		</property>
 		<property name="minimumDistance">
 			<value>2</value>
 		</property>
@@ -148,11 +154,14 @@
 			<value>0.12946159638554217</value>
 		</property>
 		<property name="length">
-			<value>0.27678840361445783</value>
+			<value>0.15178840361445783</value>
 		</property>
 		<property name="timelockedOffset">
 			<value>1.890323795180723</value>
 		</property>
+		<relationship name="fadeOutCurve">
+			<destination>{e719f733-fece-4dcf-b5d2-61346f215f06}</destination>
+		</relationship>
 		<relationship name="audioFile">
 			<destination>{6771143d-8be9-48db-93cd-70480b92402a}</destination>
 		</relationship>
@@ -219,6 +228,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{b492a380-d27b-4620-b857-39bb7075c2d0}" />
+	<object class="FadeCurve" id="{e719f733-fece-4dcf-b5d2-61346f215f06}">
+		<relationship name="startPoint">
+			<destination>{46e935dc-16eb-4adf-b878-73f0e4ae7025}</destination>
+		</relationship>
+		<relationship name="endPoint">
+			<destination>{49fafdb9-4715-46b4-b482-59434f1f0383}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{98a65b42-0549-4262-bbe5-5e6f0ca9d6db}">
 		<relationship name="effects">
 			<destination>{4008d5f5-c56e-4630-aac5-a08ba35d720b}</destination>
@@ -251,9 +268,28 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{fd28bd36-06bc-425b-a0fb-28a7dd9975bd}" />
+	<object class="AutomationPoint" id="{46e935dc-16eb-4adf-b878-73f0e4ae7025}">
+		<property name="position">
+			<value>0.25</value>
+		</property>
+		<property name="value">
+			<value>1</value>
+		</property>
+		<property name="curveShape">
+			<value>0.25471893</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{49fafdb9-4715-46b4-b482-59434f1f0383}">
+		<property name="position">
+			<value>0.28125</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="PitchShifterEffect" id="{4008d5f5-c56e-4630-aac5-a08ba35d720b}">
 		<property name="pitch">
-			<value>1.53999996</value>
+			<value>1.54600012</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{c198cccd-97c3-43fe-ac69-fb7e0f6471e8}</destination>

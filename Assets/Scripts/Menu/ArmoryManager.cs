@@ -154,7 +154,7 @@ public class ArmoryManager : MonoBehaviour
     InteractiveUpgrade interactiveUpgrade = GameObject.Find("tableauUpgrade").GetComponent<InteractiveUpgrade>();
     GameObject.FindGameObjectWithTag("Weapon").GetComponent<PlayerShot>().SetCanShot(true);
 
-    interactiveUpgrade.PlayArmoryOpenClosedSound();
+    GetComponent<ArmorySound>().PlayCloseArmory();
     interactiveUpgrade.SetArmoryState(true);
   }
 }
