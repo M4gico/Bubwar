@@ -1,6 +1,4 @@
-using UnityEngine.SceneManagement;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,7 +7,10 @@ public class GameManager : MonoBehaviour
     private bool isGameOver;
 
     [SerializeField]
-    private GameObject playerUI;
+    private GameOverManager gameOverManager;
+
+    [SerializeField]
+    private GameObject[] playerUI;
     [SerializeField]
     private GameObject player;
     [SerializeField]
@@ -33,23 +34,19 @@ public class GameManager : MonoBehaviour
         isGameOver = false;
     }
 
-    void Update()
-    {
-        if (isGameOver)
-        {
-            // Handle game over state
-        }
-    }
 
     public void StartGame()
     {
         isGameOver = false;
         RoomManager.instance.StartGame();
+        SetupPlayer();
     }
 
     public void EndGame()
     {
         isGameOver = true;
+        gameOverManager.GameOver();
+
     }
 
     public bool IsGameOver()
@@ -60,8 +57,12 @@ public class GameManager : MonoBehaviour
     public void SetupPlayer()
     {
         player.SetActive(true);
-        playerUI.SetActive(true);
+        foreach (GameObject pUI in playerUI)
+        {
+            pUI.SetActive(true);
+        }
     }
+
     public void UnSetupPlayer()
     {
         playerShot.resetPlayerShot(); // Reset player shot bubules price
@@ -69,9 +70,13 @@ public class GameManager : MonoBehaviour
         PlayerVisionController.instance.ResetVision(); // Reset player vision
 
         player.SetActive(false);
-        playerUI.SetActive(false);
+        foreach (GameObject pUI in playerUI)
+        {
+            pUI.SetActive(false);
+        }
 
         PowerUpManager.instance.ResetPowerUp(); // Reset power up levels
         RoomManager.instance.ResetRoomManager(); // Reset room manager stats
+
     }
 }

@@ -137,4 +137,9 @@ public class ChildrenManager : MonoBehaviour
 		Transform spawnPoint = enabledChildrenSpawns[randomIndex];
 		Instantiate(childPrefab, spawnPoint.position, Quaternion.identity);
 	}
+
+	public void StopSpawnChild()
+	{
+		CancelInvoke("SpawnChild");
+	}
 }

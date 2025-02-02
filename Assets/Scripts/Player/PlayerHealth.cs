@@ -22,6 +22,7 @@ public class PlayerHealth : MonoBehaviour
     private Rigidbody2D rb;
     private SpriteRenderer graphics;
 
+    [SerializeField]
     private bool isInvincible;
 
     public static PlayerHealth instance;
@@ -49,8 +50,9 @@ public class PlayerHealth : MonoBehaviour
             health -= damage;
             if (health <= 0)
             {
-                StartCoroutine(PlayerDead());
+                PlayerDead();
                 GetComponent<PlayerSound>().PlayDieSound();
+                return;
             }
             else
             {
@@ -60,21 +62,24 @@ public class PlayerHealth : MonoBehaviour
             Debug.Log("Player health " + health);
             ActualiseHearth();
 
-            StartCoroutine(InvincibilityFlash());
-            StartCoroutine(HandleInvincibilityDelay());
+            if (gameObject.activeSelf)
+            {
+                StartCoroutine(InvincibilityFlash());
+                StartCoroutine(HandleInvincibilityDelay());
+            }
         }
     }
 
-    private IEnumerator PlayerDead()
+    public void PlayerDead()
     {
         // rb.bodyType = RigidbodyType2D.Kinematic;
         // rb.linearVelocity = Vector3.zero;
-        yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene("MainMenuScene");
+        // yield return new WaitForSeconds(1f);
+        // SceneManager.LoadScene("MainMenuScene");
 
         ResetPlayerHealth();
-        ActualiseHearth();
-        GameManager.instance.UnSetupPlayer();
+        // ActualiseHearth();
+        GameManager.instance.EndGame();
     }
 
     public void GiveHP()
@@ -138,7 +143,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void ResetPlayerHealth()
     {
-        StartCoroutine(PlayerDead());
+        // PlayerDead();
 
         foreach (GameObject h in GameObject.FindGameObjectsWithTag("HeartUI"))
         {

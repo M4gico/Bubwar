@@ -5,8 +5,8 @@ public class ChildWeapon : MonoBehaviour
     [SerializeField] private GameObject bubbleBullet;
     [SerializeField] private Transform forwardWeapon;
     [SerializeField] private float forceOfTheShot;
-    [SerializeField] [Range(0.5f, 2f)] private float maxCooldownShoot;
-    [SerializeField] [Range(0.2f, 1f)] private float minCooldownShoot;
+    [SerializeField][Range(0.5f, 2f)] private float maxCooldownShoot;
+    [SerializeField][Range(0.2f, 1f)] private float minCooldownShoot;
 
 
     private float gunHeat;
