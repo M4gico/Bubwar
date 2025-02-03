@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8721495999304128537}
   - component: {fileID: 6640061760636492676}
-  - component: {fileID: 1278534798887358493}
   m_Layer: 9
   m_Name: peluche_0
   m_TagString: Untagged
@@ -88,53 +87,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!68 &1278534798887358493
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1251127718066772484}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 0.4517185, y: -0.19652233}
-  - {x: 0.1305325, y: -0.35180748}
-  - {x: -0.3123324, y: -0.2017906}
-  - {x: -0.40138078, y: 0.12814942}
-  - {x: -0.044369936, y: 0.3575616}
-  - {x: 0.24741578, y: 0.2093997}
-  - {x: 0.35686398, y: -0.012385204}
-  - {x: 0.37720394, y: -0.05186218}
-  - {x: 0.45173866, y: -0.19652244}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0

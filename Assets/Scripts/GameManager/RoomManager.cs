@@ -39,7 +39,6 @@ public class RoomManager : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log("RoomManager Awake");
         if (instance == null)
         {
             instance = this;
@@ -53,7 +52,6 @@ public class RoomManager : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("RoomManager Start");
         currentRoomIndex = 0;
     }
 
@@ -71,9 +69,9 @@ public class RoomManager : MonoBehaviour
 
     public void LoadNextRoom()
     {
-        currentRoomIndex++;
-        if (currentRoomIndex >= nbRooms)
+        if (currentRoomIndex + 1 >= nbRooms)
         {
+            playerTransform.position = new Vector3(0, -4, 0);
             SceneManager.LoadScene(finalRoomName);
             return;
         }
@@ -83,7 +81,6 @@ public class RoomManager : MonoBehaviour
     private void LoadRandomRoom()
     {
         int randRoomValue = UnityEngine.Random.Range(0, 100);
-        Debug.Log("Random scene value: " + randRoomValue);
         int roomProbabilityValue = 0;
         string nextSceneName = string.Empty;
         for (int i = 0; i < roomsProbabilities.Length; i++)
@@ -101,7 +98,6 @@ public class RoomManager : MonoBehaviour
         if (nextSceneName == rooms[0]) // Children room
             nextSceneName = GetRandomChildrenRoom();
         currentRoomIndex++;
-        Debug.Log("Next scene: " + nextSceneName);
         SceneManager.LoadScene(nextSceneName);
         playerTransform.position = new Vector3(0, -4, 0);
     }
@@ -118,7 +114,6 @@ public class RoomManager : MonoBehaviour
     private string GetRandomChildrenRoom()
     {
         int rand = UnityEngine.Random.Range(1, nbChildrenRooms + 1);
-        Debug.Log("Random children room value: " + rand);
         IncressDifficulty();
         return rooms[0] + rand;
     }

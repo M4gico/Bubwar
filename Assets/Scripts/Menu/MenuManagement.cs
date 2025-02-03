@@ -61,7 +61,7 @@ public class MenuManagement : MonoBehaviour
 
   private void StartGame()
   {
-    RoomManager.instance.StartGame();
+    GameManager.instance.StartGame();
   }
 
   public void QuitGame()

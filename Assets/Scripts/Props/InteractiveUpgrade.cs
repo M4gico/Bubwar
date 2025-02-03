@@ -113,21 +113,26 @@ public class InteractiveUpgrade : MonoBehaviour
                 armuerieCanva.enabled = false;
                 armuerieState = true;
                 GameObject.FindGameObjectWithTag("Weapon").GetComponent<PlayerShot>().SetCanShot(true);
-                armorySound.PlayOpenArmory();
+                armorySound.PlayCloseArmory();
             }
 
         }
     }
 
-    private void PlayArmoryOpenClosedSound()
+    public void PlayArmoryOpenClosedSound()
     {
         if (armuerieCanva.enabled)
         {
-            armorySound.PlayOpenArmory();
+            armorySound.PlayCloseArmory();
         }
         else
         {
-            armorySound.PlayCloseArmory();
+            armorySound.PlayOpenArmory(); 
         }
+    }
+
+    public void SetArmoryState(bool state)
+    {
+        armuerieState = state;
     }
 }

@@ -27,6 +27,58 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 250
+--- !u!114 &-7967975085439522716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/NoAmmo/Tir
+  m_EditorClassIdentifier: 
+  Name: Tir
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2215222286
+    data2: 293938900
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - ON
+  - OFF
+  Exists: 1
+--- !u!114 &-7939273020088032796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Tir
+  m_EditorClassIdentifier: 
+  Name: Tir
+  StudioPath: parameter:/Tir
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2215222286
+    data2: 293938900
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - ON
+  - OFF
+  Exists: 1
 --- !u!114 &-7905806584380732398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,7 +237,8 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: -7967975085439522716}
   MinDistance: 2
   MaxDistance: 9
   Length: 33
@@ -431,7 +484,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 8.722222
-  Length: 327
+  Length: 2359
 --- !u!114 &-4055925571520860126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -486,6 +539,32 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 909
+--- !u!114 &-3838693806865056824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BubbleBig_Die/Tir
+  m_EditorClassIdentifier: 
+  Name: Tir
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2215222286
+    data2: 293938900
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - ON
+  - OFF
+  Exists: 1
 --- !u!114 &-3108518778884824756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -721,7 +800,8 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: -3838693806865056824}
   MinDistance: 2
   MaxDistance: 9
   Length: 406
@@ -740,10 +820,10 @@ MonoBehaviour:
   Path: FMODProject/BudWar/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638735984148397344
+  lastModified: 638741104697511560
   FileSizes:
   - Name: Desktop
-    Value: 5455488
+    Value: 5476640
   Exists: 1
 --- !u!114 &-1065282167368390861
 MonoBehaviour:
@@ -939,11 +1019,12 @@ MonoBehaviour:
   EditorParameters:
   - {fileID: -1400904505080736762}
   - {fileID: 8160415907176393463}
+  - {fileID: -7939273020088032796}
   MasterBanks:
   - {fileID: -1095261682789711340}
   StringsBanks:
   - {fileID: 7944278946090224153}
-  cacheTime: 638735984148397344
+  cacheTime: 638741104697511560
   cacheVersion: 131621
 --- !u!114 &805291382504381105
 MonoBehaviour:
@@ -999,6 +1080,32 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 781
+--- !u!114 &1013185095287169867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BubbleBig_Spawn/Tir
+  m_EditorClassIdentifier: 
+  Name: Tir
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2215222286
+    data2: 293938900
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - ON
+  - OFF
+  Exists: 1
 --- !u!114 &1141151822587490606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1047,7 +1154,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -1095261682789711340}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 2
@@ -1373,7 +1480,8 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: 1013185095287169867}
   MinDistance: 2
   MaxDistance: 9
   Length: 140
@@ -1638,10 +1746,10 @@ MonoBehaviour:
   Path: FMODProject/BudWar/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638735637530076018
+  lastModified: 638740175548242448
   FileSizes:
   - Name: Desktop
-    Value: 2906
+    Value: 2940
   Exists: 1
 --- !u!114 &8160415907176393463
 MonoBehaviour:

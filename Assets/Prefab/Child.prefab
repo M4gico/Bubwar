@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 538066767251420181}
   m_Layer: 0
   m_Name: WeaponChild
-  m_TagString: Untagged
+  m_TagString: WeaponChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,6 +137,7 @@ MonoBehaviour:
   forceOfTheShot: 200
   maxCooldownShoot: 1.5
   minCooldownShoot: 0.8
+  canShoot: 1
 --- !u!1 &8890093302505974991
 GameObject:
   m_ObjectHideFlags: 0
