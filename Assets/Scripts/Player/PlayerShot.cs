@@ -39,7 +39,7 @@ public class PlayerShot : MonoBehaviour
     private Transform playerTransform;
     private PlayerMovement playerMovement;
 
-    private bool canShot = true;
+    private bool canShot = false;
 
     public static PlayerShot instance;
 

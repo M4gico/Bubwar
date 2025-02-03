@@ -32,6 +32,10 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         isGameOver = false;
+        foreach (GameObject pUI in playerUI)
+        {
+            pUI.SetActive(false);
+        }
     }
 
 
@@ -58,6 +62,7 @@ public class GameManager : MonoBehaviour
     {
         player.SetActive(true);
         GameObject.Find("Player").GetComponent<PlayerHealth>().ResetPlayerHealth();
+        playerShot.SetCanShot(true);
         foreach (GameObject pUI in playerUI)
         {
             pUI.SetActive(true);
@@ -67,6 +72,7 @@ public class GameManager : MonoBehaviour
     public void UnSetupPlayer()
     {
         playerShot.ResetPlayerShot(); // Reset player shot bubules price
+        playerShot.SetCanShot(false);
         PlayerMovement.instance.ResetMoveSpeed(); // Reset player speed
         PlayerVisionController.instance.ResetVision(); // Reset player vision
 
