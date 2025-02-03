@@ -143,10 +143,15 @@ public class PlayerHealth : MonoBehaviour
         isInvincible = false;
     }
 
-    public void ResetPlayerHealth()
+    public void DeathPlayer()
     {
         // PlayerDead();
 
+        ResetPlayerHealth(); //Call this function for espace button
+    }
+
+    public void ResetPlayerHealth()
+    {
         foreach (GameObject h in GameObject.FindGameObjectsWithTag("HeartUI"))
         {
             Destroy(h);

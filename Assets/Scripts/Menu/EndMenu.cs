@@ -20,7 +20,7 @@ public class EndMenu : MonoBehaviour
         RoomManager.instance.ResetRoomManager();
         SceneManager.LoadScene("MainMenuScene");
 
-        GameObject.Find("Player").GetComponent<PlayerHealth>().ResetPlayerHealth();
+        GameObject.Find("Player").GetComponent<PlayerHealth>().DeathPlayer();
         GameObject.Find("GameManager").GetComponent<GameManager>().UnSetupPlayer();
     }
 

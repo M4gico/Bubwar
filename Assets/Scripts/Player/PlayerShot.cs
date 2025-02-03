@@ -137,7 +137,7 @@ public class PlayerShot : MonoBehaviour
         GetComponentInParent<PlayerSound>().PlayRegenAmmoSound();
     }
 
-    public void resetPlayerShot()
+    public void ResetPlayerShot()
     {
         gaugeShot = initialGaugeShot;
         soapGaugeManager.SetCrop(gaugeShot);

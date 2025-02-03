@@ -17,6 +17,9 @@ public class PlayerVisionController : MonoBehaviour
     [SerializeField]
     private float shadowAlpha = 0.8f;
 
+    //To pause the vision if escape menu is open
+    private bool isVisionActive = true;
+
     private void Awake()
     {
         if (instance == null)
@@ -28,21 +31,18 @@ public class PlayerVisionController : MonoBehaviour
 
     void Update()
     {
-        Vector3 playerPos = Camera.main.WorldToViewportPoint(transform.position);
-        Vector3 mousePos = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+        if (isVisionActive)
+        {
+            Vector3 playerPos = Camera.main.WorldToViewportPoint(transform.position);
+            Vector3 mousePos = Camera.main.ScreenToViewportPoint(Input.mousePosition);
 
-        visionMaterial.SetVector("_PlayerPosition", new Vector4(playerPos.x, playerPos.y, 0, 0));
-        visionMaterial.SetVector("_MousePosition", new Vector4(mousePos.x, mousePos.y, 0, 0));
-        visionMaterial.SetFloat("_FOVAngle", fovAngle);
-        visionMaterial.SetFloat("_ViewDistance", viewDistance);
-        visionMaterial.SetFloat("_CircleRadius", circleRadius);
-        visionMaterial.SetFloat("_Alpha", shadowAlpha);
-    }
-
-
-    public static PlayerVisionController GetInstance()
-    {
-        return instance;
+            visionMaterial.SetVector("_PlayerPosition", new Vector4(playerPos.x, playerPos.y, 0, 0));
+            visionMaterial.SetVector("_MousePosition", new Vector4(mousePos.x, mousePos.y, 0, 0));
+            visionMaterial.SetFloat("_FOVAngle", fovAngle);
+            visionMaterial.SetFloat("_ViewDistance", viewDistance);
+            visionMaterial.SetFloat("_CircleRadius", circleRadius);
+            visionMaterial.SetFloat("_Alpha", shadowAlpha);
+        }
     }
 
     public static float GetViewRadius()
@@ -53,5 +53,10 @@ public class PlayerVisionController : MonoBehaviour
     public void ResetVision()
     {
         fovAngle = initialFovAngle;
+    }
+
+    public void SetVisionActive(bool isActive)
+    {
+        isVisionActive = isActive;
     }
 }

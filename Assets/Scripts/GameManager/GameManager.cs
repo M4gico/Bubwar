@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour
 
     public void UnSetupPlayer()
     {
-        playerShot.resetPlayerShot(); // Reset player shot bubules price
+        playerShot.ResetPlayerShot(); // Reset player shot bubules price
         PlayerMovement.instance.ResetMoveSpeed(); // Reset player speed
         PlayerVisionController.instance.ResetVision(); // Reset player vision
 
