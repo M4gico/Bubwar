@@ -72,7 +72,7 @@ public class PlayerHealth : MonoBehaviour
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene("MainMenuScene");
 
-        ResetPlayerHealth();
+        DeathPlayer();
         ActualiseHearth();
         GameManager.instance.UnSetupPlayer();
     }
@@ -136,10 +136,15 @@ public class PlayerHealth : MonoBehaviour
         isInvincible = false;
     }
 
-    public void ResetPlayerHealth()
+    public void DeathPlayer()
     {
         StartCoroutine(PlayerDead());
 
+        ResetPlayerHealth(); //Call this function for espace button
+    }
+
+    public void ResetPlayerHealth()
+    {
         foreach (GameObject h in GameObject.FindGameObjectsWithTag("HeartUI"))
         {
             Destroy(h);
