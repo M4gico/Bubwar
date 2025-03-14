@@ -56,7 +56,7 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Bubwar.sln",
+    "dotnet.defaultSolution": "SoapRiot.sln",
     "editor.formatOnSave": true,
     "[csharp]": {
         "editor.defaultFormatter": "ms-dotnettools.csharp"
