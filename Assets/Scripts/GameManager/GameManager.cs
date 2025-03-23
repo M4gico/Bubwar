@@ -86,4 +86,16 @@ public class GameManager : MonoBehaviour
         RoomManager.instance.ResetRoomManager(); // Reset room manager stats
 
     }
+
+    public void SwitchProps()
+    {
+        foreach (GameObject pUI in playerUI)
+        {
+            if (pUI.name == "PlayerConeVision")
+            {
+                pUI.SetActive(!pUI.activeSelf);
+                return;
+            }
+        }
+    }
 }

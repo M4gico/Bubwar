@@ -829,8 +829,9 @@ GameObject:
   - component: {fileID: 1421883001}
   - component: {fileID: 1421883003}
   - component: {fileID: 1421883002}
+  - component: {fileID: 1421883004}
   m_Layer: 0
-  m_Name: interrupteur
+  m_Name: interruptor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -918,6 +919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc3c2ae7b30594841bda451cf23b6a22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTutorial: 1
 --- !u!61 &1421883003
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -952,7 +954,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.007934332, y: -0.04562211}
+  m_Offset: {x: -0.00020122528, y: -0.69906956}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -962,8 +964,26 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.36488247, y: 0.34124422}
+  m_Size: {x: 1.0453959, y: 1.6481391}
   m_EdgeRadius: 0
+--- !u!114 &1421883004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421882999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fab9326068045b4e983ebbb78b539a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AddHealing: 0
+  actionChoose: 3
+  isInTrigger: 0
+  armuerieState: 0
+  delayToActiveState: 0
+  armorySound: {fileID: 0}
 --- !u!1001 &1798033974
 PrefabInstance:
   m_ObjectHideFlags: 0

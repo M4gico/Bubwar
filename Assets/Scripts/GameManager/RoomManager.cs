@@ -58,7 +58,8 @@ public class RoomManager : MonoBehaviour
     public void StartGame()
     {
         currentRoomIndex++;
-        SceneManager.LoadScene(GetRandomChildrenRoom());
+        // SceneManager.LoadScene(GetRandomChildrenRoom());
+        SceneManager.LoadScene("TutorialRoom");
         playerTransform.position = new Vector3(0, -4, 0);
     }
 

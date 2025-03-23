@@ -6,19 +6,16 @@ public class SwitchPropsManager : MonoBehaviour
     private bool isTutorial = false;
 
 
-    private void OnTriggerEnter2D(Collider2D other)
+    public void UseSwicht()
     {
-        if (other.CompareTag("Player"))
+        if (isTutorial)
         {
-            if (isTutorial)
-            {
-                // GameManager.Instance.TutorialSwitchProps();
-            }
-            else
-            {
-                // GameManager.Instance.SwitchProps();
-            }
-            Destroy(gameObject);
+            GameManager.instance.SwitchProps();
+            GameObject.Find("FinalDoor").GetComponent<DoorManager>().OpenDoor();
+        }
+        else
+        {
+            GameManager.instance.SwitchProps();
         }
     }
 }
