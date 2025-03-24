@@ -25,12 +25,12 @@ public class GameOverManager : MonoBehaviour
     [SerializeField]
     private Button mainMenuButton;
 
-    [SerializeField]
-    private bool isGameOver;
+    // [SerializeField]
+    // private bool isGameOver;
 
     public void GameOver()
     {
-        isGameOver = true;
+        // isGameOver = true;
         gameOverUI.SetActive(true);
         StartCoroutine(FadeImage(false));
 
@@ -56,7 +56,7 @@ public class GameOverManager : MonoBehaviour
 
     private IEnumerator GameOverExitRestart()
     {
-        isGameOver = false;
+        // isGameOver = false;
         restartButton.interactable = false;
         mainMenuButton.interactable = false;
         yield return StartCoroutine(FadeImage(true));
@@ -72,7 +72,7 @@ public class GameOverManager : MonoBehaviour
     }
     private IEnumerator GameOverExitMainMenu()
     {
-        isGameOver = false;
+        // isGameOver = false;
         restartButton.interactable = false;
         mainMenuButton.interactable = false;
         yield return StartCoroutine(FadeImage(true));

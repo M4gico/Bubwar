@@ -37,6 +37,7 @@ public class RoomManager : MonoBehaviour
     [SerializeField]
     private int spawnQuantityChildren = 1;
 
+
     private void Awake()
     {
         if (instance == null)
@@ -58,7 +59,8 @@ public class RoomManager : MonoBehaviour
     public void StartGame()
     {
         currentRoomIndex++;
-        SceneManager.LoadScene(GetRandomChildrenRoom());
+        // SceneManager.LoadScene(GetRandomChildrenRoom());
+        SceneManager.LoadScene("TutorialRoom");
         playerTransform.position = new Vector3(0, -4, 0);
     }
 

@@ -339,7 +339,7 @@ MonoBehaviour:
   - ChildrenRoom
   - UpgradeRoom
   - HealthRoom
-  roomsProbabilities: 1e0000004600000000000000
+  roomsProbabilities: 460000000f0000000f000000
   nbChildren: 1
   spawnTimeChildren: 2
   spawnNbChildren: 1
@@ -437,7 +437,6 @@ MonoBehaviour:
   mainMenuTextButton: {fileID: 1686147808}
   restartButton: {fileID: 1686147811}
   mainMenuButton: {fileID: 1686147809}
-  isGameOver: 0
 --- !u!114 &118606850 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 624564541101500673, guid: 872cbc796dadc484f921f3e61776ff8a, type: 3}
@@ -2100,7 +2099,7 @@ GameObject:
   - component: {fileID: 1530500921}
   - component: {fileID: 1530500920}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: PlayerHeartsUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2187,7 +2186,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!1 &1640428470
 GameObject:

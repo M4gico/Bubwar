@@ -4,7 +4,7 @@ using System.Collections;
 
 public class InteractiveUpgrade : MonoBehaviour
 {
-    private enum ActionToPlay { Heal, End, Armurerie };
+    private enum ActionToPlay { Heal, End, Armurerie, Switch };
     [SerializeField] private float AddHealing;
 
     [SerializeField] private ActionToPlay actionChoose;
@@ -37,7 +37,7 @@ public class InteractiveUpgrade : MonoBehaviour
         {
             playerHealth = GameObject.FindWithTag("Player").GetComponent<PlayerHealth>();
         }
-        else
+        else if (actionChoose != ActionToPlay.Switch)
         {
             endAnimator = GameObject.FindWithTag("EndUI").GetComponent<Animator>();
         }
@@ -58,7 +58,6 @@ public class InteractiveUpgrade : MonoBehaviour
         if (isInTrigger && !delayToActiveState)
         {
             EKeyValue = EKeyAction.ReadValue<float>();
-            Debug.Log("[InteractiveUpgrade] EKeyValue: " + EKeyValue);
             if (EKeyValue == 1f)
             {
                 if (actionChoose == ActionToPlay.Armurerie)
@@ -72,6 +71,11 @@ public class InteractiveUpgrade : MonoBehaviour
                     playerHealth.AddLife(AddHealing);
                     GameObject.Find("FinalDoor").GetComponent<DoorManager>().OpenDoor();
                     Destroy(gameObject);
+                }
+                else if (actionChoose == ActionToPlay.Switch)
+                {
+                    Debug.Log("[InteractiveUpgrade] Switch");
+                    gameObject.GetComponent<SwitchPropsManager>().UseSwicht();
                 }
                 else if (actionChoose == ActionToPlay.End)
                 {
@@ -127,7 +131,7 @@ public class InteractiveUpgrade : MonoBehaviour
         }
         else
         {
-            armorySound.PlayOpenArmory(); 
+            armorySound.PlayOpenArmory();
         }
     }
 
