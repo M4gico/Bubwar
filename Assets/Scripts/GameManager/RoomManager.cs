@@ -37,6 +37,7 @@ public class RoomManager : MonoBehaviour
     [SerializeField]
     private int spawnQuantityChildren = 1;
 
+
     private void Awake()
     {
         if (instance == null)

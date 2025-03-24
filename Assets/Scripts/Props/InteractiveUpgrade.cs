@@ -58,7 +58,6 @@ public class InteractiveUpgrade : MonoBehaviour
         if (isInTrigger && !delayToActiveState)
         {
             EKeyValue = EKeyAction.ReadValue<float>();
-            Debug.Log("[InteractiveUpgrade] EKeyValue: " + EKeyValue);
             if (EKeyValue == 1f)
             {
                 if (actionChoose == ActionToPlay.Armurerie)

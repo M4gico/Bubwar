@@ -98,4 +98,16 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
+    public void SwitchSetup(bool state)
+    {
+        foreach (GameObject pUI in playerUI)
+        {
+            if (pUI.name == "PlayerConeVision")
+            {
+                pUI.SetActive(state);
+                return;
+            }
+        }
+    }
 }
